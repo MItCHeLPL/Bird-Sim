@@ -8,7 +8,7 @@ public class ObjectFaceCamera : MonoBehaviour
 	[SerializeField] private Vector3 rotationOffset;
 	void Start()
 	{
-		target = Camera.gameObject;
+		target = GameObject.FindGameObjectWithTag("MainCamera").gameObject;
 	}
 
     void Update()
