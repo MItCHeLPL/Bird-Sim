@@ -23,8 +23,8 @@ MonoBehaviour:
       m_Values: 140000002800000050000000
       m_SchemaId:
         m_Id: With3Levels
-    supportVolumetrics: 0
-    supportVolumetricClouds: 0
+    supportVolumetrics: 1
+    supportVolumetricClouds: 1
     supportLightLayers: 1
     supportDistortion: 1
     supportTransparentBackface: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
     supportMotionVectors: 1
     supportRuntimeAOVAPI: 0
     supportDitheringCrossFade: 1
-    supportTerrainHole: 0
+    supportTerrainHole: 1
     supportProbeVolume: 0
     probeVolumeMemoryBudget: 1024
     probeVolumeSHBands: 1
