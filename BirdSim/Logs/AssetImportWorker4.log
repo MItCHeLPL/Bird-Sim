@@ -1,0 +1,2086 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.0b7 (f7def5121c60) revision 16244469'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1165; Version 2009; 64bit' Language: 'pl' Physical Memory: 16341 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.0b7\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+62953
+Successfully changed project path to: C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
+C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 217.85 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.0b7 (f7def5121c60)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   NVIDIA
+    VRAM:     4018 MB
+    Driver:   30.0.14.7111
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.054529 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 354.22 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.744 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5824ms)
+		BeginReloadAssembly (275ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (2010ms)
+			LoadAssemblies (273ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (396ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (973ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (354ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (446ms)
+				ProcessInitializeOnLoadMethodAttributes (135ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.052279 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 257.41 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.283 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5365ms)
+		BeginReloadAssembly (505ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (2ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (4712ms)
+			LoadAssemblies (392ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (883ms)
+			ReleaseScriptCaches (25ms)
+			RebuildScriptCaches (145ms)
+			SetupLoadedEditorAssemblies (3186ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (63ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (258ms)
+				BeforeProcessingInitializeOnLoad (283ms)
+				ProcessInitializeOnLoadAttributes (2522ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 2.22 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7645 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 310 unused Assets / (18.8 MB). Loaded Objects now: 8044.
+Memory consumption went from 383.0 MB to 364.2 MB.
+Total: 11.344600 ms (FindLiveObjects: 0.571100 ms CreateObjectMapping: 0.575000 ms MarkObjects: 6.794500 ms  DeleteObjects: 3.402700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 38866.262269 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(c56fbacef49007545ae24029c31051dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(c56fbacef49007545ae24029c31051dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b118de434572e70bc5270093b0119cb8') in 0.019926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.629278 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(62371d4c830a1064bb9b8c4f0a0db259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(62371d4c830a1064bb9b8c4f0a0db259) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.42 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.29 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.22 seconds
+Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+
+ -> (artifact id: '1c207a3db5bb2d27b87190822935f372') in 3.251880 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013158 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.923 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5459ms)
+		BeginReloadAssembly (503ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (44ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (83ms)
+		EndReloadAssembly (4820ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (639ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (247ms)
+			SetupLoadedEditorAssemblies (2653ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (48ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (301ms)
+				ProcessInitializeOnLoadAttributes (2149ms)
+				ProcessInitializeOnLoadMethodAttributes (113ms)
+				AfterProcessingInitializeOnLoad (36ms)
+				EditorAssembliesLoaded (3ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (59ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7238 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 105 unused Assets / (18.3 MB). Loaded Objects now: 8180.
+Memory consumption went from 365.4 MB to 347.1 MB.
+Total: 7.281400 ms (FindLiveObjects: 0.526700 ms CreateObjectMapping: 0.515900 ms MarkObjects: 4.004500 ms  DeleteObjects: 2.233100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019648 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.985 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3071ms)
+		BeginReloadAssembly (245ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (116ms)
+		EndReloadAssembly (2687ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (583ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (1498ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (160ms)
+				ProcessInitializeOnLoadAttributes (1246ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.2 MB). Loaded Objects now: 8219.
+Memory consumption went from 377.7 MB to 359.5 MB.
+Total: 7.944300 ms (FindLiveObjects: 0.550300 ms CreateObjectMapping: 0.553300 ms MarkObjects: 3.709200 ms  DeleteObjects: 3.130300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027514 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.455 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3542ms)
+		BeginReloadAssembly (297ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (86ms)
+		EndReloadAssembly (3033ms)
+			LoadAssemblies (259ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (851ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (97ms)
+			SetupLoadedEditorAssemblies (1485ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (180ms)
+				ProcessInitializeOnLoadAttributes (1216ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.71 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.2 MB). Loaded Objects now: 8234.
+Memory consumption went from 376.9 MB to 358.7 MB.
+Total: 8.664800 ms (FindLiveObjects: 0.869700 ms CreateObjectMapping: 0.954400 ms MarkObjects: 4.500300 ms  DeleteObjects: 2.338900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015862 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.51 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.590 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4706ms)
+		BeginReloadAssembly (210ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (70ms)
+		EndReloadAssembly (4272ms)
+			LoadAssemblies (171ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (916ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (2515ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (307ms)
+				ProcessInitializeOnLoadAttributes (2020ms)
+				ProcessInitializeOnLoadMethodAttributes (129ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (75ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.2 MB). Loaded Objects now: 8249.
+Memory consumption went from 377.0 MB to 358.7 MB.
+Total: 7.714700 ms (FindLiveObjects: 0.530800 ms CreateObjectMapping: 0.810700 ms MarkObjects: 4.060500 ms  DeleteObjects: 2.311400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012221 seconds.
+A Native Collection has not been disposed, resulting in a memory leak. Enable Full StackTraces to get more details.
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.28 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.347 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3442ms)
+		BeginReloadAssembly (327ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (2975ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (749ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (1529ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (154ms)
+				ProcessInitializeOnLoadAttributes (1266ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.3 MB). Loaded Objects now: 8264.
+Memory consumption went from 377.0 MB to 358.7 MB.
+Total: 7.520900 ms (FindLiveObjects: 0.543600 ms CreateObjectMapping: 0.574100 ms MarkObjects: 4.105300 ms  DeleteObjects: 2.297100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012041 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.992 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3073ms)
+		BeginReloadAssembly (224ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (2687ms)
+			LoadAssemblies (153ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (595ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (1413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (142ms)
+				ProcessInitializeOnLoadAttributes (1186ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.4 MB). Loaded Objects now: 8279.
+Memory consumption went from 377.1 MB to 358.7 MB.
+Total: 10.133700 ms (FindLiveObjects: 0.597000 ms CreateObjectMapping: 0.770200 ms MarkObjects: 6.435400 ms  DeleteObjects: 2.329900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.038095 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.10 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  8.720 seconds
+Domain Reload Profiling:
+	ReloadAssembly (9208ms)
+		BeginReloadAssembly (518ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (139ms)
+		EndReloadAssembly (8363ms)
+			LoadAssemblies (383ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1841ms)
+			ReleaseScriptCaches (14ms)
+			RebuildScriptCaches (617ms)
+			SetupLoadedEditorAssemblies (4093ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (50ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (408ms)
+				ProcessInitializeOnLoadAttributes (3451ms)
+				ProcessInitializeOnLoadMethodAttributes (128ms)
+				AfterProcessingInitializeOnLoad (53ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (91ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.4 MB). Loaded Objects now: 8294.
+Memory consumption went from 377.1 MB to 358.7 MB.
+Total: 11.483200 ms (FindLiveObjects: 0.882200 ms CreateObjectMapping: 1.331800 ms MarkObjects: 6.590600 ms  DeleteObjects: 2.677300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013141 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.036 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4112ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (3699ms)
+			LoadAssemblies (157ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1106ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (248ms)
+			SetupLoadedEditorAssemblies (1414ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (171ms)
+				ProcessInitializeOnLoadAttributes (1136ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (37ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.67 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.3 MB). Loaded Objects now: 8309.
+Memory consumption went from 377.1 MB to 358.8 MB.
+Total: 7.495700 ms (FindLiveObjects: 0.565600 ms CreateObjectMapping: 0.613200 ms MarkObjects: 3.736500 ms  DeleteObjects: 2.579000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013182 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.475 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3557ms)
+		BeginReloadAssembly (197ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (3219ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (653ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (1812ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (434ms)
+				ProcessInitializeOnLoadAttributes (1290ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (182ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.3 MB). Loaded Objects now: 8324.
+Memory consumption went from 377.1 MB to 358.8 MB.
+Total: 9.366900 ms (FindLiveObjects: 0.751800 ms CreateObjectMapping: 0.801400 ms MarkObjects: 5.187400 ms  DeleteObjects: 2.625000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013222 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.912 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2992ms)
+		BeginReloadAssembly (229ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (87ms)
+		EndReloadAssembly (2642ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (626ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (1420ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (155ms)
+				ProcessInitializeOnLoadAttributes (1164ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (32ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (46ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.3 MB). Loaded Objects now: 8339.
+Memory consumption went from 377.1 MB to 358.8 MB.
+Total: 7.618100 ms (FindLiveObjects: 0.565500 ms CreateObjectMapping: 0.602700 ms MarkObjects: 4.054800 ms  DeleteObjects: 2.393400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012294 seconds.
+A Native Collection has not been disposed, resulting in a memory leak. Enable Full StackTraces to get more details.
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.042 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4125ms)
+		BeginReloadAssembly (1359ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (781ms)
+		EndReloadAssembly (2636ms)
+			LoadAssemblies (156ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (660ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (1380ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (1142ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (45ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.42 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.4 MB). Loaded Objects now: 8354.
+Memory consumption went from 377.2 MB to 358.8 MB.
+Total: 14.207600 ms (FindLiveObjects: 6.341900 ms CreateObjectMapping: 0.518100 ms MarkObjects: 4.820200 ms  DeleteObjects: 2.525800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016229 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.560 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4684ms)
+		BeginReloadAssembly (290ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (84ms)
+		EndReloadAssembly (4201ms)
+			LoadAssemblies (202ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1139ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (2230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (214ms)
+				ProcessInitializeOnLoadAttributes (1769ms)
+				ProcessInitializeOnLoadMethodAttributes (195ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (90ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.2 MB). Loaded Objects now: 8369.
+Memory consumption went from 377.0 MB to 358.8 MB.
+Total: 8.455900 ms (FindLiveObjects: 0.616600 ms CreateObjectMapping: 0.677800 ms MarkObjects: 4.379000 ms  DeleteObjects: 2.781400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012259 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.237 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3319ms)
+		BeginReloadAssembly (291ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (2855ms)
+			LoadAssemblies (227ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (673ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (1508ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (174ms)
+				ProcessInitializeOnLoadAttributes (1237ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (54ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.51 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.4 MB). Loaded Objects now: 8384.
+Memory consumption went from 377.2 MB to 358.8 MB.
+Total: 7.100400 ms (FindLiveObjects: 0.601000 ms CreateObjectMapping: 0.588200 ms MarkObjects: 3.312600 ms  DeleteObjects: 2.597300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013904 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.879 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2956ms)
+		BeginReloadAssembly (262ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (78ms)
+		EndReloadAssembly (2527ms)
+			LoadAssemblies (161ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (614ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (1345ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (140ms)
+				ProcessInitializeOnLoadAttributes (1130ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (46ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.3 MB). Loaded Objects now: 8399.
+Memory consumption went from 377.2 MB to 358.9 MB.
+Total: 6.952900 ms (FindLiveObjects: 0.555900 ms CreateObjectMapping: 0.542300 ms MarkObjects: 3.218000 ms  DeleteObjects: 2.635500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016030 seconds.
+Begin MonoManager ReloadAssembly
+A Native Collection has not been disposed, resulting in a memory leak. Enable Full StackTraces to get more details.
+
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.801 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3894ms)
+		BeginReloadAssembly (213ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (3428ms)
+			LoadAssemblies (206ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (967ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (1699ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (162ms)
+				ProcessInitializeOnLoadAttributes (1444ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (70ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.4 MB). Loaded Objects now: 8414.
+Memory consumption went from 377.3 MB to 358.9 MB.
+Total: 9.511700 ms (FindLiveObjects: 0.545100 ms CreateObjectMapping: 0.544500 ms MarkObjects: 3.219300 ms  DeleteObjects: 5.201800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011526 seconds.
+A Native Collection has not been disposed, resulting in a memory leak. Enable Full StackTraces to get more details.
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.781 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3880ms)
+		BeginReloadAssembly (321ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (3405ms)
+			LoadAssemblies (232ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (743ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (93ms)
+			SetupLoadedEditorAssemblies (1875ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (199ms)
+				ProcessInitializeOnLoadAttributes (1567ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (30ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (64ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.2 MB). Loaded Objects now: 8429.
+Memory consumption went from 377.1 MB to 358.9 MB.
+Total: 13.093900 ms (FindLiveObjects: 0.550000 ms CreateObjectMapping: 0.548900 ms MarkObjects: 7.891800 ms  DeleteObjects: 4.102000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.175155 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.40 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.999 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3076ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (2747ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (670ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (1416ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (166ms)
+				ProcessInitializeOnLoadAttributes (1166ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (57ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.3 MB). Loaded Objects now: 8444.
+Memory consumption went from 377.3 MB to 358.9 MB.
+Total: 7.935800 ms (FindLiveObjects: 0.675000 ms CreateObjectMapping: 0.670200 ms MarkObjects: 3.974900 ms  DeleteObjects: 2.614200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012122 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.529 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4620ms)
+		BeginReloadAssembly (244ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (4008ms)
+			LoadAssemblies (162ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (933ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (2238ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (92ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (367ms)
+				ProcessInitializeOnLoadAttributes (1706ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (75ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.4 MB). Loaded Objects now: 8459.
+Memory consumption went from 377.3 MB to 359.0 MB.
+Total: 21.985000 ms (FindLiveObjects: 0.586700 ms CreateObjectMapping: 0.641700 ms MarkObjects: 10.790300 ms  DeleteObjects: 9.963800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012305 seconds.
+A Native Collection has not been disposed, resulting in a memory leak. Enable Full StackTraces to get more details.
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.323 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4411ms)
+		BeginReloadAssembly (207ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (76ms)
+		EndReloadAssembly (4082ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (615ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (125ms)
+			SetupLoadedEditorAssemblies (2665ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (515ms)
+				ProcessInitializeOnLoadAttributes (2054ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (85ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.2 MB). Loaded Objects now: 8474.
+Memory consumption went from 377.2 MB to 359.0 MB.
+Total: 7.498100 ms (FindLiveObjects: 0.645100 ms CreateObjectMapping: 0.638900 ms MarkObjects: 3.640300 ms  DeleteObjects: 2.572500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012190 seconds.
+A Native Collection has not been disposed, resulting in a memory leak. Enable Full StackTraces to get more details.
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.889 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2968ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (2679ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (701ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (1392ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (139ms)
+				ProcessInitializeOnLoadAttributes (1174ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (71ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.4 MB). Loaded Objects now: 8489.
+Memory consumption went from 377.4 MB to 359.0 MB.
+Total: 7.556500 ms (FindLiveObjects: 0.648000 ms CreateObjectMapping: 0.565400 ms MarkObjects: 3.933300 ms  DeleteObjects: 2.408400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1530.488990 seconds.
+  path: Assets/Models
+  artifactKey: Guid(95b9a9807865237458b63a9f3b9fdaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(95b9a9807865237458b63a9f3b9fdaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '647e457351f1d19cb71db4e751722755') in 0.021644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.860737 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31858aa9811287a817ef9c584839beb1') in 0.007524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.650566 seconds.
+  path: Assets/Phisics
+  artifactKey: Guid(ca810fa9fa6b5d74eb1a867636067390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phisics using Guid(ca810fa9fa6b5d74eb1a867636067390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3e0d832b9c6e9a7373dfde188de1fb') in 0.009516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.832778 seconds.
+  path: Assets/Physic Materials
+  artifactKey: Guid(ca810fa9fa6b5d74eb1a867636067390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physic Materials using Guid(ca810fa9fa6b5d74eb1a867636067390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e76849a3d31800049024dfa99a2f0b') in 0.009096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.622869 seconds.
+  path: Assets/Physic Materials/Slide.physicMaterial
+  artifactKey: Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physic Materials/Slide.physicMaterial using Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d79c9679d730f7b1ded1cc0019eed2') in 0.022601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.541405 seconds.
+  path: Assets/Physic Materials/Slide.physicMaterial
+  artifactKey: Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physic Materials/Slide.physicMaterial using Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d86ea85017e5aa3728f724cb067ae0') in 0.010110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.004756 seconds.
+  path: Assets/Physic Materials/Slide.physicMaterial
+  artifactKey: Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physic Materials/Slide.physicMaterial using Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c08a0509c8fd4ed76afd4108b45898') in 0.009265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.499011 seconds.
+  path: Assets/Physic Materials/Slide.physicMaterial
+  artifactKey: Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physic Materials/Slide.physicMaterial using Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16af6a00e05b1e8c8d746129750d2956') in 0.008162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.577923 seconds.
+  path: Assets/Physic Materials/Slide and Bounce.physicMaterial
+  artifactKey: Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physic Materials/Slide and Bounce.physicMaterial using Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba4faa7c2c802a7e7d72908339938a46') in 0.019371 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018115 seconds.
+A Native Collection has not been disposed, resulting in a memory leak. Enable Full StackTraces to get more details.
+
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.051 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4150ms)
+		BeginReloadAssembly (297ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (3647ms)
+			LoadAssemblies (202ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (831ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (1997ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (188ms)
+				ProcessInitializeOnLoadAttributes (1691ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (30ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (91ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7235 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (18.3 MB). Loaded Objects now: 8504.
+Memory consumption went from 377.4 MB to 359.0 MB.
+Total: 9.392400 ms (FindLiveObjects: 0.620100 ms CreateObjectMapping: 0.823900 ms MarkObjects: 4.991000 ms  DeleteObjects: 2.955100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 238.891176 seconds.
+  path: Assets/Physic Materials/Slide and Bounce.physicMaterial
+  artifactKey: Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physic Materials/Slide and Bounce.physicMaterial using Guid(048321a94fe4ab2478f5fafe53ff64e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9fd8968b4be67dbdc791a6f28c036a') in 0.019185 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014203 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
