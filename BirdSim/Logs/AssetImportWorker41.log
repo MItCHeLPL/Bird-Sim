@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2021.2.0b7\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker2
+AssetImportWorker41
 -projectPath
 C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
 -logFile
-Logs/AssetImportWorker2.log
+Logs/AssetImportWorker41.log
 -srvPort
 50703
 Successfully changed project path to: C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
