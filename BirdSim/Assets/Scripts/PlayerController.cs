@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 	private Rigidbody rb;
 
-	private float speed = 2.0f;
+	[HideInInspector] public float speed = 2.0f;
 	[SerializeField] private float minSpeed = 2.0f;
 	[SerializeField] private float maxSpeed = 8.0f;
 	[SerializeField] private float speedBoost = 0.5f;
@@ -29,9 +29,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 		//Inputs
-		x = Input.GetAxis("HorizontalQE"); // left right rotation (yaw)
+		x = Input.GetAxis("Horizontal"); // left right rotation (yaw)
 		y = Input.GetAxis("Vertical"); // up down rotation (pitch)
-		z = Input.GetAxis("Horizontal"); // roll rotation
+		z = Input.GetAxis("HorizontalQE"); // roll rotation
 
 		input = new Vector3(x, y, z);
 		rotation = new Vector3(y, x, -z);

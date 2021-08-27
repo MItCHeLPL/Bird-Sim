@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855507949709643}
-  m_LocalRotation: {x: 0.053712964, y: -0.000000017315255, z: 9.313982e-10, w: 0.99855644}
+  m_LocalRotation: {x: 0.053712964, y: 0.000000017315251, z: -9.31398e-10, w: 0.99855644}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -509,6 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 666bcc32a9cdbc640beff34b21400ba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
   minSpeed: 2
   maxSpeed: 8
   speedBoost: 0.5
@@ -539,7 +540,7 @@ SphereCollider:
   m_GameObject: {fileID: 5970855508439352682}
   m_Material: {fileID: 13400000, guid: 048321a94fe4ab2478f5fafe53ff64e6, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.4
   m_Center: {x: 0, y: 0.15, z: -0.1}
@@ -550,9 +551,9 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508439352682}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 048321a94fe4ab2478f5fafe53ff64e6, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.25
   m_Height: 1
   m_Direction: 0
@@ -729,7 +730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508519365837}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 5.33}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -743,7 +744,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508519365837}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -898,7 +899,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508769612771}
-  m_LocalRotation: {x: 0.053712964, y: -0.000000017340334, z: 9.300491e-10, w: 0.99855644}
+  m_LocalRotation: {x: 0.053712964, y: 0.000000017342881, z: -9.299118e-10, w: 0.99855644}
   m_LocalPosition: {x: 0, y: 0.5, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1174,7 +1175,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855509106745540}
-  m_LocalRotation: {x: 0.025091244, y: 0.0000000021501205, z: -5.3966193e-11, w: 0.99968517}
+  m_LocalRotation: {x: 0.02509124, y: -0.00000000215012, z: 5.396617e-11, w: 0.99968517}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1248,6 +1249,7 @@ GameObject:
   - component: {fileID: 5970855509370248301}
   - component: {fileID: 5970855509370248298}
   - component: {fileID: 5970855509370248299}
+  - component: {fileID: 537850098}
   m_Layer: 0
   m_Name: Birds
   m_TagString: Untagged
@@ -1282,29 +1284,38 @@ VisualEffect:
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
-  m_ResetSeedOnPlay: 1
+  m_ResetSeedOnPlay: 0
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 4
+      - m_Value: 4.18
         m_Name: TiltAngle
         m_Overridden: 1
       - m_Value: 0.3
         m_Name: FlapAmplitude
         m_Overridden: 0
-      - m_Value: 20
+      - m_Value: 15
         m_Name: AttractionStrength
         m_Overridden: 1
       - m_Value: 1
         m_Name: Drag
         m_Overridden: 1
-      - m_Value: 5
+      - m_Value: 1.25
         m_Name: MaxVelocity
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: BodyTiltAngle
+        m_Overridden: 1
+      - m_Value: -6
+        m_Name: WingsTiltAngle
+        m_Overridden: 1
+      - m_Value: 0.1
+        m_Name: VariationSpeed
         m_Overridden: 1
     m_Vector2f:
       m_Array:
-      - m_Value: {x: 4, y: 8}
+      - m_Value: {x: 2, y: 4}
         m_Name: FlapMinMaxSpeed
         m_Overridden: 1
       - m_Value: {x: 60, y: 120}
@@ -1312,6 +1323,15 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: {x: -0.1, y: 0.1}
         m_Name: MinMaxVariationStrength
+        m_Overridden: 1
+      - m_Value: {x: -0.1, y: 0.1}
+        m_Name: ZMinMaxVariationStrength
+        m_Overridden: 1
+      - m_Value: {x: -0.1, y: 0.1}
+        m_Name: XMinMaxVariationStrength
+        m_Overridden: 1
+      - m_Value: {x: -0.05, y: 0.05}
+        m_Name: YMinMaxVariationStrength
         m_Overridden: 1
     m_Vector3f:
       m_Array:
@@ -1324,7 +1344,7 @@ VisualEffect:
       - m_Value: {x: 0, y: 0, z: 1}
         m_Name: BirdsDirection
         m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: 10}
+      - m_Value: {x: 0, y: 0, z: 5.33}
         m_Name: TargetPosition
         m_Overridden: 1
       - m_Value: {x: 0, y: 0, z: 0}
@@ -1336,14 +1356,17 @@ VisualEffect:
       - m_Value: {x: 0, y: -0.01, z: -0.03}
         m_Name: WingsPosition_vector
         m_Overridden: 1
-      - m_Value: {x: 0.07, y: -0.04, z: -0.01}
+      - m_Value: {x: 0.6, y: 0.2, z: 0.09}
         m_Name: LeftWingOffset
         m_Overridden: 1
-      - m_Value: {x: 0.01, y: -0.04, z: 0.07}
+      - m_Value: {x: 0.6, y: 0.2, z: -0.09}
         m_Name: RightWingOffset
         m_Overridden: 1
       - m_Value: {x: 5, y: 5, z: 5}
         m_Name: BirdsSpawnBounds
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 0, z: 0}
+        m_Name: BodyOffset
         m_Overridden: 1
     m_Vector4f:
       m_Array:
@@ -1368,6 +1391,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 250
         m_Name: Amount
+        m_Overridden: 1
+      - m_Value: 50
+        m_Name: BirdAmount
         m_Overridden: 1
     m_Matrix4x4f:
       m_Array: []
@@ -1468,6 +1494,20 @@ MonoBehaviour:
   m_Bindings:
   - {fileID: 5970855509370248298}
   m_VisualEffect: {fileID: 5970855509370248300}
+--- !u!114 &537850098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970855509370248296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be93074ca59a9240a7f225f4aca1f4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 5970855508439352687}
+  TargetVelocitySpeedMultiplier: 0.85
 --- !u!1 &5970855509421565606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,7 +1762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855509504035046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 2.665}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
