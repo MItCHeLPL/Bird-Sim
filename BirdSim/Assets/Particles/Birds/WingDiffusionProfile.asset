@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WingDiffusionProfile
   m_EditorClassIdentifier: 
   profile:
-    scatteringDistance: {r: 0.990566, g: 0.7528318, b: 0.53733534, a: 1}
+    scatteringDistance: {r: 0.5372549, g: 0.9476322, b: 0.99215686, a: 1}
     transmissionTint: {r: 1, g: 1, b: 1, a: 1}
     texturingMode: 0
     transmissionMode: 1

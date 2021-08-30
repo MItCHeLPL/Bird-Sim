@@ -21,10 +21,17 @@ public class PlayerController : MonoBehaviour
 	private Vector3 input;
 	private Vector3 rotation;
 
+	[SerializeField] private Animator anim;
+
 	void Start()
     {
 		rb = GetComponent<Rigidbody>();
-    }
+
+		if (anim != null)
+		{
+			anim.SetBool("flying", true); //Start flying animation
+		}
+	}
 
     void Update()
     {
@@ -52,11 +59,18 @@ public class PlayerController : MonoBehaviour
 		
 		speed = Mathf.Clamp(speed - angle * speedBoost * Time.deltaTime, minSpeed, maxSpeed);
 
+		//Animation
+		if (anim != null)
+		{
+			anim.SetFloat("flyingDirectionX", x); //Left right rotation (yaw)
+			anim.SetFloat("flyingDirectionY", y); //Left right rotation (yaw)
+		}
+
 		//Debug
-		Debug.Log("input: " + input);
+		/*Debug.Log("input: " + input);
 		Debug.Log("speed: " + speed);
 		Debug.Log("velocity: " + rb.velocity.magnitude + ", " + rb.velocity);
-		Debug.Log("Transform forward: " + transform.forward.magnitude + ", " + transform.forward);
+		Debug.Log("Transform forward: " + transform.forward.magnitude + ", " + transform.forward);*/
 	}
 
 	private void FixedUpdate()
