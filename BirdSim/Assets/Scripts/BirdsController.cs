@@ -20,8 +20,10 @@ public class BirdsController : MonoBehaviour
 		birds.SetFloat("MaxVelocity", (playerController.speed * TargetVelocitySpeedMultiplier));
 	}
 
-	public void SetBirdAmount(int amount)
+	public void SetBirdAmount(int amount, Vector3 position)
 	{
+		birds.SetInt("Set/RandomSpawnPosition", 0);
+		birds.SetVector3("SpawnPosition", position);
 		birds.SetInt("BirdAmount", amount);
 	}
 }

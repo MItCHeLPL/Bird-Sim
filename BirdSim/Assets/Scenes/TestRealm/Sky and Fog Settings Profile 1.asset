@@ -614,7 +614,7 @@ MonoBehaviour:
     m_Value: 0
   aerosolTint:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.28395534, b: 1, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   aerosolMaximumAltitude:
     m_OverrideState: 1
     m_Value: 8289.296
@@ -626,7 +626,7 @@ MonoBehaviour:
     m_Value: 8
   groundTint:
     m_OverrideState: 1
-    m_Value: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+    m_Value: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
   groundColorTexture:
     m_OverrideState: 1
     m_Value: {fileID: 0}
@@ -659,10 +659,10 @@ MonoBehaviour:
     m_Value: 1
   horizonTint:
     m_OverrideState: 1
-    m_Value: {r: 0.12673402, g: 1, b: 0, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   zenithTint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0, b: 0, a: 1}
+    m_Value: {r: 0, g: 1, b: 1, a: 1}
   horizonZenithShift:
     m_OverrideState: 1
     m_Value: 0

@@ -6,11 +6,24 @@ public class PlayerController : MonoBehaviour
 {
 	private Rigidbody rb;
 
+	//Speed
 	[HideInInspector] public float speed = 2.0f;
 	[SerializeField] private float minSpeed = 2.0f;
 	[SerializeField] private float maxSpeed = 8.0f;
-	[SerializeField] private float speedBoost = 0.5f;
-	[SerializeField] private float angleToLooseSeed = 0.15f;
+
+	//Windboost
+	private float dynamicMaxSpeed;
+	[SerializeField] private float timeToReduceDynamicMaxSpeed = 10.0f;
+
+	private Coroutine SpeedRiser;
+	private bool speedRiserIsRunning = false;
+
+	private Coroutine dynamicMaxSpeedReductor;
+	private bool dynamicMaxSpeedReductorIsRunning = false;
+
+	//Bird angle speed modifications
+	[SerializeField] private float downwardSpeedBoost = 0.5f;
+	[SerializeField] private float angleToLooseSpeed = 0.15f;
 
 	[SerializeField] private float rotationSpeed = 1.0f;
 
@@ -26,6 +39,8 @@ public class PlayerController : MonoBehaviour
 	void Start()
     {
 		rb = GetComponent<Rigidbody>();
+
+		dynamicMaxSpeed = maxSpeed;
 
 		if (anim != null)
 		{
@@ -48,17 +63,20 @@ public class PlayerController : MonoBehaviour
 		//fly down - get speed (angle * 2), fly up - loose speed (angle * 1)
 		float angle;
 
-		if(transform.forward.y - angleToLooseSeed < 0)
+		if(transform.forward.y - angleToLooseSpeed < 0) //flying down
 		{
-			angle = (transform.forward.y - angleToLooseSeed) * 2;
+			angle = (transform.forward.y - angleToLooseSpeed) * 2;
 		}
-		else
+		else //flying up
 		{
-			angle = transform.forward.y - angleToLooseSeed;
+			angle = transform.forward.y - angleToLooseSpeed;
 		}
 		
-		speed = Mathf.Clamp(speed - angle * speedBoost * Time.deltaTime, minSpeed, maxSpeed);
-
+		if(speedRiserIsRunning == false)
+		{
+			speed = Mathf.Clamp(speed - angle * downwardSpeedBoost * Time.deltaTime, minSpeed, dynamicMaxSpeed); //Calculate player speed
+		}
+		
 		//Animation
 		if (anim != null)
 		{
@@ -67,10 +85,11 @@ public class PlayerController : MonoBehaviour
 		}
 
 		//Debug
-		/*Debug.Log("input: " + input);
-		Debug.Log("speed: " + speed);
-		Debug.Log("velocity: " + rb.velocity.magnitude + ", " + rb.velocity);
-		Debug.Log("Transform forward: " + transform.forward.magnitude + ", " + transform.forward);*/
+		//Debug.Log("input: " + input);
+		//Debug.Log("speed: " + speed);
+		//Debug.Log("dynamicMaxSpeed: " + dynamicMaxSpeed);
+		//Debug.Log("velocity: " + rb.velocity.magnitude + ", " + rb.velocity);
+		//Debug.Log("Transform forward: " + transform.forward.magnitude + ", " + transform.forward);
 	}
 
 	private void FixedUpdate()
@@ -84,5 +103,85 @@ public class PlayerController : MonoBehaviour
 
 		//Limit player speed
 		//rb.velocity = Vector3.ClampMagnitude(rb.velocity, speed);
+	}
+
+	public void RiseDynamicMaxSpeed(float newDynamicMaxSpeedValue, float timeToRiseSpeed)
+	{
+		if (dynamicMaxSpeedReductorIsRunning && dynamicMaxSpeedReductor != null)
+		{
+			StopCoroutine(dynamicMaxSpeedReductor); //If reducing dynamicMaxSpeed stop
+
+			dynamicMaxSpeedReductorIsRunning = false;
+
+			//Debug.Log("Stopped dynamicMaxSpeedReductor");
+		}
+
+		dynamicMaxSpeed = newDynamicMaxSpeedValue; //rise max dynamic speed
+
+		SpeedRiser = StartCoroutine(RiseSpeedCoroutine(timeToRiseSpeed)); //Rise player speed to match new dynamic max speed
+	}
+
+	public void ReduceDynamicMaxSpeed()
+	{
+		if (speedRiserIsRunning && SpeedRiser != null)
+		{
+			StopCoroutine(SpeedRiser); //If rising speed stop
+
+			speedRiserIsRunning = false;
+
+			//Debug.Log("Stopped SpeedRiser");
+		}
+		
+		dynamicMaxSpeedReductor = StartCoroutine(ReduceDynamicMaxSpeedCoroutine()); //Start reducing dynamic max speed over time
+	}
+
+	private IEnumerator RiseSpeedCoroutine(float timeToRiseSpeed)
+	{
+		speedRiserIsRunning = true;
+
+		float t = 0f;
+		float startSpeed = speed;
+
+		//Debug.Log("Started RiseSpeedCoroutine, speed: " + speed);
+
+		while (t < 1)
+		{
+			t += Time.deltaTime / timeToRiseSpeed;
+			speed = Mathf.Lerp(startSpeed, dynamicMaxSpeed, t);
+
+			//Debug.Log("speed: " + speed);
+
+			yield return null;
+		}
+
+		speed = dynamicMaxSpeed;
+		speedRiserIsRunning = false;
+
+		//Debug.Log("Finished RiseSpeedCoroutine, speed: " + speed);
+	}
+
+	private IEnumerator ReduceDynamicMaxSpeedCoroutine()
+	{
+		dynamicMaxSpeedReductorIsRunning = true;
+		
+		float t = 0f;
+		float startDynamicMaxSpeed = dynamicMaxSpeed;
+
+		//Debug.Log("Started ReduceDynamicMaxSpeedCoroutine, dynamicMaxSpeedCoroutine: " + dynamicMaxSpeed);
+
+		while (t < 1)
+		{
+			t += Time.deltaTime / timeToReduceDynamicMaxSpeed;
+			dynamicMaxSpeed = Mathf.Lerp(startDynamicMaxSpeed, maxSpeed, t);
+
+			//Debug.Log("dynamicMaxSpeed: " + dynamicMaxSpeed);
+
+			yield return null;
+		}
+
+		dynamicMaxSpeed = maxSpeed;
+		dynamicMaxSpeedReductorIsRunning = false;
+
+		//Debug.Log("Finished ReduceDynamicMaxSpeedCoroutine, dynamicMaxSpeedCoroutine: " + dynamicMaxSpeed);
 	}
 }
