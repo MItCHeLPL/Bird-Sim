@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
 	private Vector3 rotation;
 
 	[SerializeField] private Animator anim;
+	public BirdsController birdsController;
 
 	void Start()
     {

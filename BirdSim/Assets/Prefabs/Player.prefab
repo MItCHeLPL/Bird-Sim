@@ -2254,7 +2254,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855507949709643}
-  m_LocalRotation: {x: 0.07935611, y: 0.0000000042880295, z: -3.413578e-10, w: 0.9968464}
+  m_LocalRotation: {x: 0.07935611, y: -0.0000000042880304, z: 3.4135786e-10, w: 0.9968464}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2663,6 +2663,7 @@ MonoBehaviour:
   angleToLooseSpeed: 0.15
   rotationSpeed: 1
   anim: {fileID: 1489167722}
+  birdsController: {fileID: 537850098}
 --- !u!54 &5970855508439352684
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3034,7 +3035,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508769612771}
-  m_LocalRotation: {x: 0.07935611, y: 0.000000004310939, z: -3.3953437e-10, w: 0.9968464}
+  m_LocalRotation: {x: 0.07935611, y: -0.0000000043109396, z: 3.39534e-10, w: 0.9968464}
   m_LocalPosition: {x: 0, y: 0.33, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3430,8 +3431,8 @@ VisualEffect:
   m_GameObject: {fileID: 5970855509370248296}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: d3380a2b6c2f5fa41aa58e4206f427c4, type: 3}
-  m_InitialEventName: OnPlay
-  m_InitialEventNameOverriden: 0
+  m_InitialEventName: SpawnBirds
+  m_InitialEventNameOverriden: 1
   m_StartSeed: 0
   m_ResetSeedOnPlay: 0
   m_ResourceVersion: 1
@@ -3553,7 +3554,7 @@ VisualEffect:
       - m_Value: 250
         m_Name: Amount
         m_Overridden: 1
-      - m_Value: 50
+      - m_Value: 10
         m_Name: BirdAmount
         m_Overridden: 1
     m_Matrix4x4f:
