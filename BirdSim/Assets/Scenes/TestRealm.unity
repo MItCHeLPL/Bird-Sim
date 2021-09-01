@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4279.8916, g: 4568.211, b: 5819.172, a: 1}
+  m_IndirectSpecularColor: {r: 4286.956, g: 4574.461, b: 5817.4375, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12066,7 +12066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1582816715}
   m_Layer: 0
-  m_Name: Birds
+  m_Name: BirdModels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

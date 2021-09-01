@@ -6,6 +6,8 @@ public class Checkpoint : MonoBehaviour
 {
 	[SerializeField] private int addBirdAmount = 10;
 	[SerializeField] private Vector3 spawnOffset = new Vector3(0,0,-10);
+	[SerializeField] private bool destroyOnExit = false;
+	[SerializeField] private float destroyCooldown = 0.0f;
 
 	private void OnTriggerEnter(Collider col)
 	{
@@ -25,9 +27,16 @@ public class Checkpoint : MonoBehaviour
 	{
 		if (col.tag == "Player")
 		{
-			PlayerController playerController = col.GetComponent<PlayerController>();
-
-			//Destroy(gameObject); //Destroy checkpoint
+			if(destroyOnExit)
+			{
+				StartCoroutine(DestroyCheckpoint()); //Destroy checkpoint
+			}
 		}
+	}
+
+	private IEnumerator DestroyCheckpoint()
+	{
+		yield return new WaitForSeconds(destroyCooldown);
+		Destroy(gameObject);
 	}
 }
