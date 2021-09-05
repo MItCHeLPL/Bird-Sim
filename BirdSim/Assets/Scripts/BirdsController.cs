@@ -16,6 +16,8 @@ public class BirdsController : MonoBehaviour
 	{
 		birds = GetComponent<VisualEffect>();
 
+		Vector3 position = new Vector3(playerController.transform.position.x, playerController.transform.position.y, playerController.transform.position.z - 10.0f);
+
 		TotalBirdsSpawned += birds.GetInt("BirdAmount"); //Save initial birds amount
 	}
 
@@ -31,10 +33,8 @@ public class BirdsController : MonoBehaviour
 		TotalBirdsSpawned += birds.GetInt("BirdAmount"); //Save total birds amount
 	}
 
-	public void SetBirdAmount(int amount, Vector3 position)
+	public void SetBirdAmount(int amount)
 	{
-		birds.SetInt("Set/RandomSpawnPosition", 0);
-		birds.SetVector3("SpawnPosition", position);
 		birds.SetInt("BirdAmount", amount);
 
 		TriggerSpawnEvent(); //Spawn new birds
