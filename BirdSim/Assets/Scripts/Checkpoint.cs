@@ -8,6 +8,8 @@ public class Checkpoint : MonoBehaviour
 	[SerializeField] private bool destroyOnExit = false;
 	[SerializeField] private float destroyCooldown = 0.0f;
 
+	[SerializeField] private LevelManager lvlManager;
+
 	private void OnTriggerEnter(Collider col)
 	{
 		if (col.tag == "Player")
@@ -28,6 +30,8 @@ public class Checkpoint : MonoBehaviour
 			{
 				StartCoroutine(DestroyCheckpoint()); //Destroy checkpoint
 			}
+
+			lvlManager.UseCheckpoint(this);
 		}
 	}
 

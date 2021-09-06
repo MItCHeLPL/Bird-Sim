@@ -23,7 +23,7 @@ public class NpcBirdController : MonoBehaviour
         anim.SetFloat("IdleAgitated", IdleAgitated); 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //play random animation every set amount of frames with offset
         if((Time.frameCount + animationOffset) % frameCooldown == 0)

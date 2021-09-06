@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private Animator anim;
 	public BirdsController birdsController;
 
+	[SerializeField] private List<GameObject> trails;
+	private bool trailsActivated = false;
+
 	void Start()
     {
 		rb = GetComponent<Rigidbody>();
@@ -47,6 +50,13 @@ public class PlayerController : MonoBehaviour
 		{
 			anim.SetBool("flying", true); //Start flying animation
 		}
+
+		//Deactivate trails
+		foreach (GameObject trail in trails)
+		{
+			trail.SetActive(false);
+		}
+		trailsActivated = false;
 	}
 
     void Update()
@@ -83,6 +93,24 @@ public class PlayerController : MonoBehaviour
 		{
 			anim.SetFloat("flyingDirectionX", x); //Left right rotation (yaw)
 			anim.SetFloat("flyingDirectionY", y); //Left right rotation (yaw)
+		}
+
+		//Trails
+		if (speed >= maxSpeed && trailsActivated == false)
+		{
+			foreach (GameObject trail in trails)
+			{
+				trail.SetActive(true);
+			}
+			trailsActivated = true;
+		}
+		else if (speed < maxSpeed && trailsActivated == true)
+		{
+			foreach (GameObject trail in trails)
+			{
+				trail.SetActive(false);
+			}
+			trailsActivated = false;
 		}
 
 		//Debug
