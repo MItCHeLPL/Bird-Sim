@@ -23,8 +23,6 @@ public class LevelManager : MonoBehaviour
 
 	void Awake()
     {
-		Time.timeScale = 1; //Start level time
-
 		timerCounter = StartCoroutine(TimerCoroutine()); //Start counting time
 
 		//Hide cursor

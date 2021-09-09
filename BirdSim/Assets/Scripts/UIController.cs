@@ -30,6 +30,7 @@ public class UIController : MonoBehaviour
 	{
 		//SceneManager.LoadScene(levelId);
 		StartCoroutine(LoadYourAsyncScene(levelId));
+		Time.timeScale = 1; //UnFreeze gameplay in new scene
 	}
 
 	public void ExitGame()

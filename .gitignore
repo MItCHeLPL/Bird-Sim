@@ -45,3 +45,6 @@ Thumbs.db
 
 MapMagic/
 alps/
+Lightmap*
+ReflectionProbe*
+LightingData*

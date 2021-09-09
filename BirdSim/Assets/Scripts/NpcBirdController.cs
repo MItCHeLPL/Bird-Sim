@@ -16,6 +16,8 @@ public class NpcBirdController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
 
+        TriggerRandomAnimation(); //Launch starting animation
+
         animationOffset = Random.Range(frameCooldown / 4, frameCooldown / 2); //Random offset between animations
 
         //Random idle animation
