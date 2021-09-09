@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class WindBoost : MonoBehaviour
 {
-    [SerializeField] private float newDynamicMaxSpeed = 10.0f;
-    [SerializeField] private float timeToRiseSpeed = 5.0f;
+    [SerializeField] private float newDynamicMaxSpeed = 10.0f; //Arbitrary max speed value
+    [SerializeField] private float timeToRiseSpeed = 5.0f; //How long does it take to rise speed to match arbitrary max speed
 
-	[SerializeField] private float newCameraFOV = 70.0f;
+	[SerializeField] private float newCameraFOV = 70.0f; //Camera fov during boost
 
 	private CameraController camController;
 
-	private void Start()
+	private void Awake()
 	{
-		camController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
+		camController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>(); //Get camera
 	}
 
 	private void OnTriggerEnter(Collider col)
@@ -22,9 +22,9 @@ public class WindBoost : MonoBehaviour
 		{
 			PlayerController playerController = col.GetComponent<PlayerController>();
 
-			playerController.RiseDynamicMaxSpeed(newDynamicMaxSpeed, timeToRiseSpeed); //Rise player max speed and speed on enter
+			playerController.RiseDynamicMaxSpeed(newDynamicMaxSpeed, timeToRiseSpeed); //Rise player arbitrary max speed and speed on enter
 
-			camController.ChangeFOV(newCameraFOV); //Change fov to match speed
+			camController.ChangeFOV(newCameraFOV); //Change fov to match boost camera fov
 		}
 	}
 
@@ -34,7 +34,7 @@ public class WindBoost : MonoBehaviour
 		{
 			PlayerController playerController = col.GetComponent<PlayerController>();
 
-			playerController.ReduceDynamicMaxSpeed(); //Reduce player's max speed on exit
+			playerController.ReduceDynamicMaxSpeed(); //Reduce player's arbitrary max speed back to natural max speed on exit
 
 			camController.ChangeFOV(camController.baseFOV); //Change fov to match speed
 		}

@@ -9,6 +9,7 @@ public class ObjectFaceOtherObject : MonoBehaviour
 
 	void Update()
     {
+		//Make object face other object
 		transform.LookAt(target.transform.position, -Vector3.up);
 		transform.rotation *= new Quaternion(rotationOffset.x, rotationOffset.y, rotationOffset.z, 0);
 	}

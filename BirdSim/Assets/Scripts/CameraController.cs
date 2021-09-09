@@ -9,23 +9,27 @@ public class CameraController : MonoBehaviour
 	private CinemachineBrain brain;
 	private CinemachineFreeLook activeCam;
 
-	[HideInInspector] public float baseFOV;
+	[HideInInspector] public float baseFOV; //default fov
 
-    [SerializeField] private float timeToChangeFOV = 1.0f;
+    [SerializeField] private float timeToChangeFOV = 1.0f; //How long does it tak to change fov
 
 	//Coroutine
     private Coroutine fovChanger;
     private bool fovChangerIsRunning = false;
 
-    private void Start()
+	//Player settings
+	private bool invertCamY = false;
+
+
+	private void Start()
     {
         cam = GetComponent<Camera>();
 		brain = GetComponent<CinemachineBrain>();
 
-        baseFOV = brain.ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineFreeLook>().m_Lens.FieldOfView; //save baseline fov
+        baseFOV = brain.ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineFreeLook>().m_Lens.FieldOfView; //save default fov
     }
 
-    public void ChangeFOV(float newFOVValue)
+	public void ChangeFOV(float newFOVValue)
 	{
 		activeCam = brain.ActiveVirtualCamera.VirtualCameraGameObject.GetComponent<CinemachineFreeLook>(); //save reference to active camera
 
@@ -51,16 +55,39 @@ public class CameraController : MonoBehaviour
 		while (t < 1)
 		{
 			t += Time.deltaTime / timeToChangeFOV;
-			activeCam.m_Lens.FieldOfView = Mathf.Lerp(startFOV, newFOVValue, t);
+			activeCam.m_Lens.FieldOfView = Mathf.Lerp(startFOV, newFOVValue, t); //Change fov
 
 			//Debug.Log("fov: " + activeCam.m_Lens.FieldOfView);
 
 			yield return null;
 		}
 
-		activeCam.m_Lens.FieldOfView = newFOVValue;
+		activeCam.m_Lens.FieldOfView = newFOVValue; //Round fov value
 		fovChangerIsRunning = false;
 
 		//Debug.Log("Finished ChangeFOVCoroutine, fov: " + activeCam.m_Lens.FieldOfView);
+	}
+
+	public void GetSettingsFromPlayerPrefs(CinemachineFreeLook vcam)
+	{
+		invertCamY = PlayerPrefs.GetInt(("Options_CamInvertY")) == 1 ? false : true; //Get player Y axis inversion setting
+
+		vcam.m_YAxis.m_InvertInput = invertCamY; //Apply Y axis inversion setting
+	}
+
+	public void ChangeUpdateMehod(bool fixedUpdate)
+	{
+		//Cinemachine brain update method has to be set to fixed update to support Time.timeScale
+		//During gameplay with rigidbodys cinemachine works better with Smart Update
+		//Swap between update methods
+
+		if(fixedUpdate)
+		{
+			brain.m_UpdateMethod = CinemachineBrain.UpdateMethod.FixedUpdate;
+		}
+		else
+		{
+			brain.m_UpdateMethod = CinemachineBrain.UpdateMethod.SmartUpdate;
+		}
 	}
 }

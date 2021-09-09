@@ -6,13 +6,13 @@ public class NpcBirdController : MonoBehaviour
 {
     private Animator anim;
 
-    [SerializeField] private int frameCooldown = 1000;
-    [SerializeField] private List<string> animations;
+    [SerializeField] private int frameCooldown = 1000; //Cooldown between animations
+    [SerializeField] private List<string> animations; //Animations to be played
 
-    private int animationOffset;
-    private float IdleAgitated = 0;
+    private int animationOffset; //Offset between animations
+    private float IdleAgitated = 0; //Random idle animation
 
-    void Start()
+    void Awake()
     {
         anim = GetComponent<Animator>();
 
@@ -34,7 +34,7 @@ public class NpcBirdController : MonoBehaviour
 
     private void TriggerRandomAnimation()
 	{
-        int rand = Random.Range(0, animations.Count);
-        anim.SetTrigger(animations[rand]);
+        int rand = Random.Range(0, animations.Count); //Pick random animation
+        anim.SetTrigger(animations[rand]); //Play animation
     }
 }

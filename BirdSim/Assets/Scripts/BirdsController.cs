@@ -5,14 +5,14 @@ using UnityEngine.VFX;
 
 public class BirdsController : MonoBehaviour
 {
-	private int TotalBirdsSpawned = 0;
+	private int TotalBirdsSpawned = 0; //Current amount of particle birds spawned
 
     [SerializeField] private PlayerController playerController;
 	private VisualEffect birds;
 
-	[SerializeField] private float TargetVelocitySpeedSubtraction = 1.0f;
+	[SerializeField] private float TargetVelocitySpeedSubtraction = -1.0f; //Max speed difference between player and particle birds
 
-	private void Start()
+	private void Awake()
 	{
 		birds = GetComponent<VisualEffect>();
 
