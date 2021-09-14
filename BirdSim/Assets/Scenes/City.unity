@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 663.0022, g: 670.7776, b: 846.2915, a: 1}
+  m_IndirectSpecularColor: {r: 639.3672, g: 642.3013, b: 804.50195, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -25697,11 +25697,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5970855507949709645, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 2.2981613e-11
+      value: 0.000000008517817
       objectReference: {fileID: 0}
     - target: {fileID: 5970855507949709645, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.1102229e-16
+      value: -0.0000000013611252
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508562553836, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
@@ -25713,11 +25713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508769612774, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000043109396
+      value: 0.000000004310939
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508769612774, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 3.3953457e-10
+      value: -3.3953437e-10
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508913377826, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_Name
@@ -25769,11 +25769,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5970855509106745542, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000021348812
+      value: -0.000000012772521
       objectReference: {fileID: 0}
     - target: {fileID: 5970855509106745542, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000027925076
+      value: 0.0000000016765567
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}

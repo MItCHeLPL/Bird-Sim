@@ -2581,6 +2581,10 @@ PrefabInstance:
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5000516518410272814}
+    - target: {fileID: 8384797850563253407, guid: a2bd351d7e7745b4bb318b83963299a2, type: 3}
+      propertyPath: m_text
+      value: Invert Camera Y Axis
+      objectReference: {fileID: 0}
     - target: {fileID: 9109856408047530978, guid: a2bd351d7e7745b4bb318b83963299a2, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
