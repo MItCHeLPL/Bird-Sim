@@ -13,7 +13,7 @@ public class UIController : MonoBehaviour
 	[SerializeField] private Slider VolumeSlider = null;
 	[SerializeField] private Toggle ToggleShowTimer = null;
 
-	private void Start()
+	private void Awake()
 	{
 		SetUpPlayerPrefs(); //Set up player prefs if they don't exitst
 	}
