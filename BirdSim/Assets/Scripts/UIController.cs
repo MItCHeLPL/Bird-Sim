@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class UIController : MonoBehaviour
 {
 	[SerializeField] private Toggle ToggleInvertCamY = null;
 	[SerializeField] private Toggle ToggleInvertBirdY = null;
 	[SerializeField] private Slider VolumeSlider = null;
+	[SerializeField] private Toggle ToggleShowTimer = null;
 
 	private void Start()
 	{
@@ -24,6 +26,15 @@ public class UIController : MonoBehaviour
 	public void DisablePanel(GameObject panel)
 	{
 		panel.SetActive(false);
+	}
+
+	public void SelectButton(GameObject selection)
+	{
+		//clear selection
+		EventSystem.current.SetSelectedGameObject(null);
+
+		//select new object
+		EventSystem.current.SetSelectedGameObject(selection);
 	}
 
 	public void LoadLevel(int levelId)
@@ -75,6 +86,21 @@ public class UIController : MonoBehaviour
 		PlayerPrefs.Save();
 	}
 
+	public void Options_ToggleShowTimer(Toggle toggle)
+	{
+		//Save changed option to player settings
+		if (toggle.isOn)
+		{
+			PlayerPrefs.SetInt(("Options_ShowTimer"), 1);
+		}
+		else
+		{
+			PlayerPrefs.SetInt(("Options_ShowTimer"), 0);
+		}
+
+		PlayerPrefs.Save();
+	}
+
 	private void SetUpPlayerPrefs()
 	{
 		//Level lock states
@@ -100,6 +126,10 @@ public class UIController : MonoBehaviour
 		{
 			PlayerPrefs.SetFloat(("Options_Volume"), .5f); //default volume
 		}
+		if (!PlayerPrefs.HasKey(("Options_ShowTimer")))
+		{
+			PlayerPrefs.SetInt(("Options_ShowTimer"), 1); //default showing timer
+		}
 
 		PlayerPrefs.Save(); //Save player settings
 	}
@@ -117,6 +147,10 @@ public class UIController : MonoBehaviour
 		if (VolumeSlider != null)
 		{
 			VolumeSlider.value = PlayerPrefs.GetFloat(("Options_Volume")); //Load volume option from player settings
+		}
+		if (ToggleShowTimer != null)
+		{
+			ToggleShowTimer.isOn = PlayerPrefs.GetInt(("Options_ShowTimer")) == 1 ? true : false; //Load Show Timer option from player settings
 		}
 	}
 

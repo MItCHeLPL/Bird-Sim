@@ -37,11 +37,11 @@ public class LevelManager : MonoBehaviour
 	private void Update()
 	{
 		//Wait for escape to pause
-		if (Input.GetKeyDown(KeyCode.Escape) && finished == false)
+		if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton7) || (Input.GetKeyDown(KeyCode.JoystickButton1) && isPaused)) && finished == false)
 		{
 			if(isPaused)
 			{
-				Resume();		
+				Resume();
 			}
 			else
 			{
