@@ -40,7 +40,7 @@ public class UIController : MonoBehaviour
 	public void LoadLevel(int levelId)
 	{
 		//if there is such scene
-		if(SceneManager.sceneCount > levelId)
+		if(SceneManager.sceneCountInBuildSettings > levelId)
 		{
 			//SceneManager.LoadScene(levelId);
 			StartCoroutine(LoadYourAsyncScene(levelId));
