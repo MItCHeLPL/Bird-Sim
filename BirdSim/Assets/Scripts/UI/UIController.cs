@@ -39,9 +39,13 @@ public class UIController : MonoBehaviour
 
 	public void LoadLevel(int levelId)
 	{
-		//SceneManager.LoadScene(levelId);
-		StartCoroutine(LoadYourAsyncScene(levelId));
-		Time.timeScale = 1; //UnFreeze gameplay in new scene
+		//if there is such scene
+		if(SceneManager.sceneCount > levelId)
+		{
+			//SceneManager.LoadScene(levelId);
+			StartCoroutine(LoadYourAsyncScene(levelId));
+			Time.timeScale = 1; //UnFreeze gameplay in new scene
+		}
 	}
 
 	public void ExitGame()
@@ -116,7 +120,7 @@ public class UIController : MonoBehaviour
 		//Set up default options
 		if (!PlayerPrefs.HasKey(("Options_CamInvertY")))
 		{
-			PlayerPrefs.SetInt(("Options_CamInvertY"), 1); //default invert Y cam axis
+			PlayerPrefs.SetInt(("Options_CamInvertY"), 0); //default invert Y cam axis
 		}
 		if (!PlayerPrefs.HasKey(("Options_BirdInvertY")))
 		{
