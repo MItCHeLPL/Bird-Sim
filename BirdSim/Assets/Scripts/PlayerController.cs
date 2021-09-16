@@ -223,6 +223,9 @@ public class PlayerController : MonoBehaviour
 
 	public void GetSettingsFromPlayerPrefs()
 	{
-		invertBirdY = PlayerPrefs.GetInt(("Options_BirdInvertY")) == 1 ? 1 : -1; //Get Invert input user setting
+		if (PlayerPrefs.HasKey("Options_BirdInvertY"))
+		{
+			invertBirdY = PlayerPrefs.GetInt(("Options_BirdInvertY")) == 1 ? 1 : -1; //Get Invert input user setting
+		}
 	}
 }

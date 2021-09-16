@@ -70,7 +70,10 @@ public class CameraController : MonoBehaviour
 
 	public void GetSettingsFromPlayerPrefs(CinemachineFreeLook vcam)
 	{
-		invertCamY = PlayerPrefs.GetInt(("Options_CamInvertY")) == 1 ? false : true; //Get player Y axis inversion setting
+		if (PlayerPrefs.HasKey("Options_CamInvertY"))
+		{
+			invertCamY = PlayerPrefs.GetInt(("Options_CamInvertY")) == 1 ? false : true; //Get player Y axis inversion setting
+		}
 
 		vcam.m_YAxis.m_InvertInput = invertCamY; //Apply Y axis inversion setting
 	}

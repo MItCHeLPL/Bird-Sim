@@ -8,14 +8,9 @@ using UnityEngine.EventSystems;
 
 public class UIController : MonoBehaviour
 {
-	[SerializeField] private Toggle ToggleInvertCamY = null;
-	[SerializeField] private Toggle ToggleInvertBirdY = null;
-	[SerializeField] private Slider VolumeSlider = null;
-	[SerializeField] private Toggle ToggleShowTimer = null;
-
 	private void Awake()
 	{
-		SetUpPlayerPrefs(); //Set up player prefs if they don't exitst
+		SetUpLevelLockStates(); //Set up player prefs if they don't exitst
 	}
 
 	public void EnablePanel(GameObject panel)
@@ -53,59 +48,7 @@ public class UIController : MonoBehaviour
 		Application.Quit();
 	}
 
-	public void Options_ToggleInvertCamY(Toggle toggle)
-	{
-		//Save changed option to player settings
-		if (toggle.isOn)
-		{
-			PlayerPrefs.SetInt(("Options_CamInvertY"), 1);
-		}
-		else
-		{
-			PlayerPrefs.SetInt(("Options_CamInvertY"), 0);
-		}
-
-		PlayerPrefs.Save();
-	}
-
-	public void Options_ToggleInvertBirdY(Toggle toggle)
-	{
-		//Save changed option to player settings
-		if (toggle.isOn)
-		{
-			PlayerPrefs.SetInt(("Options_BirdInvertY"), 1);
-		}
-		else
-		{
-			PlayerPrefs.SetInt(("Options_BirdInvertY"), 0);
-		}
-
-		PlayerPrefs.Save();
-	}
-
-	public void Options_ChangeVolume(Slider slider)
-	{
-		PlayerPrefs.SetFloat(("Options_Volume"), slider.value); //Save changed option to player settings
-
-		PlayerPrefs.Save();
-	}
-
-	public void Options_ToggleShowTimer(Toggle toggle)
-	{
-		//Save changed option to player settings
-		if (toggle.isOn)
-		{
-			PlayerPrefs.SetInt(("Options_ShowTimer"), 1);
-		}
-		else
-		{
-			PlayerPrefs.SetInt(("Options_ShowTimer"), 0);
-		}
-
-		PlayerPrefs.Save();
-	}
-
-	private void SetUpPlayerPrefs()
+	private void SetUpLevelLockStates()
 	{
 		//Level lock states
 		for (int lvlID = 2; lvlID < SceneManager.sceneCountInBuildSettings; lvlID++)
@@ -117,45 +60,7 @@ public class UIController : MonoBehaviour
 		}
 		PlayerPrefs.SetInt(("LevelLockedStatus_1"), 0); //Unlock first level
 
-		//Set up default options
-		if (!PlayerPrefs.HasKey(("Options_CamInvertY")))
-		{
-			PlayerPrefs.SetInt(("Options_CamInvertY"), 0); //default invert Y cam axis
-		}
-		if (!PlayerPrefs.HasKey(("Options_BirdInvertY")))
-		{
-			PlayerPrefs.SetInt(("Options_BirdInvertY"), 1); //default invert Y bird axis
-		}
-		if (!PlayerPrefs.HasKey(("Options_Volume")))
-		{
-			PlayerPrefs.SetFloat(("Options_Volume"), .5f); //default volume
-		}
-		if (!PlayerPrefs.HasKey(("Options_ShowTimer")))
-		{
-			PlayerPrefs.SetInt(("Options_ShowTimer"), 1); //default showing timer
-		}
-
 		PlayerPrefs.Save(); //Save player settings
-	}
-
-	public void LoadOptionValuesFromPlayerPrefs()
-	{
-		if(ToggleInvertCamY != null)
-		{
-			ToggleInvertCamY.isOn = PlayerPrefs.GetInt(("Options_CamInvertY")) == 1 ? true : false; //Load Camera Invert Y option from player settings
-		}
-		if (ToggleInvertBirdY != null)
-		{
-			ToggleInvertBirdY.isOn = PlayerPrefs.GetInt(("Options_BirdInvertY")) == 1 ? true : false; //Load Bird Invert Y option from player settings
-		}
-		if (VolumeSlider != null)
-		{
-			VolumeSlider.value = PlayerPrefs.GetFloat(("Options_Volume")); //Load volume option from player settings
-		}
-		if (ToggleShowTimer != null)
-		{
-			ToggleShowTimer.isOn = PlayerPrefs.GetInt(("Options_ShowTimer")) == 1 ? true : false; //Load Show Timer option from player settings
-		}
 	}
 
 	private IEnumerator LoadYourAsyncScene(int sceneIndex)

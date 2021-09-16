@@ -20,6 +20,9 @@ public class AudioController : MonoBehaviour
 
 	public void GetSettingsFromPlayerPrefs()
 	{
-		volume = PlayerPrefs.GetInt(("Options_Volume")); //Get volume value from user settings
+		if (PlayerPrefs.HasKey("Options_Volume"))
+		{
+			volume = PlayerPrefs.GetInt(("Options_Volume")); //Get volume value from user settings
+		}
 	}
 }
