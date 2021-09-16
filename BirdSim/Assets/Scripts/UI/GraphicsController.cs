@@ -33,12 +33,12 @@ public class GraphicsController : MonoBehaviour
 			if(PlayerPrefs.GetInt("Graphics_Windowed") == 0)
 			{
 				Screen.fullScreen = true;
-				Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+				Screen.fullScreenMode = FullScreenMode.Windowed;
 			}
 			else
 			{
 				Screen.fullScreen = false;
-				Screen.fullScreenMode = FullScreenMode.MaximizedWindow;
+				Screen.fullScreenMode = FullScreenMode.Windowed;
 			}
 		}
 	}
