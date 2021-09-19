@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using System;
 
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private List<Checkpoint> checkpoints; //List of all checkpoints of current level
+
+	[SerializeField] private bool randomizeCheckpoints = false;
+	[SerializeField] private int randomCheckpointsAmount = 6;
 
     public float timer = 0.0f; //Gameplay timer
     private Coroutine timerCounter; //Coroutine
@@ -20,6 +24,14 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] private UnityEvent OnResume;
 	[SerializeField] private UnityEvent OnFinished;
 	[SerializeField] private UnityEvent OnPersonalBest;
+
+	private void Start()
+	{
+		if(randomizeCheckpoints)
+		{
+			RandomizeCheckpoints();
+		}
+	}
 
 	void Awake()
     {
@@ -47,6 +59,39 @@ public class LevelManager : MonoBehaviour
 			{
 				Pause();
 			}	
+		}
+	}
+
+	private void RandomizeCheckpoints()
+	{
+		int amountToDisable = checkpoints.Count - randomCheckpointsAmount;
+
+		List<int> randomizedNumbers = new List<int>();
+
+		System.Random rand = new System.Random();
+
+		int num = 0;
+
+		//Randomize unique numbers
+		for (int i = 0; i < amountToDisable; i++)
+		{
+			do
+			{
+				num = rand.Next(0, checkpoints.Count-1);
+			} while (randomizedNumbers.Contains(num));
+
+			randomizedNumbers.Add(num);
+		}
+
+		//Sort randomized array descending 
+		randomizedNumbers.Sort();
+		randomizedNumbers.Reverse();
+
+		//Use and remove picked checkpoints
+		foreach (int x in randomizedNumbers)
+		{
+			checkpoints[x].gameObject.SetActive(false); //Deactivate checkpoint object
+			checkpoints.RemoveAt(x); //remove checkpoint from list
 		}
 	}
 

@@ -6,27 +6,22 @@ public class PlayerController : MonoBehaviour
 {
 	private Rigidbody rb;
 
+	[Header("Speed")]
 	//Speed
 	[HideInInspector] public float speed = 2.0f; //Current player speed
 	[SerializeField] private float minSpeed = 2.0f; //Slowest player speed
-	[SerializeField] private float maxSpeed = 8.0f; //Fastest natural player speed
+	[SerializeField] private float maxSpeed = 12.0f; //Fastest natural player speed
 
 	//Windboost
 	private float dynamicMaxSpeed; //Fastest arbitrary player speed
 	[SerializeField] private float timeToReduceDynamicMaxSpeed = 10.0f; //How long does it take to loose speed from arbirary to natural max speed
-
-	//Coroutines
-	private Coroutine SpeedRiser;
-	private bool speedRiserIsRunning = false;
-
-	private Coroutine dynamicMaxSpeedReductor;
-	private bool dynamicMaxSpeedReductorIsRunning = false;
 
 	//Bird angle speed modifications
 	[SerializeField] private float downwardSpeedBoost = 0.5f; //How much speed does player gain from going downwards
 	[SerializeField] private float angleToLooseSpeed = 0.15f; //At which angle can player go up without loosing speed
 
 	[SerializeField] private float rotationSpeed = 1.0f; //How fast does player rotate
+
 
 	//Inputs
 	private float x;
@@ -36,33 +31,57 @@ public class PlayerController : MonoBehaviour
 	private Vector3 input;
 	private Vector3 rotation;
 
-	[SerializeField] private Animator anim; //Animations
+
+	[Header("Birds")]
 	public BirdsController birdsController; //Bird particles reference
 
+
+	[Header("Animation")]
+	[SerializeField] private Animator anim; //Animations
+
+	//Animation smoothing
+	[SerializeField] private float animationSmoothingSpeed = 3.0f;
+	private float animatedX = 0.0f;
+	private float animatedY = 0.0f;
+
+	//Animation speed
+	[SerializeField] private bool animationSpeedBasedOnAngle = true;
+	[SerializeField] private float minAnimationSpeed = 0.25f;
+	[SerializeField] private float maxAnimationSpeed = 1.5f;
+
+
 	//Trails
-	[SerializeField] private List<GameObject> trails; 
-	private bool trailsActivated = false;
+	[Header("Trails")]
+	[SerializeField] private List<TrailRenderer> trails;
+	[SerializeField] private bool trailsActivated = true;
+	[SerializeField] private float speedToActivateTrails = 10.0f;
+	[SerializeField] private float maxTrailTime = 0.1f;
+
 
 	//Player Settings
 	private int invertBirdY = 1;
+
+
+	//Coroutines
+	private Coroutine SpeedRiser;
+	private bool speedRiserIsRunning = false;
+
+	private Coroutine dynamicMaxSpeedReductor;
+	private bool dynamicMaxSpeedReductorIsRunning = false;
 
 	void Awake()
 	{
 		rb = GetComponent<Rigidbody>();
 
+
 		dynamicMaxSpeed = maxSpeed; //equal max speeds
+
 
 		if (anim != null)
 		{
 			anim.SetBool("flying", true); //Start flying animation
 		}
 
-		//Deactivate trails
-		foreach (GameObject trail in trails)
-		{
-			trail.SetActive(false);
-		}
-		trailsActivated = false;
 
 		GetSettingsFromPlayerPrefs(); //Get player settings
 	}
@@ -77,6 +96,7 @@ public class PlayerController : MonoBehaviour
 		//Convert player input to bird rotations
 		input = new Vector3(x, y, z);
 		rotation = new Vector3(invertBirdY * y, x, -z);
+
 
 		//Calculate player speed
 		//angle gets angleToLooseSeed subtracted from it, so while flying at angle greater than 0, player is still gaining speed
@@ -97,32 +117,42 @@ public class PlayerController : MonoBehaviour
 		{
 			speed = Mathf.Clamp(speed - angle * downwardSpeedBoost * Time.deltaTime, minSpeed, dynamicMaxSpeed); //Calculate player speed
 		}
-		
+
+
 		//Animation
 		if (anim != null)
 		{
-			anim.SetFloat("flyingDirectionX", x); //Left right rotation (yaw)
-			anim.SetFloat("flyingDirectionY", y); //Left right rotation (yaw)
+			animatedX = Mathf.Lerp(animatedX, x, animationSmoothingSpeed * Time.deltaTime); //Calculate soomthed yaw
+			animatedY = Mathf.Lerp(animatedY, y, animationSmoothingSpeed * Time.deltaTime); //Calculate soomthed pitch
+
+			anim.SetFloat("flyingDirectionX", animatedX); //Left right rotation (yaw)
+			anim.SetFloat("flyingDirectionY", animatedY); //Up down rotation (pitch)
+
+			if(animationSpeedBasedOnAngle)
+			{
+				//float converted = newMin + (val - minVal) * (newMax - newMin) / (maxVal - minVal);
+				anim.speed = minAnimationSpeed + (transform.forward.y - -1) * (maxAnimationSpeed - minAnimationSpeed) / (1 - -1); //Calculate animation speed based on birds angle (looking down - slower animation, looking up - faster animation)
+			}
 		}
 
+
 		//Trails
-		//Activate all trails when achieved natural max speed
-		if (speed >= maxSpeed && trailsActivated == false)
+		if(trailsActivated)
 		{
-			foreach (GameObject trail in trails)
+			foreach (TrailRenderer trail in trails)
 			{
-				trail.SetActive(true);
+				//float converted = newMin + (val - minVal) * (newMax - newMin) / (maxVal - minVal);
+				trail.time = 0 + (speed - speedToActivateTrails) * (maxTrailTime - 0) / (maxSpeed - speedToActivateTrails); //Calculate trail time (length) 
 			}
-			trailsActivated = true;
 		}
-		else if (speed < maxSpeed && trailsActivated == true)
+		else
 		{
-			foreach (GameObject trail in trails)
+			foreach (TrailRenderer trail in trails)
 			{
-				trail.SetActive(false);
+				trail.time = 0;
 			}
-			trailsActivated = false;
 		}
+
 
 		//Debug
 		//Debug.Log("input: " + input);
@@ -130,6 +160,7 @@ public class PlayerController : MonoBehaviour
 		//Debug.Log("dynamicMaxSpeed: " + dynamicMaxSpeed);
 		//Debug.Log("velocity: " + rb.velocity.magnitude + ", " + rb.velocity);
 		//Debug.Log("Transform forward: " + transform.forward.magnitude + ", " + transform.forward);
+		//Debug.Log("Transorm forward Y: " + transform.forward.y + ", Anim speed: " + anim.speed);
 	}
 
 	private void FixedUpdate()
