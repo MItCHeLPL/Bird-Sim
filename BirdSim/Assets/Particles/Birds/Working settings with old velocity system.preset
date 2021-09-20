@@ -1,0 +1,835 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Working settings with old velocity system
+  m_TargetType:
+    m_NativeTypeID: 2083052967
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Asset
+    value: 
+    objectReference: {fileID: 8926484042661614526, guid: d3380a2b6c2f5fa41aa58e4206f427c4, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_InitialEventName
+    value: SpawnBirds
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_InitialEventNameOverriden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_StartSeed
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ResetSeedOnPlay
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ResourceVersion
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Value
+    value: 4.18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Name
+    value: TiltAngle
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Value
+    value: 0.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Name
+    value: FlapAmplitude
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Value
+    value: 15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Name
+    value: AttractionStrength
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[3].m_Value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[3].m_Name
+    value: Drag
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[3].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Value
+    value: 1.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Name
+    value: MaxVelocity
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Name
+    value: BodyTiltAngle
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[6].m_Value
+    value: -6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[6].m_Name
+    value: WingsTiltAngle
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[6].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[7].m_Value
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[7].m_Name
+    value: VariationSpeed
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[7].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[8].m_Value
+    value: 30
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[8].m_Name
+    value: LeftWingRotationOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[8].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[9].m_Value
+    value: 30
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[9].m_Name
+    value: RightWingRotationOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[9].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.size
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[0].m_Value.x
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[0].m_Value.y
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[0].m_Name
+    value: FlapMinMaxSpeed
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[1].m_Value.x
+    value: 60
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[1].m_Value.y
+    value: 120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[1].m_Name
+    value: FlapMinMaxAngle
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[1].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[2].m_Value.x
+    value: -0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[2].m_Value.y
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[2].m_Name
+    value: MinMaxVariationStrength
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[3].m_Value.x
+    value: -0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[3].m_Value.y
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[3].m_Name
+    value: ZMinMaxVariationStrength
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[3].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[4].m_Value.x
+    value: -0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[4].m_Value.y
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[4].m_Name
+    value: XMinMaxVariationStrength
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[4].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[5].m_Value.x
+    value: -0.05
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[5].m_Value.y
+    value: 0.05
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[5].m_Name
+    value: YMinMaxVariationStrength
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[5].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[6].m_Value.x
+    value: -10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[6].m_Value.y
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[6].m_Name
+    value: RandomFlapFrequency
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[6].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.size
+    value: 15
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
+    value: 2.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+    value: 1.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Name
+    value: WingsScale
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.x
+    value: 4000
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.y
+    value: 400
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.z
+    value: 4000
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Name
+    value: Bounds_size
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Value.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Value.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Name
+    value: BirdsDirection
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Value.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Value.z
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Name
+    value: TargetPosition
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[3].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[4].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[4].m_Value.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[4].m_Value.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[4].m_Name
+    value: Bounds_center
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[4].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[5].m_Value.x
+    value: 0.275
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[5].m_Value.y
+    value: 0.275
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[5].m_Value.z
+    value: 0.275
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[5].m_Name
+    value: BodyScale
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[5].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[6].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[6].m_Value.y
+    value: -0.01
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[6].m_Value.z
+    value: -0.03
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[6].m_Name
+    value: WingsPosition_vector
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[6].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[7].m_Value.x
+    value: 0.47
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[7].m_Value.y
+    value: -0.21
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[7].m_Value.z
+    value: 0.24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[7].m_Name
+    value: LeftWingOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[7].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[8].m_Value.x
+    value: 0.47
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[8].m_Value.y
+    value: -0.21
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[8].m_Value.z
+    value: -0.24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[8].m_Name
+    value: RightWingOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[8].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[9].m_Value.x
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[9].m_Value.y
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[9].m_Value.z
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[9].m_Name
+    value: BirdsSpawnBounds
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[9].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[10].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[10].m_Value.y
+    value: -0.18
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[10].m_Value.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[10].m_Name
+    value: BodyOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[10].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[11].m_Value.x
+    value: -45
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[11].m_Value.y
+    value: 90
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[11].m_Value.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[11].m_Name
+    value: BodyRotationOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[11].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[12].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[12].m_Value.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[12].m_Value.z
+    value: -10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[12].m_Name
+    value: SpawnPosition
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[12].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[13].m_Value.x
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[13].m_Value.y
+    value: -0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[13].m_Value.z
+    value: 0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[13].m_Name
+    value: TargetRandomOffset_center
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[13].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[14].m_Value.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[14].m_Value.y
+    value: 0.25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[14].m_Value.z
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[14].m_Name
+    value: TargetRandomOffset_size
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[14].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.x
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.y
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.z
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Name
+    value: Color
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[1].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[1].m_Value.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[1].m_Value.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[1].m_Value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[1].m_Name
+    value: WingColor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[1].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[2].m_Value.x
+    value: 8.675365
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[2].m_Value.y
+    value: 8.675365
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[2].m_Value.z
+    value: 8.675365
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[2].m_Value.w
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[2].m_Name
+    value: BodyColor
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Uint.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.size
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[0].m_Value
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[0].m_Name
+    value: AttractionStrength
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[1].m_Value
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[1].m_Name
+    value: DragStrength
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[1].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[2].m_Value
+    value: 250
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[2].m_Name
+    value: Amount
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[3].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[3].m_Name
+    value: BirdAmount
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[3].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[4].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[4].m_Name
+    value: Set/RandomSpawnPosition
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[4].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Matrix4x4f.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_AnimationCurve.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.size
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Value
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Name
+    value: WingsMaskMap
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[1].m_Value
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[1].m_Name
+    value: WingsNormalMap
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[1].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[2].m_Value
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[2].m_Name
+    value: BodyMaskMap
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[3].m_Value
+    value: 
+    objectReference: {fileID: 2800000, guid: 20050c6247dc6ee4fbf4c1cc2964b661, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[3].m_Name
+    value: BodyTexture
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[3].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[4].m_Value
+    value: 
+    objectReference: {fileID: 2800000, guid: d471081030a66574eba1d1f1d57d543c, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[4].m_Name
+    value: WingsTexture
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[4].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[5].m_Value
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[5].m_Name
+    value: BodyNormalMap
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[5].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[6].m_Value
+    value: 
+    objectReference: {fileID: 717720852511821093, guid: 02ec5c693a02b4b48b011b632476177f, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[6].m_Name
+    value: BodyMesh
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[6].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Bool.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []

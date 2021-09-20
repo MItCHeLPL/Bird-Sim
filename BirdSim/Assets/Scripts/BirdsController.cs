@@ -10,7 +10,7 @@ public class BirdsController : MonoBehaviour
     [SerializeField] private PlayerController playerController;
 	private VisualEffect birds;
 
-	[SerializeField] private float TargetVelocitySpeedSubtraction = -1.0f; //Max speed difference between player and particle birds
+	[SerializeField] private float TargetVelocitySpeedModifier = +1.0f; //Max speed difference between player and particle birds
 
 	private void Awake()
 	{
@@ -21,7 +21,7 @@ public class BirdsController : MonoBehaviour
 
 	private void Update()
 	{
-		birds.SetFloat("MaxVelocity", (playerController.speed - TargetVelocitySpeedSubtraction)); //Limit birds max speed
+		birds.SetFloat("MaxVelocity", (playerController.speed + TargetVelocitySpeedModifier)); //Limit birds max speed
 	}
 
 	private void TriggerSpawnEvent()

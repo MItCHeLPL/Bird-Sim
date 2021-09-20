@@ -12,12 +12,15 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private float minSpeed = 2.0f; //Slowest player speed
 	[SerializeField] private float maxSpeed = 12.0f; //Fastest natural player speed
 
+	//Stun on collision
+	[SerializeField] private float timeToReduceStun= 3.0f;
+
 	//Windboost
 	private float dynamicMaxSpeed; //Fastest arbitrary player speed
 	[SerializeField] private float timeToReduceDynamicMaxSpeed = 10.0f; //How long does it take to loose speed from arbirary to natural max speed
 
 	//Bird angle speed modifications
-	[SerializeField] private float downwardSpeedBoost = 0.5f; //How much speed does player gain from going downwards
+	[SerializeField] private float downwardSpeedBoost = 0.75f; //How much speed does player gain from going downwards
 	[SerializeField] private float angleToLooseSpeed = 0.15f; //At which angle can player go up without loosing speed
 
 	[SerializeField] private float rotationSpeed = 1.0f; //How fast does player rotate
@@ -69,6 +72,7 @@ public class PlayerController : MonoBehaviour
 	private Coroutine dynamicMaxSpeedReductor;
 	private bool dynamicMaxSpeedReductorIsRunning = false;
 
+
 	void Awake()
 	{
 		rb = GetComponent<Rigidbody>();
@@ -85,6 +89,7 @@ public class PlayerController : MonoBehaviour
 
 		GetSettingsFromPlayerPrefs(); //Get player settings
 	}
+
 
 	void Update()
     {
@@ -163,6 +168,7 @@ public class PlayerController : MonoBehaviour
 		//Debug.Log("Transorm forward Y: " + transform.forward.y + ", Anim speed: " + anim.speed);
 	}
 
+
 	private void FixedUpdate()
 	{
 		//rotate player
@@ -171,6 +177,14 @@ public class PlayerController : MonoBehaviour
 		//move player towards rotation with player's speed
 		rb.velocity = transform.forward * speed;
 	}
+
+
+	private void OnCollisionEnter(Collision collision)
+	{
+		RiseDynamicMaxSpeed(minSpeed, 0);
+		Invoke("ReduceDynamicMaxSpeed", timeToReduceStun);
+	}
+
 
 	public void RiseDynamicMaxSpeed(float newDynamicMaxSpeedValue, float timeToRiseSpeed)
 	{
@@ -187,21 +201,6 @@ public class PlayerController : MonoBehaviour
 
 		SpeedRiser = StartCoroutine(RiseSpeedCoroutine(timeToRiseSpeed)); //Rise player speed to match the new dynamic max speed
 	}
-
-	public void ReduceDynamicMaxSpeed()
-	{
-		if (speedRiserIsRunning && SpeedRiser != null)
-		{
-			StopCoroutine(SpeedRiser); //If rising speed, stop
-
-			speedRiserIsRunning = false;
-
-			//Debug.Log("Stopped SpeedRiser");
-		}
-		
-		dynamicMaxSpeedReductor = StartCoroutine(ReduceDynamicMaxSpeedCoroutine()); //Start reducing dynamic max speed over time
-	}
-
 	private IEnumerator RiseSpeedCoroutine(float timeToRiseSpeed)
 	{
 		speedRiserIsRunning = true;
@@ -227,6 +226,19 @@ public class PlayerController : MonoBehaviour
 		//Debug.Log("Finished RiseSpeedCoroutine, speed: " + speed);
 	}
 
+	public void ReduceDynamicMaxSpeed()
+	{
+		if (speedRiserIsRunning && SpeedRiser != null)
+		{
+			StopCoroutine(SpeedRiser); //If rising speed, stop
+
+			speedRiserIsRunning = false;
+
+			//Debug.Log("Stopped SpeedRiser");
+		}
+		
+		dynamicMaxSpeedReductor = StartCoroutine(ReduceDynamicMaxSpeedCoroutine()); //Start reducing dynamic max speed over time
+	}
 	private IEnumerator ReduceDynamicMaxSpeedCoroutine()
 	{
 		dynamicMaxSpeedReductorIsRunning = true;
@@ -251,6 +263,7 @@ public class PlayerController : MonoBehaviour
 
 		//Debug.Log("Finished ReduceDynamicMaxSpeedCoroutine, dynamicMaxSpeedCoroutine: " + dynamicMaxSpeed);
 	}
+
 
 	public void GetSettingsFromPlayerPrefs()
 	{

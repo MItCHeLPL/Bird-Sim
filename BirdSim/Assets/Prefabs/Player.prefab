@@ -2301,7 +2301,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855507949709643}
-  m_LocalRotation: {x: -0, y: 0.000000008517817, z: -0.0000000013611252, w: 1}
+  m_LocalRotation: {x: -0, y: 2.2982501e-11, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2346,7 +2346,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7779255, y: 1}
+    m_SensorSize: {x: 1.7781909, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -2534,7 +2534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508264837710}
   m_LocalRotation: {x: 0.07935611, y: -0.000000004310939, z: 3.3953404e-10, w: 0.9968464}
-  m_LocalPosition: {x: 0, y: 0.33, z: -0.744}
+  m_LocalPosition: {x: 0, y: 0.33, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2574,7 +2574,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7779255, y: 1}
+    m_SensorSize: {x: 1.7781909, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -2748,6 +2748,7 @@ MonoBehaviour:
   speed: 2
   minSpeed: 2
   maxSpeed: 12
+  timeToReduceStun: 3
   timeToReduceDynamicMaxSpeed: 5
   downwardSpeedBoost: 0.75
   angleToLooseSpeed: 0.15
@@ -2965,7 +2966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508519365837}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3046,7 +3047,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508562553834}
-  m_LocalRotation: {x: 0.028831515, y: 2.2973175e-11, z: -6.6263656e-13, w: 0.99958426}
+  m_LocalRotation: {x: 0.028831508, y: 0.000000008475035, z: -0.0000000016061412, w: 0.99958426}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3091,7 +3092,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7779255, y: 1}
+    m_SensorSize: {x: 1.7781909, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -3135,8 +3136,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855508769612771}
-  m_LocalRotation: {x: 0.07935611, y: 0.000000004310939, z: -3.3953387e-10, w: 0.9968464}
-  m_LocalPosition: {x: 0, y: 0.33, z: -0.744}
+  m_LocalRotation: {x: 0.07935611, y: -0.000000004310939, z: 3.3953393e-10, w: 0.9968464}
+  m_LocalPosition: {x: 0, y: 0.33, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3426,7 +3427,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855509106745540}
-  m_LocalRotation: {x: -0.028641026, y: 0.000000021348812, z: -0.0000000027925076, w: 0.9995898}
+  m_LocalRotation: {x: -0.028641026, y: -0.000000012772521, z: 0.0000000016765567, w: 0.9995898}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3471,7 +3472,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7779255, y: 1}
+    m_SensorSize: {x: 1.7781909, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -3546,13 +3547,13 @@ VisualEffect:
       - m_Value: 0.3
         m_Name: FlapAmplitude
         m_Overridden: 0
-      - m_Value: 15
+      - m_Value: 14
         m_Name: AttractionStrength
         m_Overridden: 1
-      - m_Value: 1
+      - m_Value: 0.9
         m_Name: Drag
         m_Overridden: 1
-      - m_Value: 1.25
+      - m_Value: 12
         m_Name: MaxVelocity
         m_Overridden: 1
       - m_Value: 0
@@ -3570,6 +3571,18 @@ VisualEffect:
       - m_Value: 30
         m_Name: RightWingRotationOffset
         m_Overridden: 1
+      - m_Value: 0
+        m_Name: TurbulenceIntensity
+        m_Overridden: 1
+      - m_Value: 0.5
+        m_Name: TurbulenceFrequency
+        m_Overridden: 1
+      - m_Value: 0.25
+        m_Name: VariationFrequency
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: TargetRadius
+        m_Overridden: 1
     m_Vector2f:
       m_Array:
       - m_Value: {x: 2, y: 4}
@@ -3581,13 +3594,13 @@ VisualEffect:
       - m_Value: {x: -0.1, y: 0.1}
         m_Name: MinMaxVariationStrength
         m_Overridden: 1
-      - m_Value: {x: -0.1, y: 0.1}
+      - m_Value: {x: -0.1, y: 0}
         m_Name: ZMinMaxVariationStrength
         m_Overridden: 1
-      - m_Value: {x: -0.1, y: 0.1}
+      - m_Value: {x: -0.01, y: 0.01}
         m_Name: XMinMaxVariationStrength
         m_Overridden: 1
-      - m_Value: {x: -0.05, y: 0.05}
+      - m_Value: {x: -0.01, y: 0.01}
         m_Name: YMinMaxVariationStrength
         m_Overridden: 1
       - m_Value: {x: -10, y: 10}
@@ -3604,7 +3617,7 @@ VisualEffect:
       - m_Value: {x: 0, y: 0, z: 1}
         m_Name: BirdsDirection
         m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: 5}
+      - m_Value: {x: 0, y: 0, z: 3}
         m_Name: TargetPosition
         m_Overridden: 1
       - m_Value: {x: 0, y: 0, z: 0}
@@ -3625,19 +3638,19 @@ VisualEffect:
       - m_Value: {x: 5, y: 5, z: 5}
         m_Name: BirdsSpawnBounds
         m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: 0}
+      - m_Value: {x: 0, y: -0.18, z: 0}
         m_Name: BodyOffset
         m_Overridden: 1
       - m_Value: {x: -45, y: 90, z: 0}
         m_Name: BodyRotationOffset
         m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: -10}
+      - m_Value: {x: 0, y: 0, z: -5}
         m_Name: SpawnPosition
         m_Overridden: 1
-      - m_Value: {x: -1, y: -0.25, z: 0.25}
+      - m_Value: {x: -2, y: -1, z: 1}
         m_Name: TargetRandomOffset_center
         m_Overridden: 1
-      - m_Value: {x: 1, y: 0.25, z: 0.5}
+      - m_Value: {x: 2, y: 1, z: -0.5}
         m_Name: TargetRandomOffset_size
         m_Overridden: 1
     m_Vector4f:
@@ -3785,7 +3798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 5970855508439352687}
-  TargetVelocitySpeedSubtraction: -1
+  TargetVelocitySpeedModifier: 0.5
 --- !u!1 &5970855509502629169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,7 +3970,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855509504035046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.878}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4010,7 +4023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5970855509626665638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.756}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
