@@ -61,6 +61,13 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private float maxTrailTime = 0.1f;
 
 
+	//Particles
+	[Header("Particles")]
+	[SerializeField] private ParticleSystem feathersParticles;
+	[SerializeField] private int minParticleCountOnStun = 5;
+	[SerializeField] private int maxParticleCountOnStun = 50;
+
+
 	//Player Settings
 	private int invertBirdY = 1;
 
@@ -181,8 +188,53 @@ public class PlayerController : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collision)
 	{
-		RiseDynamicMaxSpeed(minSpeed, 0);
+		Vector3 orthogonalVector = collision.contacts[0].point - transform.position;
+
+		//0-180, 0 -> straight hit, 180 -> light touch
+		float angle = Vector3.Angle(orthogonalVector, rb.velocity) - 45;
+
+		//float converted = newMin + (val - minVal) * (newMax - newMin) / (maxVal - minVal);
+		float stunSpeed = Mathf.Clamp((minSpeed + (angle - 0) * (speed - minSpeed) / (180 - 0)), minSpeed, dynamicMaxSpeed); //Calculate speed after stun based on collision angle
+
+		//Calculate how many particles to emit
+		int particleCount = Mathf.Clamp((minParticleCountOnStun + ((int)speed - (int)minSpeed) * (maxParticleCountOnStun - minParticleCountOnStun) / ((int)dynamicMaxSpeed - (int)minSpeed)), minParticleCountOnStun, maxParticleCountOnStun);
+
+		//Change speed
+		RiseDynamicMaxSpeed(stunSpeed, 0);
 		Invoke("ReduceDynamicMaxSpeed", timeToReduceStun);
+
+		//Emit particles
+		StartCoroutine(EmitFeathers(particleCount));
+
+		//Play sound
+
+		//Debug
+		//Debug.Log(collision.gameObject.name + ", angle: " + angle + ", speed: " + stunSpeed);
+		//Debug.Log(particleCount);
+	}
+
+	public IEnumerator EmitFeathers(int count)
+	{
+		//Enable particles, set it in bird position
+		feathersParticles.gameObject.SetActive(true);
+		feathersParticles.transform.parent = null;
+		feathersParticles.transform.position = transform.position;
+
+		//Burst passed amount of particles
+		feathersParticles.emission.SetBursts(
+			new ParticleSystem.Burst[]{
+				new ParticleSystem.Burst(0, count)
+			});
+
+		//Emit particles
+		feathersParticles.Emit(1);
+
+		//Wait until particles system stops emitting
+		yield return new WaitForSeconds(feathersParticles.main.duration);
+
+		//Disable particles and bind it to player
+		feathersParticles.transform.parent = transform;
+		feathersParticles.gameObject.SetActive(false);
 	}
 
 
