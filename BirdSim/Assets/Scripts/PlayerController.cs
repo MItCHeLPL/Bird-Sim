@@ -26,6 +26,10 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private float rotationSpeed = 1.0f; //How fast does player rotate
 
 
+	[Header("Collision")]
+	public LayerMask ignoreCollisionLayers;
+
+
 	//Inputs
 	private float x;
 	private float y;
@@ -40,7 +44,7 @@ public class PlayerController : MonoBehaviour
 
 
 	[Header("Animation")]
-	[SerializeField] private Animator anim; //Animations
+	[SerializeField] private Animator anim;
 
 	//Animation smoothing
 	[SerializeField] private float animationSmoothingSpeed = 3.0f;
@@ -70,6 +74,12 @@ public class PlayerController : MonoBehaviour
 
 	//Player Settings
 	private int invertBirdY = 1;
+
+
+	//Audio
+	[Header("Audio")]
+	public AudioController audioController;
+	[SerializeField] private string impactAudioName;
 
 
 	//Coroutines
@@ -188,29 +198,36 @@ public class PlayerController : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collision)
 	{
-		Vector3 orthogonalVector = collision.contacts[0].point - transform.position;
+		if((ignoreCollisionLayers.value & (1 << collision.transform.gameObject.layer)) <= 0) //if not colliding with ignored layers
+		{
+			Vector3 orthogonalVector = collision.contacts[0].point - transform.position;
 
-		//0-180, 0 -> straight hit, 180 -> light touch
-		float angle = Vector3.Angle(orthogonalVector, rb.velocity) - 45;
+			//0-180, 0 -> straight hit, 180 -> light touch
+			float angle = Vector3.Angle(orthogonalVector, rb.velocity) - 45;
 
-		//float converted = newMin + (val - minVal) * (newMax - newMin) / (maxVal - minVal);
-		float stunSpeed = Mathf.Clamp((minSpeed + (angle - 0) * (speed - minSpeed) / (180 - 0)), minSpeed, dynamicMaxSpeed); //Calculate speed after stun based on collision angle
+			//float converted = newMin + (val - minVal) * (newMax - newMin) / (maxVal - minVal);
+			float stunSpeed = Mathf.Clamp((minSpeed + (angle - 0) * (speed - minSpeed) / (180 - 0)), minSpeed, dynamicMaxSpeed); //Calculate speed after stun based on collision angle
 
-		//Calculate how many particles to emit
-		int particleCount = Mathf.Clamp((minParticleCountOnStun + ((int)speed - (int)minSpeed) * (maxParticleCountOnStun - minParticleCountOnStun) / ((int)dynamicMaxSpeed - (int)minSpeed)), minParticleCountOnStun, maxParticleCountOnStun);
+			//Calculate how many particles to emit
+			int particleCount = Mathf.Clamp((minParticleCountOnStun + ((int)speed - (int)minSpeed) * (maxParticleCountOnStun - minParticleCountOnStun) / ((int)dynamicMaxSpeed - (int)minSpeed)), minParticleCountOnStun, maxParticleCountOnStun);
 
-		//Change speed
-		RiseDynamicMaxSpeed(stunSpeed, 0);
-		Invoke("ReduceDynamicMaxSpeed", timeToReduceStun);
+			//Change speed
+			RiseDynamicMaxSpeed(stunSpeed, 0);
+			Invoke("ReduceDynamicMaxSpeed", timeToReduceStun);
 
-		//Emit particles
-		StartCoroutine(EmitFeathers(particleCount));
+			//Emit particles
+			StartCoroutine(EmitFeathers(particleCount));
 
-		//Play sound
+			//Play sound
+			if (audioController != null)
+			{
+				audioController.Play(impactAudioName);
+			}
 
-		//Debug
-		//Debug.Log(collision.gameObject.name + ", angle: " + angle + ", speed: " + stunSpeed);
-		//Debug.Log(particleCount);
+			//Debug
+			//Debug.Log(collision.gameObject.name + ", angle: " + angle + ", speed: " + stunSpeed);
+			//Debug.Log(particleCount);
+		}
 	}
 
 	public IEnumerator EmitFeathers(int count)
