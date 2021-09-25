@@ -20,6 +20,8 @@ public class Sound
 	public bool stopOnGamePause = false;
 	public bool playOnGameResume = true;
 
+	public bool useMusicVolume = false;
+
 	[Range(0f, 2f)]
 	public float volume = 1;
 	[HideInInspector] public float defaultVolume = 1;
@@ -33,7 +35,8 @@ public class Sound
 
 public class AudioController : MonoBehaviour
 {
-	private float globalVolume = 1;
+	private float globalVolume = 0.5f;
+	private float musicVolume = 0.5f;
 
 	[SerializeField] private List<Sound> sounds;
 
@@ -143,10 +146,23 @@ public class AudioController : MonoBehaviour
 			globalVolume = PlayerPrefs.GetFloat(("Options_Volume")); //Get volume value from user settings
 		}
 
+		if (PlayerPrefs.HasKey("Options_MusicVolume"))
+		{
+			musicVolume = PlayerPrefs.GetFloat(("Options_MusicVolume")); //Get music volume value from user settings
+		}
+
 		//Assign volume to all sources
 		foreach (Sound s in sounds)
 		{
-			s.source.volume = globalVolume * s.defaultVolume;
+			if(s.useMusicVolume)
+			{
+				s.source.volume = musicVolume * s.defaultVolume;
+			}
+			else
+			{
+				s.source.volume = globalVolume * s.defaultVolume;
+			}
+			
 		}
 	}
 }

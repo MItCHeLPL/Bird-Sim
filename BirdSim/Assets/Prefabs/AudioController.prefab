@@ -52,6 +52,7 @@ MonoBehaviour:
     loop: 1
     stopOnGamePause: 1
     playOnGameResume: 0
+    useMusicVolume: 0
     volume: 1
     defaultVolume: 0
     pitch: 1
@@ -63,6 +64,7 @@ MonoBehaviour:
     loop: 1
     stopOnGamePause: 1
     playOnGameResume: 0
+    useMusicVolume: 0
     volume: 0.2
     defaultVolume: 0
     pitch: 1
@@ -74,6 +76,7 @@ MonoBehaviour:
     loop: 1
     stopOnGamePause: 1
     playOnGameResume: 0
+    useMusicVolume: 0
     volume: 0.2
     defaultVolume: 0
     pitch: 1
@@ -85,6 +88,7 @@ MonoBehaviour:
     loop: 1
     stopOnGamePause: 1
     playOnGameResume: 0
+    useMusicVolume: 0
     volume: 0.2
     defaultVolume: 0
     pitch: 1
@@ -96,6 +100,7 @@ MonoBehaviour:
     loop: 1
     stopOnGamePause: 0
     playOnGameResume: 1
+    useMusicVolume: 1
     volume: 1
     defaultVolume: 0
     pitch: 1
@@ -107,17 +112,19 @@ MonoBehaviour:
     loop: 1
     stopOnGamePause: 0
     playOnGameResume: 1
+    useMusicVolume: 0
     volume: 0.3
     defaultVolume: 0
     pitch: 1
     spatialBlend: 0
   - name: global_ambientWind
     source: {fileID: 0}
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: a4751e6e3810adc42a48e2eaeea8e0c6, type: 3}
     playOnAwake: 1
     loop: 1
     stopOnGamePause: 0
     playOnGameResume: 1
+    useMusicVolume: 0
     volume: 0.2
     defaultVolume: 0
     pitch: 1
@@ -129,6 +136,7 @@ MonoBehaviour:
     loop: 1
     stopOnGamePause: 0
     playOnGameResume: 1
+    useMusicVolume: 0
     volume: 0.05
     defaultVolume: 0
     pitch: 1
@@ -140,6 +148,7 @@ MonoBehaviour:
     loop: 0
     stopOnGamePause: 1
     playOnGameResume: 0
+    useMusicVolume: 0
     volume: 0.6
     defaultVolume: 0
     pitch: 1.1
@@ -151,6 +160,7 @@ MonoBehaviour:
     loop: 0
     stopOnGamePause: 1
     playOnGameResume: 0
+    useMusicVolume: 0
     volume: 0.5
     defaultVolume: 0
     pitch: 1

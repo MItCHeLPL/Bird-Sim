@@ -32,7 +32,8 @@ public class SettingsController : MonoBehaviour
 	};
 	private Dictionary<string, float> floatKeys = new Dictionary<string, float>()
 	{
-		{"Options_Volume", 0.5f}
+		{"Options_Volume", 0.5f},
+		{"Options_MusicVolume", 0.5f}
 	};
 	private Dictionary<string, string> stringKeys = new Dictionary<string, string>()
 	{
