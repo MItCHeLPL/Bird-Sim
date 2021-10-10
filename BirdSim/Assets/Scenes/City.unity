@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 635.4409, g: 637.38184, b: 796.75195, a: 1}
+  m_IndirectSpecularColor: {r: 663.03076, g: 670.8323, b: 846.39307, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10047,14 +10047,20 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0.9
+      - m_Value: 0.5
         m_Name: Alpha
         m_Overridden: 1
-      - m_Value: 1
+      - m_Value: 1.5
         m_Name: Size
         m_Overridden: 1
+      - m_Value: 2.5
+        m_Name: Lifetime
+        m_Overridden: 1
     m_Vector2f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 1, y: 1}
+        m_Name: Scale
+        m_Overridden: 1
     m_Vector3f:
       m_Array:
       - m_Value: {x: 0, y: -30, z: 0}
@@ -10069,13 +10075,13 @@ VisualEffect:
       - m_Value: {x: 1000, y: 300, z: 1000}
         m_Name: Position To_vector
         m_Overridden: 1
-      - m_Value: {x: 0, y: -10, z: 0}
+      - m_Value: {x: 0, y: -75, z: 0}
         m_Name: Velocity_center
         m_Overridden: 1
-      - m_Value: {x: 1, y: -50, z: 1}
+      - m_Value: {x: 1, y: -100, z: 1}
         m_Name: Velocity_size
         m_Overridden: 1
-      - m_Value: {x: 1000, y: 250, z: 1000}
+      - m_Value: {x: 1000, y: 150, z: 1000}
         m_Name: Bounds_size
         m_Overridden: 1
       - m_Value: {x: 0, y: 0, z: 0}
@@ -10084,7 +10090,7 @@ VisualEffect:
       - m_Value: {x: -500, y: 0, z: -500}
         m_Name: Position_center
         m_Overridden: 1
-      - m_Value: {x: 500, y: 250, z: 500}
+      - m_Value: {x: 500, y: 150, z: 500}
         m_Name: Position_size
         m_Overridden: 1
     m_Vector4f:
@@ -20952,7 +20958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189421108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 500, y: 125, z: 500}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26351,11 +26357,11 @@ PrefabInstance:
       objectReference: {fileID: 1065673001}
     - target: {fileID: 5970855507949709645, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008517817
+      value: 2.2981613e-11
       objectReference: {fileID: 0}
     - target: {fileID: 5970855507949709645, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000013611252
+      value: 1.1102229e-16
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508439352687, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: audioController
@@ -26363,19 +26369,19 @@ PrefabInstance:
       objectReference: {fileID: 1065673001}
     - target: {fileID: 5970855508562553836, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008475033
+      value: 2.2973175e-11
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508562553836, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000001606141
+      value: -6.6263656e-13
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508769612774, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000004310939
+      value: -0.0000000043109396
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508769612774, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -3.3953437e-10
+      value: 3.3953457e-10
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508913377826, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_Name
@@ -26427,11 +26433,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5970855509106745542, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000012772521
+      value: 0.000000021348812
       objectReference: {fileID: 0}
     - target: {fileID: 5970855509106745542, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000016765567
+      value: -0.0000000027925076
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}

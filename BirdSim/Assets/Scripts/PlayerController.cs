@@ -153,7 +153,8 @@ public class PlayerController : MonoBehaviour
 			if(animationSpeedBasedOnAngle)
 			{
 				//float converted = newMin + (val - minVal) * (newMax - newMin) / (maxVal - minVal);
-				anim.speed = minAnimationSpeed + (transform.forward.y - -1) * (maxAnimationSpeed - minAnimationSpeed) / (1 - -1); //Calculate animation speed based on birds angle (looking down - slower animation, looking up - faster animation)
+				//anim.speed = minAnimationSpeed + (transform.forward.y - -1) * (maxAnimationSpeed - minAnimationSpeed) / (1 - -1); //Calculate animation speed based on birds angle (looking down - slower animation, looking up - faster animation)
+				anim.speed = ExtendedMathf.Map(transform.forward.y, -1, 1, minAnimationSpeed, maxAnimationSpeed);
 			}
 		}
 
@@ -164,7 +165,8 @@ public class PlayerController : MonoBehaviour
 			foreach (TrailRenderer trail in trails)
 			{
 				//float converted = newMin + (val - minVal) * (newMax - newMin) / (maxVal - minVal);
-				trail.time = 0 + (speed - speedToActivateTrails) * (maxTrailTime - 0) / (maxSpeed - speedToActivateTrails); //Calculate trail time (length) 
+				//trail.time = 0 + (speed - speedToActivateTrails) * (maxTrailTime - 0) / (maxSpeed - speedToActivateTrails); //Calculate trail time (length) 
+				trail.time = ExtendedMathf.Map(speed, speedToActivateTrails, maxSpeed, 0, maxTrailTime);
 			}
 		}
 		else
@@ -205,11 +207,13 @@ public class PlayerController : MonoBehaviour
 			//0-180, 0 -> straight hit, 180 -> light touch
 			float angle = Vector3.Angle(orthogonalVector, rb.velocity) - 45;
 
+			float stunSpeed = Mathf.Clamp(ExtendedMathf.Map(angle, 0, 180, minSpeed, speed), minSpeed, dynamicMaxSpeed);
 			//float converted = newMin + (val - minVal) * (newMax - newMin) / (maxVal - minVal);
-			float stunSpeed = Mathf.Clamp((minSpeed + (angle - 0) * (speed - minSpeed) / (180 - 0)), minSpeed, dynamicMaxSpeed); //Calculate speed after stun based on collision angle
+			//float stunSpeed = Mathf.Clamp((minSpeed + (angle - 0) * (speed - minSpeed) / (180 - 0)), minSpeed, dynamicMaxSpeed); //Calculate speed after stun based on collision angle
 
 			//Calculate how many particles to emit
-			int particleCount = Mathf.Clamp((minParticleCountOnStun + ((int)speed - (int)minSpeed) * (maxParticleCountOnStun - minParticleCountOnStun) / ((int)dynamicMaxSpeed - (int)minSpeed)), minParticleCountOnStun, maxParticleCountOnStun);
+			//int particleCount = Mathf.Clamp((minParticleCountOnStun + ((int)speed - (int)minSpeed) * (maxParticleCountOnStun - minParticleCountOnStun) / ((int)dynamicMaxSpeed - (int)minSpeed)), minParticleCountOnStun, maxParticleCountOnStun);
+			int particleCount = Mathf.Clamp(ExtendedMathf.Map((int)speed, (int)minSpeed, (int)dynamicMaxSpeed, minParticleCountOnStun, maxParticleCountOnStun), minParticleCountOnStun, maxParticleCountOnStun);
 
 			//Change speed
 			RiseDynamicMaxSpeed(stunSpeed, 0);
