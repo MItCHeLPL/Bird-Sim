@@ -16,13 +16,18 @@ public class SpinnerController : MonoBehaviour
 
     [SerializeField] private float rotationSpeed = 150.0f;
 
+    [SerializeField] private bool ChangeSpinnerFill = true;
+
     void Awake()
     {
         image = GetComponent<Image>();
 
         fill = image.fillAmount;
 
-        StartCoroutine(FillChanger());
+        if(ChangeSpinnerFill)
+		{
+            StartCoroutine(FillChanger());
+        }
     }
 
     void Update()
