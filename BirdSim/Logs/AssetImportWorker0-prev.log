@@ -15,7 +15,7 @@ C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50130
+53165
 Successfully changed project path to: C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
 C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 237.20 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 259.28 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.0b7 (f7def5121c60)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/Resources/UnitySubsystems
@@ -63,53 +63,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.021417 seconds.
+Registered in 0.017763 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 219.43 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 266.73 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.863 seconds
+- Completed reload, in  1.947 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1907ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (1989ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (804ms)
-			LoadAssemblies (108ms)
+		EndReloadAssembly (1011ms)
+			LoadAssemblies (133ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (216ms)
+			SetupTypeCache (315ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (451ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (524ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (220ms)
+				RefreshPlugins (267ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016768 seconds.
+Registered in 0.022888 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 305.84 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 260.18 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -123,33 +123,33 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  5.546 seconds
+- Completed reload, in  4.241 seconds
 Domain Reload Profiling:
-	ReloadAssembly (5641ms)
-		BeginReloadAssembly (287ms)
+	ReloadAssembly (4334ms)
+		BeginReloadAssembly (217ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (16ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (5228ms)
-			LoadAssemblies (133ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (3977ms)
+			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (916ms)
+			SetupTypeCache (675ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (148ms)
-			SetupLoadedEditorAssemblies (3746ms)
+			RebuildScriptCaches (135ms)
+			SetupLoadedEditorAssemblies (2770ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (306ms)
-				BeforeProcessingInitializeOnLoad (392ms)
-				ProcessInitializeOnLoadAttributes (2920ms)
-				ProcessInitializeOnLoadMethodAttributes (90ms)
-				AfterProcessingInitializeOnLoad (17ms)
+				RefreshPlugins (260ms)
+				BeforeProcessingInitializeOnLoad (216ms)
+				ProcessInitializeOnLoadAttributes (2188ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (16ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -161,13 +161,13 @@ Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pi
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 1.39 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 2.52 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7845 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 313 unused Assets / (24.6 MB). Loaded Objects now: 8256.
-Memory consumption went from 418.4 MB to 393.8 MB.
-Total: 7.586600 ms (FindLiveObjects: 0.576300 ms CreateObjectMapping: 0.609100 ms MarkObjects: 3.192500 ms  DeleteObjects: 3.207700 ms)
+Memory consumption went from 418.3 MB to 393.8 MB.
+Total: 13.286500 ms (FindLiveObjects: 0.912700 ms CreateObjectMapping: 1.568700 ms MarkObjects: 6.294100 ms  DeleteObjects: 4.509700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -182,20 +182,197 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 35050.611993 seconds.
+  Time since last request: 38773.940644 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Vulcano Explosion.prefab
+  artifactKey: Guid(1ce24eec91e7b1d448d2fb69d76e4411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Vulcano Explosion.prefab using Guid(1ce24eec91e7b1d448d2fb69d76e4411) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+ -> (artifact id: '62f44bad6f9a0aa6e56b1491091e3b0b') in 1.882220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.672902 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures
+  artifactKey: Guid(ae0c522e57403d849ad3fef79334f715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures using Guid(ae0c522e57403d849ad3fef79334f715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '551bfacac6e52f8b4b560cf0d8335726') in 0.004610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.562271 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials
+  artifactKey: Guid(576010b9cad21be4dbe607c9d075f4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials using Guid(576010b9cad21be4dbe607c9d075f4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9fe715b9b42dc35496baad76f2e1dbd') in 0.003433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.739532 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/Refraction.png
+  artifactKey: Guid(64218d9f6b5322d4290a0fdf6d7a1670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/Refraction.png using Guid(64218d9f6b5322d4290a0fdf6d7a1670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef948278425bdcfec9c6608013bbd3d1') in 0.037490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.510667 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/RoundSoftParticle.tif
+  artifactKey: Guid(82c211cd7b28abb4a9e4ee77e8bd1b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/RoundSoftParticle.tif using Guid(82c211cd7b28abb4a9e4ee77e8bd1b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889d369e96408704cffe4e1b77340ef3') in 0.021094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.868609 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/Refraction_mask.tga
+  artifactKey: Guid(9e816d59f3e337b418ee323d5fea8372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/Refraction_mask.tga using Guid(9e816d59f3e337b418ee323d5fea8372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4024b338ea291fc3562552ac134b1611') in 0.044463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.419558 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/SmokePuff02ParticleSheet 1.tif
+  artifactKey: Guid(454fb466ddb13a344990be7679b4132c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/SmokePuff02ParticleSheet 1.tif using Guid(454fb466ddb13a344990be7679b4132c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a527119312a4b7d893a4e01be9389ec0') in 0.016794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.902050 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/SmokePuff02ParticleSheet.tif
+  artifactKey: Guid(26e206bd730800f4f82b828eb9f1c067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/SmokePuff02ParticleSheet.tif using Guid(26e206bd730800f4f82b828eb9f1c067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c653f1ea11fbeb9745a62a31acbc00b') in 0.015700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.480555 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/SmokePuffNormalSheet.tif
+  artifactKey: Guid(3bc01580ce4f1834eb3562397607f51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/SmokePuffNormalSheet.tif using Guid(3bc01580ce4f1834eb3562397607f51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bbadcafb5e1964c1e78d16f4346138') in 0.041241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.876283 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/SmokePuffParticleSheet.png
+  artifactKey: Guid(d3c9883e2f0eef44f9241b6f8428f9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Textures/SmokePuffParticleSheet.png using Guid(d3c9883e2f0eef44f9241b6f8428f9fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93046a210565635e0c4e87785a0d2370') in 0.113142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.426640 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Vertex Paint Prefabs
+  artifactKey: Guid(77451bd591ac40448b0af55d1f940fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Vertex Paint Prefabs using Guid(77451bd591ac40448b0af55d1f940fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eda6f01ad6346669d78f80cbbcdc87d') in 0.004159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.825142 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Vertex Paint Prefabs/prefab_A_big_lava_rock_01.prefab
+  artifactKey: Guid(67ed439583d5c5543815347dcfa5c9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Vertex Paint Prefabs/prefab_A_big_lava_rock_01.prefab using Guid(67ed439583d5c5543815347dcfa5c9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7dd4f00527a9d113b994a219c7aa14') in 0.113908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.263937 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Vertex Paint Prefabs/prefab_A_medium_lava_rock_01.prefab
+  artifactKey: Guid(c8e2cf29e89bee149a98da23f7c71a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Vertex Paint Prefabs/prefab_A_medium_lava_rock_01.prefab using Guid(c8e2cf29e89bee149a98da23f7c71a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd35f4e959a4361d5b4ac1487e1db70a') in 0.121404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.308685 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Vertex Paint Prefabs/prefab_A_medium_lava_rock_06.prefab
+  artifactKey: Guid(9c379b0afddf74c46bbdec6229516304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Vertex Paint Prefabs/prefab_A_medium_lava_rock_06.prefab using Guid(9c379b0afddf74c46bbdec6229516304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84af49b3195373797bf9a66aafaccb3e') in 0.095452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.717112 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_02.FBX
+  artifactKey: Guid(7f2eef7fb34697d42bbe3467ee41fbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_02.FBX using Guid(7f2eef7fb34697d42bbe3467ee41fbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d9ec40eabfebd0083a96780d8ef233') in 0.352695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 385.592886 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_03.FBX
+  artifactKey: Guid(9a9f9dbdefbf94a418b9887cdaeb73b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_03.FBX using Guid(9a9f9dbdefbf94a418b9887cdaeb73b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5832fcb0357d1b084e7fd66297518bfe') in 0.402931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.449348 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_05.FBX
+  artifactKey: Guid(6cb4c933a1332944899b3c63e6e1384d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_05.FBX using Guid(6cb4c933a1332944899b3c63e6e1384d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94066ecce868c9e44ac2990addf24695') in 0.368664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_08.FBX
+  artifactKey: Guid(2850e95b9b0b3c043bddd6b332add801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_08.FBX using Guid(2850e95b9b0b3c043bddd6b332add801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5311825ac41580f74112e70a5305f65') in 0.254891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.121191 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_03.FBX
+  artifactKey: Guid(862171df0873b2b4588315987e85799f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_03.FBX using Guid(862171df0873b2b4588315987e85799f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609cfc89bd619b2e068ca498305c0286') in 0.239438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.234167 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_04.FBX
+  artifactKey: Guid(fea124ca7676f99468dcdbf60cb04236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_04.FBX using Guid(fea124ca7676f99468dcdbf60cb04236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f4ea63256392ea4cc4c11e606099f1') in 0.250634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.999474 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_07.FBX
+  artifactKey: Guid(be59c4d3679ef6c469bfe1529bd8e141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_07.FBX using Guid(be59c4d3679ef6c469bfe1529bd8e141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262c55ab2af10142978ea5a4e9303da1') in 0.206121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.722417 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_04.FBX
+  artifactKey: Guid(dc14ee27aa6463c45891a9bdda37ba23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_04.FBX using Guid(dc14ee27aa6463c45891a9bdda37ba23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9317393d6b7f47ac470237c9b05440') in 0.258943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.403009 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Demo Scenes/Lava Demo 2.unity
+  artifactKey: Guid(12ae20e27466f614590adf6ed57198c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Demo Scenes/Lava Demo 2.unity using Guid(12ae20e27466f614590adf6ed57198c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fecc3c8b45393977e8dc1f4c5ac73e69') in 0.005768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.975996 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Demo Scenes/Lava Demo 3.unity
+  artifactKey: Guid(b5ec14299da5df442a97bf7e1facfa1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Demo Scenes/Lava Demo 3.unity using Guid(b5ec14299da5df442a97bf7e1facfa1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feec91edb0997847d9d558789a4885c8') in 0.005698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.498064 seconds.
   path: Assets/Scenes/Volcano.unity
   artifactKey: Guid(b44dac13a3306b54696e3db30fe4bf33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Volcano.unity using Guid(b44dac13a3306b54696e3db30fe4bf33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992a6d6390ddbea0cbd0b08ae3cbe31a') in 0.014693 seconds 
+Start importing Assets/Scenes/Volcano.unity using Guid(b44dac13a3306b54696e3db30fe4bf33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49b62a01677783ab0896d6265791ef5') in 0.004602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 420.962700 seconds.
+  path: Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock3.prefab
+  artifactKey: Guid(f282d9fb9b399dd4384b20aba08642fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock3.prefab using Guid(f282d9fb9b399dd4384b20aba08642fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d3e05e979988740b612786b906343c') in 0.085171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.175538 seconds.
+  path: Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock1A.prefab
+  artifactKey: Guid(d209be13548e70947bc39053977ce977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock1A.prefab using Guid(d209be13548e70947bc39053977ce977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a038113b5d3f0d681a936e1d0d102af9') in 0.068248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.731740 seconds.
+  path: Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock2.prefab
+  artifactKey: Guid(940d55d4117386f4f9398ea3ff52d4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock2.prefab using Guid(940d55d4117386f4f9398ea3ff52d4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f10dc090e1c700f889f4bf61d2feacb') in 0.101297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.279174 seconds.
+  path: Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock4A.prefab
+  artifactKey: Guid(5f36b57d675b1444cb2203b7a6cac6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock4A.prefab using Guid(5f36b57d675b1444cb2203b7a6cac6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcdfd6dce3adcac21db0c1db2a70a786') in 0.064495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.289891 seconds.
+  path: Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock6A.prefab
+  artifactKey: Guid(ad1f5855a33f0694886cbd301d99cc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs/Rock6A.prefab using Guid(ad1f5855a33f0694886cbd301d99cc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7043969c1039a153bb9914d34c7544ea') in 0.065286 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.017033 seconds.
+Registered in 0.022799 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.19 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.55 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -218,33 +395,33 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  3.710 seconds
+- Completed reload, in  3.099 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3814ms)
-		BeginReloadAssembly (266ms)
+	ReloadAssembly (3179ms)
+		BeginReloadAssembly (283ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (35ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (97ms)
-		EndReloadAssembly (3399ms)
-			LoadAssemblies (162ms)
+			CreateAndSetChildDomain (77ms)
+		EndReloadAssembly (2763ms)
+			LoadAssemblies (135ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (852ms)
-			ReleaseScriptCaches (5ms)
-			RebuildScriptCaches (110ms)
-			SetupLoadedEditorAssemblies (1861ms)
+			SetupTypeCache (634ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (1508ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (187ms)
-				ProcessInitializeOnLoadAttributes (1544ms)
-				ProcessInitializeOnLoadMethodAttributes (84ms)
-				AfterProcessingInitializeOnLoad (21ms)
+				BeforeProcessingInitializeOnLoad (153ms)
+				ProcessInitializeOnLoadAttributes (1262ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (14ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
 Platform modules already initialized, skipping
 Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
@@ -254,12 +431,1288 @@ Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pi
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Refreshing native plugins compatible for Editor in 2.23 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.64 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7408 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (21.5 MB). Loaded Objects now: 8502.
+Memory consumption went from 426.7 MB to 405.3 MB.
+Total: 8.010600 ms (FindLiveObjects: 0.596300 ms CreateObjectMapping: 0.606200 ms MarkObjects: 4.109300 ms  DeleteObjects: 2.697500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 849.680686 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_01.FBX
+  artifactKey: Guid(e84f8c7d5fce28948a9c9914dd603142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_01.FBX using Guid(e84f8c7d5fce28948a9c9914dd603142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1463abfd26b11ea45178d14ee7fbef') in 1.348288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.224505 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_02.FBX
+  artifactKey: Guid(41d9f217587b3964f9e2106b261f47ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_02.FBX using Guid(41d9f217587b3964f9e2106b261f47ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2b054e0e61f991be2fd3951062f0f5') in 0.324245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.529744 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_06.FBX
+  artifactKey: Guid(c8743ab8213661e4982ce0874a511310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_06.FBX using Guid(c8743ab8213661e4982ce0874a511310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f878c999919716b29dc994061fe9f4bb') in 0.332413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 204.900420 seconds.
+  path: Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs_snow/Rock1_grup1.prefab
+  artifactKey: Guid(564ee2d9da8d5fa4ca9d1b7054064847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs_snow/Rock1_grup1.prefab using Guid(564ee2d9da8d5fa4ca9d1b7054064847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ab1f625f77c87e9ae2d12afede568e') in 0.119652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.459743 seconds.
+  path: Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs_snow/Rock2.prefab
+  artifactKey: Guid(d6b40ce3457ff954e8faab16436c9d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs_snow/Rock2.prefab using Guid(d6b40ce3457ff954e8faab16436c9d29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f48040095560258740608f07893968c') in 0.087542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.998679 seconds.
+  path: Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs_snow/Rock1A.prefab
+  artifactKey: Guid(f28e8463f4463eb48afeccffe267583f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/Rocks and Boulders 2/Rocks/Prefabs_snow/Rock1A.prefab using Guid(f28e8463f4463eb48afeccffe267583f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77accd6fa0a8af5949775031b2105943') in 0.073831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 282.858941 seconds.
+  path: Assets/Particles/Smoke
+  artifactKey: Guid(4faa864ecd89ec2488ec0861b71bb573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke using Guid(4faa864ecd89ec2488ec0861b71bb573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7137e1fd2044810f0feb5d81080406f9') in 0.004948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.236129 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ad8e58b575c1ad74721cd759675220') in 0.050799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.351773 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e19d70953864c455fa06473b174402b') in 0.033293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.115775 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064479c2e0da520389dcf06436b25053') in 0.317970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.706260 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e92914f445b502c0ad0f3bb14d7534c') in 0.064088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.967969 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f41980802335f7d7a54fcaadf396497f') in 0.066319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.264592 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e880696759913c273b5ef4f4e40456') in 0.827915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.490703 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65beafc70a00cbe4f57d12074ae7913') in 1.020799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.505326 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c0a148954768c3385efa16e46c2f1f') in 1.209755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.096610 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da23c4790132708c0bcf49ca692334b3') in 0.425943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.292814 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844843a42c986d36da9dc249c4ead861') in 1.117924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.537011 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7be61f19f9f08be3bbc3ab7a6204e4') in 0.062350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.419103 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e80b3dbfb7cdec1818be1e567738b46') in 1.151690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.166869 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c783fa1493e4140bacdb1f5ed3b122') in 0.026235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.800354 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e3c67645bcbc766f334578ac0281c9') in 22.119471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496822d6bdbf0dab6de8ddba9de5a66a') in 21.776368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734798ac996a1c8076c1580b69ed7417') in 11.945841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.771549 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdadf8e02a74433ce831d364a0057de9') in 24.334414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '108bfdd6d9307a9866c42c15c721b416') in 15.725297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 503.008201 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f18438bc0438d7277dbfadbed7798d') in 0.049829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 151.406402 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1f9545316f66dd99fa26c92fba98c7') in 0.375686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.183608 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a79c62e389d145c1565849dac3b01ee') in 14.239806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.162343 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb042fa969032964f5ce04272972c7e') in 11.537399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b850489625b07d9084723bff3935516') in 14.609367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.453816 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd589abd9787aad07deadfe4edf4eaf1e') in 13.347698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd57c115e32ba29d3e7e49b3b972e1e') in 14.516538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 336.454184 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cabca41cfadd157bbc0138e491668c4f') in 0.052550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.399865 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b460b83e6ef32cc17bbfbe6d772e839') in 0.052498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.724761 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc076b050fec284a46e18750813f774b') in 0.042860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.901276 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770498bf4591425df71c120164ad0292') in 0.045327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.176653 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5176b9b75a24765b32575cdefe633eb6') in 0.053552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.883243 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5965c0a28941d0b6ed8fedd7fe4d1b80') in 0.045202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.246153 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42e623f0e77e67b9e72f260250f2e55') in 0.036443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.842868 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f39ae706c525ee9ebddc638dfcb3e61') in 0.056763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.131742 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdffdeaac4dcb1cfd4c3e486891804c') in 0.060313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.666642 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a854047e187e5ca02688e74575244d') in 0.044672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.520625 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6c755d2895be9d58c08813f7190548') in 0.042983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.036712 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f6c9c0f343b7d9fe7ae2f3c235297c') in 0.073575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.364546 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cfc815013c6c0d577d71fc259398604') in 0.035720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.150047 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909a221d79ff7d22eda1affa060778a9') in 18.957127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.335714 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351597a1f95963ef092e7ffa20113d0f') in 0.045873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.486419 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b07ae01d2495485543f724d9ad44ad59') in 0.048446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.064072 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb37a98c33576e2548838ab6f4f3f5a') in 0.034695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.746663 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d63759541c8d246a43bbdcf2e644fc') in 0.034851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.072814 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240dc1da7de9f5527b8de556077cf987') in 10.920358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.410081 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2c184042439d3f67a6b12975c92c66') in 0.029378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.380523 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655b22fd1992f457fa7f8ac9f2d14a76') in 0.038402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.911139 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e5b7ef01e1861c7ddc3f169d8eccbf') in 0.058833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.481395 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a6675117a737d3d43e1a096d89f9b3b') in 0.049461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.387417 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631c5684be50f10d943c69849991dc36') in 0.039216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.528169 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046e723e25cc22ba02b188a19e473e99') in 0.056566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.549895 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8e6f43d6f9001a78ab4c6280ace150') in 0.036349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 121.296846 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f36612dc4d4265a38a1261d470e04a4') in 9.652404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000b60dd110f670055da240f3c51979e') in 9.606302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee030f7d97e0034c11502950403491b4') in 0.024798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.020730 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb47575043d314cb92f77b23f78fca70') in 0.040511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.901621 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711da2141d3f58ec118d64f812d1cf23') in 0.035881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 127.863323 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9665b52286f2882a288099a9e54e7693') in 0.072793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.342199 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02fe75775a8d38f91ae7b891139ecc2') in 24.536417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124894eab4a3e34612e2a2c7acd184d8') in 0.074399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.830127 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62abf5ea978a12c5095c2c904c296dff') in 0.049140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.561121 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5594908b854cca98cb530ba7f24faf62') in 0.048242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.867794 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f40eabfafe1decfd9ae16f9adbdbc0e') in 0.028669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.069210 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e5edab2453791a1f9c362507aad466') in 0.048282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.001425 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c7c2aaffbf76f075ad8826f4b7aaf0') in 0.040899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.190827 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d855475152aca08245dfa716b211b82') in 11.331841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.743616 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643287f6496486462c786f7a4dd6abde') in 0.058612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.780785 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab70d16dfb5006b83112627e5e97a833') in 12.121428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6bf8e25851407d9a77a27d22dd00500') in 14.420900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.822595 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5565eb1451b617bcfa46eee636241bc3') in 13.629121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38fd11c2a7552ecc2ec01aca9719284') in 12.235700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.278091 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21bdcfc989e360172722d7ab3c2e88ec') in 0.037579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.685381 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd196b61a12b201947f80e5a02f74b0e2') in 0.039417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.313474 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30a8c33d5bb0a591224eab72a8c87ec') in 12.988442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.707313 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2cb15cfee3610d5714853f73476facc') in 0.067721 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019536 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.04 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  6.195 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6302ms)
+		BeginReloadAssembly (731ms)
+			ExecutionOrderSort (1ms)
+			DisableScriptedObjects (141ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (338ms)
+		EndReloadAssembly (5369ms)
+			LoadAssemblies (216ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1217ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (617ms)
+			SetupLoadedEditorAssemblies (2397ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (278ms)
+				ProcessInitializeOnLoadAttributes (1943ms)
+				ProcessInitializeOnLoadMethodAttributes (119ms)
+				AfterProcessingInitializeOnLoad (31ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 101 unused Assets / (21.4 MB). Loaded Objects now: 8682.
+Memory consumption went from 440.3 MB to 418.9 MB.
+Total: 13.776300 ms (FindLiveObjects: 0.704000 ms CreateObjectMapping: 0.771200 ms MarkObjects: 5.271700 ms  DeleteObjects: 7.028000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 224.018789 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa71c4c4cfbcb72fda0753d6745c565a') in 0.795759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.365905 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efbd4eebb7371abf5659b24117918ea') in 0.023974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.777698 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '366690783553d48240ad5cf2243934fa') in 0.026866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.913479 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efaf055018f187f8fd1dd8f8261faee') in 0.035261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.051609 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95694383c1745ed7e9b5c11ea7e0d13') in 0.041609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.296263 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a3f58eb66a2303114f5a1fe5cbb2d7') in 0.029287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.644919 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee6406620ced519a7b682b6198bf4b2') in 0.066312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.161321 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1962efba80f52eb52a9fcde105b10e') in 0.141681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 119.090626 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d62fe43585a52157faa005ae00bb24') in 0.029557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.388886 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605312e5f1cd939d4d3aed1cef9f9880') in 0.027677 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.021116 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 3.93 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.293 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4402ms)
+		BeginReloadAssembly (323ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (42ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (113ms)
+		EndReloadAssembly (3911ms)
+			LoadAssemblies (180ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (827ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (2225ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (4ms)
+				BeforeProcessingInitializeOnLoad (313ms)
+				ProcessInitializeOnLoadAttributes (1767ms)
+				ProcessInitializeOnLoadMethodAttributes (103ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (42ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 3.99 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7400 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 101 unused Assets / (21.5 MB). Loaded Objects now: 8271.
-Memory consumption went from 392.4 MB to 370.9 MB.
-Total: 10.553800 ms (FindLiveObjects: 0.806400 ms CreateObjectMapping: 1.012300 ms MarkObjects: 4.485000 ms  DeleteObjects: 4.248900 ms)
+Unloading 100 unused Assets / (21.4 MB). Loaded Objects now: 8806.
+Memory consumption went from 439.4 MB to 418.0 MB.
+Total: 16.106800 ms (FindLiveObjects: 0.616900 ms CreateObjectMapping: 0.873400 ms MarkObjects: 9.622100 ms  DeleteObjects: 4.993300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 645.215372 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b) A Native Collection has not been disposed, resulting in a memory leak. Allocated from:
+Unity.Collections.NativeArray`1:.ctor(Byte[], Allocator)
+UnityEngine.Networking.UploadHandlerRaw:.ctor(Byte[])
+WakaTime.Plugin:SendHeartbeat(Boolean) (at Library\PackageCache\com.vladfaust.unitywakatime@4dedbeac2e\Editor\Plugin.cs:145)
+WakaTime.Plugin:Initialize() (at Library\PackageCache\com.vladfaust.unitywakatime@4dedbeac2e\Editor\Plugin.cs:62)
+WakaTime.Plugin:.cctor() (at Library\PackageCache\com.vladfaust.unitywakatime@4dedbeac2e\Editor\Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes(Type[])
+
+ -> (artifact id: '8a62d5145f0ec366a87d5a723f7b3543') in 0.839393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.130367 seconds.
+  path: Assets/Particles/Smoke/Smoke 1.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke 1.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2c348172bb78ecd7eef61de830aa9f1') in 0.052218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.502277 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b6dda2d03eb2148cfb8a869969f4cb') in 0.049783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.865929 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf32b118de63a8c0989e47f3e0aca1c') in 0.938448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.216013 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '949448243ab1bedabe3c872fe8d4b1fe') in 0.024907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.710496 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563052c5f021a75a236ae872a30f8040') in 0.027699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 190.778614 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7ca367b83fec1fd821a7f202f0c91a') in 0.038695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.437389 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '104e57c63e65d8a2dc4d040773358b46') in 0.045826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.612898 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6d6edf6a474cb2a946f716329c7688') in 0.028490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.213042 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e34a299c9b12e0cc785fef8749954f') in 0.029324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.577401 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdf4bcb5752ec15b6f0456da700bf9f') in 0.037773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.671255 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84055de5e6c6524efcb44bcd8605f86') in 8.811623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.393734 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4824bfcb8f0432e905b0685d93aafc') in 0.043680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.335091 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d1cb479aa2de11ad46d9bf9d1971246') in 15.407086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.622822 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce12a55d0ff8a82e18c319f88d39ab89') in 0.029829 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016190 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.174 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4271ms)
+		BeginReloadAssembly (334ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (33ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (106ms)
+		EndReloadAssembly (3716ms)
+			LoadAssemblies (207ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (857ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (122ms)
+			SetupLoadedEditorAssemblies (1997ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (188ms)
+				ProcessInitializeOnLoadAttributes (1581ms)
+				ProcessInitializeOnLoadMethodAttributes (149ms)
+				AfterProcessingInitializeOnLoad (50ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (64ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7401 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (21.4 MB). Loaded Objects now: 8930.
+Memory consumption went from 439.9 MB to 418.4 MB.
+Total: 13.292900 ms (FindLiveObjects: 1.491000 ms CreateObjectMapping: 1.477500 ms MarkObjects: 6.761100 ms  DeleteObjects: 3.560600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 12.870847 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b) A Native Collection has not been disposed, resulting in a memory leak. Allocated from:
+Unity.Collections.NativeArray`1:.ctor(Byte[], Allocator)
+UnityEngine.Networking.UploadHandlerRaw:.ctor(Byte[])
+WakaTime.Plugin:SendHeartbeat(Boolean) (at Library\PackageCache\com.vladfaust.unitywakatime@4dedbeac2e\Editor\Plugin.cs:145)
+WakaTime.Plugin:Initialize() (at Library\PackageCache\com.vladfaust.unitywakatime@4dedbeac2e\Editor\Plugin.cs:62)
+WakaTime.Plugin:.cctor() (at Library\PackageCache\com.vladfaust.unitywakatime@4dedbeac2e\Editor\Plugin.cs:34)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(IntPtr)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor(RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes(Type[])
+
+ -> (artifact id: '64e91e0566e63a11b1f8961587290de1') in 0.758965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.265776 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c42f05216c1df629665b0b54ed5113c') in 0.022266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.372590 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc192ec00ce40e797f62acc3fbd5d205') in 0.039556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.057823 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdc0787961b82a49dad14985586734a') in 0.030852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.800830 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632a4a8ad57c7537c6c9d565d2234fdd') in 0.037286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.456740 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e77e795d9f6866b5d6d09832aad7141') in 0.098232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.699578 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e9f25523a59e23e158ba2c9ab0d243') in 0.025114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.661629 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '090eef6e4863dc9f6c146c009bff4f9c') in 0.127425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.997685 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8974f7a9d4042979e53be003d1e2e123') in 0.025590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.079546 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '682a045dc83650153caa27eebcfde2d9') in 0.043286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.429499 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49330c6c6431a1f1ce80b04d9fa13e22') in 0.036004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.473094 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e290939eecf4cc4cbc1662e30962978e') in 0.027681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.756219 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29414de48f417297b413d185723fdb7d') in 0.040386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.921789 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ba5016b6eb24c7153c699426af2939') in 0.045149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.725062 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21eeda78095e857aaa158d29f3972d80') in 0.110397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.102725 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a14b8c31b671ff8f9fda82f8b7d0db') in 0.094843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.974112 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6d424c9cc518ca63c7bf8638fb1d75') in 0.028948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.568666 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adaa2c9625ef033cb57e72634c089a83') in 0.118927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.171568 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9c66b264a90fc068bf5d3d122cc879') in 0.127104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.927121 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1250675a3df31704bba02b70c335cef6') in 0.026889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.197153 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e96379b947addb1e077e3e1f6ef62dd7') in 0.108583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.160953 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b68c73e3e6a6451499d005bbcd7f6f8') in 0.024771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 80.464646 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0d8ee79cecc8bc68f14765a2e4a765') in 0.104755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.743820 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7428069584541d3967cc632183a46ed6') in 0.026025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.509068 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b87346e34c09afe8016c8ec1e2b83a') in 0.034651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.023263 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a34b83ad3805aaea99ec530fc6a88aa') in 0.023287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 118.738030 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1893134d9164b0e60289917eba224ac1') in 0.025976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.134580 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432fcf80e230838ca1dbfad3aef06bb5') in 0.023418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.938418 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c76cbedf38a3aa0f5fc3d0d1273edcb') in 0.032630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.488031 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc5c755cb13e5ccbfdfdf7b186691dd') in 0.028859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.715130 seconds.
+  path: Assets/Particles/Smoke/Smoke.vfx
+  artifactKey: Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke.vfx using Guid(44e21f2db08458f42be04943c9af6076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925cf649cf31b60481c5eb638917a765') in 0.108816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 221.958566 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d9cead13831e8dda03bad112f05302') in 0.038252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.842736 seconds.
+  path: Assets/Particles/Smoke/Smoke Lit.vfx
+  artifactKey: Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Smoke/Smoke Lit.vfx using Guid(d4f57260774ecda4ebbc9fc720ca3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bbc5617426a4c2c8534aa153e5fbaa0') in 0.033918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 376.963621 seconds.
+  path: Assets/Particles/Sparks
+  artifactKey: Guid(67b6fee26955e5b48aff298fb42aa48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks using Guid(67b6fee26955e5b48aff298fb42aa48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac28a49ab3c005c090a5e13f47f5971') in 0.005130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 681.189751 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7bca1bb50d56c4e82e4e706e42f898') in 0.036907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.457921 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce5cb8cc4026c18e548cf279cb50e05') in 0.031629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.991900 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_01.FBX
+  artifactKey: Guid(75f130d28569a874d9c5fc015ff59694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_01.FBX using Guid(75f130d28569a874d9c5fc015ff59694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44001d5e80ef16e376904d2b7a54040') in 0.390530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.851983 seconds.
+  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/FlameParticle.mat
+  artifactKey: Guid(bd8c234372a08af408b82538314378fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/FlameParticle.mat using Guid(bd8c234372a08af408b82538314378fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac1636c5c8ce4586eccc4301db4b0377') in 0.207610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1195.003954 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe062fd0b32eaa68375e3b26057a8bc') in 0.097363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.716043 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acbce630c692a46b9382c909b0ac4a9a') in 0.030925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.601420 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a71b4eb3095bc59353471a051c226ea') in 0.025090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.459175 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b28ad5a906bd61a3614fde04c9e04a6') in 0.050134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 221.250681 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793646f23be564f984687c0610ca4693') in 0.044895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.211717 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99eff1a2036e54839345d55787da0994') in 0.025465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 152.713736 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6606c718b3b9f5891715d9c8d4bc3b5a') in 0.046838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.181713 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b2fa2398d9970564773628207d5ec2') in 0.032713 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.024249 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.88 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+[com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Unity.Burst.Editor.BurstLoader:.cctor () (at Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs:107)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.654 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5763ms)
+		BeginReloadAssembly (799ms)
+			ExecutionOrderSort (1ms)
+			DisableScriptedObjects (89ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (327ms)
+		EndReloadAssembly (4733ms)
+			LoadAssemblies (386ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1074ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (2695ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (259ms)
+				ProcessInitializeOnLoadAttributes (2329ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (71ms)
+Platform modules already initialized, skipping
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Refreshing native plugins compatible for Editor in 4.69 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7400 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (21.4 MB). Loaded Objects now: 9054.
+Memory consumption went from 440.4 MB to 418.9 MB.
+Total: 12.206900 ms (FindLiveObjects: 1.077400 ms CreateObjectMapping: 0.808600 ms MarkObjects: 6.864600 ms  DeleteObjects: 3.454400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -275,7 +1728,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.022060 seconds.
+Registered in 0.044624 seconds.
 A Native Collection has not been disposed, resulting in a memory leak. Allocated from:
 Unity.Collections.NativeArray`1:.ctor(Byte[], Allocator)
 UnityEngine.Networking.UploadHandlerRaw:.ctor(Byte[])
@@ -291,7 +1744,7 @@ Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 3.17 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.60 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -314,33 +1767,33 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  3.790 seconds
+- Completed reload, in  3.613 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3894ms)
-		BeginReloadAssembly (263ms)
+	ReloadAssembly (3705ms)
+		BeginReloadAssembly (256ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (103ms)
-		EndReloadAssembly (3479ms)
-			LoadAssemblies (192ms)
+			CreateAndSetChildDomain (89ms)
+		EndReloadAssembly (3295ms)
+			LoadAssemblies (158ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (784ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (96ms)
-			SetupLoadedEditorAssemblies (1994ms)
+			SetupTypeCache (774ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (1762ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (202ms)
-				ProcessInitializeOnLoadAttributes (1675ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (186ms)
+				ProcessInitializeOnLoadAttributes (1452ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
 				AfterProcessingInitializeOnLoad (17ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
+			AwakeInstancesAfterBackupRestoration (52ms)
 Platform modules already initialized, skipping
 Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
@@ -350,12 +1803,12 @@ Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pi
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Refreshing native plugins compatible for Editor in 1.78 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 28.33 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7400 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 101 unused Assets / (21.5 MB). Loaded Objects now: 8286.
-Memory consumption went from 392.4 MB to 370.9 MB.
-Total: 16.711500 ms (FindLiveObjects: 0.671200 ms CreateObjectMapping: 1.239500 ms MarkObjects: 5.318800 ms  DeleteObjects: 9.480800 ms)
+Unloading 7399 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (21.4 MB). Loaded Objects now: 9069.
+Memory consumption went from 439.6 MB to 418.2 MB.
+Total: 21.110300 ms (FindLiveObjects: 0.835300 ms CreateObjectMapping: 1.314000 ms MarkObjects: 11.121800 ms  DeleteObjects: 7.838200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -370,262 +1823,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1957.948705 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs
-  artifactKey: Guid(a7b9e4d9c7939ba4e91c77211e669b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs using Guid(a7b9e4d9c7939ba4e91c77211e669b8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e34a5368ba0456e7dc73661d1cd689') in 0.569337 seconds 
+  Time since last request: 408.491094 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ab2dfd6e971be11028af680abd30fc0') in 0.676663 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.009564 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_01.FBX
-  artifactKey: Guid(4e246d83056c21949825368424acc5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_01.FBX using Guid(4e246d83056c21949825368424acc5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Launched and connected shader compiler UnityShaderCompiler.exe after 3.20 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
- -> (artifact id: 'c36291720d6b02419cc1e077da2fe669') in 48.485564 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_02.FBX
-  artifactKey: Guid(219375d062284af4f875979e1594ac81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_02.FBX using Guid(219375d062284af4f875979e1594ac81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611a3a26984f7e6e71956d7a237ff30b') in 0.632953 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_07.FBX
-  artifactKey: Guid(03789b494c864a04fbcd41523080081a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_07.FBX using Guid(03789b494c864a04fbcd41523080081a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2216f12903a5d856703fe95ba6e39d68') in 0.431128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Ground and River Textures
-  artifactKey: Guid(e61e4de19cf7e814cab3cce314a3797f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Ground and River Textures using Guid(e61e4de19cf7e814cab3cce314a3797f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9944937aa4eeb4af183e9de9ae4b7bed') in 0.010632 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_04.FBX
-  artifactKey: Guid(96c897e3e74cd9f4591dfd28a20c3051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_04.FBX using Guid(96c897e3e74cd9f4591dfd28a20c3051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af2a062c6061204466ba3be7c1b24a7') in 0.399134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_09.FBX
-  artifactKey: Guid(b53a0c80004ca7a44861dba9186030b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_09.FBX using Guid(b53a0c80004ca7a44861dba9186030b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d563adc5856898d7c8061ea262c0a2') in 0.444690 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_08.FBX
-  artifactKey: Guid(f4fcdcceba1d36241bb87b8a109a5915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_08.FBX using Guid(f4fcdcceba1d36241bb87b8a109a5915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a06dc6a730d6c207f33566e6aed1104') in 0.458249 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_06.FBX
-  artifactKey: Guid(91b27dcd65e2d4649aed35ab1bf1cfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_06.FBX using Guid(91b27dcd65e2d4649aed35ab1bf1cfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c842bb9ef9914839dafbcfe916299e') in 0.407355 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_05.FBX
-  artifactKey: Guid(19cd4f9e578add5489f12c02f6c35b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_05.FBX using Guid(19cd4f9e578add5489f12c02f6c35b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417d894f103f5312bcaf1e12b4bca423') in 0.367857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_03.FBX
-  artifactKey: Guid(aabc8bca366c2104a912bd6e117bdeb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Cliffs/lava_wall_03.FBX using Guid(aabc8bca366c2104a912bd6e117bdeb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d6f484d05ef17c4fc044d249e1aa08') in 0.333499 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Ground and River Textures/Ground Material
-  artifactKey: Guid(0392748bfcf7dbe44bb176dc7ee531e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Ground and River Textures/Ground Material using Guid(0392748bfcf7dbe44bb176dc7ee531e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb840b01276f0ae4a54cf43b93bc9c48') in 0.005474 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.942715 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Terrain Data/_TerrainAutoUpgrade/layer_T_lava_rock_02_A_SMT_lava_rock_02_N(15.000,15.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer
-  artifactKey: Guid(1b70de4740674d44785f239fa4c326dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Terrain Data/_TerrainAutoUpgrade/layer_T_lava_rock_02_A_SMT_lava_rock_02_N(15.000,15.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer using Guid(1b70de4740674d44785f239fa4c326dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40575282df3b5b04b514e0bfe4eb64e') in 0.064047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 74.952017 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Ground and River Textures/T_lava_river_01_1_AO.tga
-  artifactKey: Guid(05066acdad7480740a684bc3f9d497e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Ground and River Textures/T_lava_river_01_1_AO.tga using Guid(05066acdad7480740a684bc3f9d497e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65befad18096d243c0dea77f73827ad9') in 0.028941 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.461954 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Ground and River Textures/T_lava_river_01_2_AO.tga
-  artifactKey: Guid(b3a5bf671c1c73147a176b55c2839d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Ground and River Textures/T_lava_river_01_2_AO.tga using Guid(b3a5bf671c1c73147a176b55c2839d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0349c647ca1ecc7370c23f36469119fb') in 0.018354 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.878861 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Lava Profiles
-  artifactKey: Guid(e30889d99770a0c49bdaefa7d1f3f522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Lava Profiles using Guid(e30889d99770a0c49bdaefa7d1f3f522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e8879d7a19a5891af7eed189a2d4d5') in 0.005763 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.557818 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles
-  artifactKey: Guid(3c6961dce5c779744866473d148b167d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles using Guid(3c6961dce5c779744866473d148b167d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04911696a0ae23a79d62040ea9d445e2') in 0.007416 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.928979 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks
-  artifactKey: Guid(73914fdd9e07ab942b3b42d513146ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks using Guid(73914fdd9e07ab942b3b42d513146ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d2613a3d4fdbc95275667b1dfbcbcf') in 0.003244 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.406528 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Lava Distortion.prefab
-  artifactKey: Guid(cf20412a8aaa30c4aa99aa3fb92c818d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Lava Distortion.prefab using Guid(cf20412a8aaa30c4aa99aa3fb92c818d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9752d66db823673f915a2cfe843a1324') in 0.050969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/Lava Distortion.mat
-  artifactKey: Guid(bf7e49969efbb364d945d0717ff55483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/Lava Distortion.mat using Guid(bf7e49969efbb364d945d0717ff55483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eaa43a08207d05dc3e238a19b05c3f7') in 0.138872 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 36.308552 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_02.FBX
-  artifactKey: Guid(7f2eef7fb34697d42bbe3467ee41fbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_02.FBX using Guid(7f2eef7fb34697d42bbe3467ee41fbd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9f2a3652d0d2e79b5e1dcdf13781c3') in 0.924415 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.154276 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_04.FBX
-  artifactKey: Guid(dc14ee27aa6463c45891a9bdda37ba23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_04.FBX using Guid(dc14ee27aa6463c45891a9bdda37ba23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44cc43c37ed5b75f0832bb579ea9b16b') in 0.372919 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.126315 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_02.FBX
-  artifactKey: Guid(8ff7c52c25febe5439ca5453843e98f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_02.FBX using Guid(8ff7c52c25febe5439ca5453843e98f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f523fcf33fbab078495a14f7cf5b33a6') in 0.358012 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.660550 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_05.FBX
-  artifactKey: Guid(f96f7355921bcd84eaed52a57c9835dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_05.FBX using Guid(f96f7355921bcd84eaed52a57c9835dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f789fb048686729b83711cf1e47db2') in 0.299347 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.280093 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_08.FBX
-  artifactKey: Guid(8a9d69cda12a9e043953ffa9987d6c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/small_lava_rock_08.FBX using Guid(8a9d69cda12a9e043953ffa9987d6c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2003aab5b37f0031b1b663408fc3b06') in 0.249655 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.559452 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_07.FBX
-  artifactKey: Guid(2b7454b3a32908a47ae85107d5268094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_07.FBX using Guid(2b7454b3a32908a47ae85107d5268094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676aa67ec16680252168f46b04f1a9c5') in 0.259558 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.241472 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_05.FBX
-  artifactKey: Guid(6cb4c933a1332944899b3c63e6e1384d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/medium_lava_rock_05.FBX using Guid(6cb4c933a1332944899b3c63e6e1384d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5441e55d698b751c0cb3dbad37bb9713') in 0.354129 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.296072 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_01.FBX
-  artifactKey: Guid(696ac210fd1c2194ebc1e3020cb3c3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_01.FBX using Guid(696ac210fd1c2194ebc1e3020cb3c3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e53fe2b69b99a7b205b83a11cb5e2a1') in 0.333978 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.772112 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_04.FBX
-  artifactKey: Guid(ebcda205cf29c234791c85edad57e15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_04.FBX using Guid(ebcda205cf29c234791c85edad57e15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32d99e38112cbaebd384b26863d2ff0') in 0.377492 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.204899 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_03.FBX
-  artifactKey: Guid(0e358a09a0fd3ea4895135e441d4e305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/big_lava_rock_03.FBX using Guid(0e358a09a0fd3ea4895135e441d4e305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f99fcebe66487ad8575467e3be5257e2') in 0.266512 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.694557 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs
-  artifactKey: Guid(cc6874bd1a6b8d344b5e8000c0312128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs using Guid(cc6874bd1a6b8d344b5e8000c0312128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7883096598fc725866e192ae07543fb') in 0.004770 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.718680 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_A_medium_lava_rock_04.prefab
-  artifactKey: Guid(21f3bb7155c2e394796c282360c3ab46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_A_medium_lava_rock_04.prefab using Guid(21f3bb7155c2e394796c282360c3ab46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf8c124c4b6f91aed2a5ddcf4aca48e') in 0.147310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.284908 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_B_big_lava_rock_02.prefab
-  artifactKey: Guid(d3df0a2a9dfd329448dbc4254f7a89c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_B_big_lava_rock_02.prefab using Guid(d3df0a2a9dfd329448dbc4254f7a89c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660361eb7a683eb68753001f65d4ddd8') in 0.126396 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.483344 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_B_small_lava_rock_04.prefab
-  artifactKey: Guid(3a11c9abd91c5da4aa6759b66a85b20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_B_small_lava_rock_04.prefab using Guid(3a11c9abd91c5da4aa6759b66a85b20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1a081f8e5d13a0fbd7caf789dd8a95') in 0.128651 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.040812 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_A_small_lava_rock_01.prefab
-  artifactKey: Guid(5c708f14843826e49bf8a9324f8c5203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_A_small_lava_rock_01.prefab using Guid(5c708f14843826e49bf8a9324f8c5203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb85bbbd7f99dbee7bd57ce9c1b8a271') in 0.125284 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.294334 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_A_big_lava_rock_02.prefab
-  artifactKey: Guid(52b5a9a2da027f9479704f13a6340fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Rocks/Standard prefabs/prefab_A_big_lava_rock_02.prefab using Guid(52b5a9a2da027f9479704f13a6340fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012b1ba6a10a68cae1fd877c25fdfc3c') in 0.128570 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 161.157710 seconds.
-  path: Assets/Shaders/Water/OceanWater.shadergraph
-  artifactKey: Guid(bd92e7b75d4c21d4ab293daac424fea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/Water/OceanWater.shadergraph using Guid(bd92e7b75d4c21d4ab293daac424fea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bed8016508ee0af75dee140495d3e4a') in 0.008363 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1146.170296 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/ParticlesLight_2.prefab
-  artifactKey: Guid(81262712db08dc84baad195e5ad2d3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/ParticlesLight_2.prefab using Guid(81262712db08dc84baad195e5ad2d3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd0817cf0b144ac1c91a616a5742c77') in 0.027862 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 105.889749 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/Lava Heated Smoke.mat
-  artifactKey: Guid(636c2e516a7f61d41b9a9bf7079f6af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/Lava Heated Smoke.mat using Guid(636c2e516a7f61d41b9a9bf7079f6af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e9537dd1cdfd0087c8b731702e7c16') in 0.098150 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.894557 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/SmokeWater.mat
-  artifactKey: Guid(e4c1833f7aa6f784da880d9a13bead84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/SmokeWater.mat using Guid(e4c1833f7aa6f784da880d9a13bead84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0842cb9eb929f0aa1d38e2a2d9c2766') in 0.072532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 42.078997 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/SmokeDarkParticle.mat
-  artifactKey: Guid(698a8134f4ebbbd4e848648685f68067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/SmokeDarkParticle.mat using Guid(698a8134f4ebbbd4e848648685f68067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18b0f1f41dc19accc61f90f7b326a71') in 0.090454 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.896834 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/EmbersParticle.mat
-  artifactKey: Guid(776677ab3818fb249adaca05f4e04545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/EmbersParticle.mat using Guid(776677ab3818fb249adaca05f4e04545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c53807f3c35b8c601c330d7f92ef225') in 0.039283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.817732 seconds.
-  path: Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/Vulcano Smoke.mat
-  artifactKey: Guid(fde44d9fc5af87b45a4b312852d58e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported/NatureManufacture Assets/L.V.E- Lava and Volcano Environment/Particles/Materials/Vulcano Smoke.mat using Guid(fde44d9fc5af87b45a4b312852d58e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12698806fc08efbe67c8079d85ad1ac0') in 0.085537 seconds 
+  Time since last request: 3.878679 seconds.
+  path: Assets/Particles/Sparks/Sparks.vfx
+  artifactKey: Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/Sparks/Sparks.vfx using Guid(d33a79cd93fb21b44a2b6fa9c3fa90b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bceef292bd023208604038f337df3356') in 0.024615 seconds 

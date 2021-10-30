@@ -6,6 +6,7 @@ TagManager:
   tags:
   - lb_bird
   - AudioController
+  - Killer
   layers:
   - Default
   - TransparentFX
