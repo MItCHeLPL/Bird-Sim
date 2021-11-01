@@ -164,9 +164,16 @@ public class RockThrower : MonoBehaviour
 	{
         Vector3 targetPosition = new Vector3(targetPos.x, targetY, targetPos.y);
 
-        //Instantiate(rockPrefab, transform.position, Quaternion.identity, rocksContainer.transform); //temp, remove comment after bezier curve is working
+        RockController rock = null;
 
-        Instantiate(rockPrefab, targetPosition, Quaternion.identity, rocksContainer.transform); //temp, instantiating at final position
+        //rock = Instantiate(rockPrefab, transform.position, Quaternion.identity, rocksContainer.transform); //temp, remove comment after bezier curve is working
+        rock = Instantiate(rockPrefab, targetPosition, Quaternion.identity, rocksContainer.transform).GetComponent<RockController>(); //temp, instantiating at final position
+
+        rock.targetPosition = targetPosition;
+        rock.timeToReachPosition = timeToReachPosition;
+        //rock.curve = curve //todo, add bezier curve solution
+
+        rock.Throw();
 
         //todo, add custom script to rock prefab, start coroutine on start, lerp over bezier curve, stop coroutine on colsiion with terrain, water or player, end level on collision with player, play sound particles, disable collision, etc. on collision with terrain or water. Try to instantiate with arguments of bezier curve and rockSpeed
     }

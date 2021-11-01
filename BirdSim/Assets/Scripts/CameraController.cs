@@ -72,7 +72,7 @@ public class CameraController : MonoBehaviour
 	{
 		if (PlayerPrefs.HasKey("Options_CamInvertY"))
 		{
-			invertCamY = PlayerPrefs.GetInt(("Options_CamInvertY")) == 1 ? false : true; //Get player Y axis inversion setting
+			invertCamY = PlayerPrefs.GetInt(("Options_CamInvertY")) != 1; //Get player Y axis inversion setting
 		}
 
 		vcam.m_YAxis.m_InvertInput = invertCamY; //Apply Y axis inversion setting

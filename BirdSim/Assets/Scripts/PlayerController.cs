@@ -217,7 +217,7 @@ public class PlayerController : MonoBehaviour
 
 			//Change speed
 			RiseDynamicMaxSpeed(stunSpeed, 0);
-			Invoke("ReduceDynamicMaxSpeed", timeToReduceStun);
+			Invoke(nameof(ReduceDynamicMaxSpeed), timeToReduceStun);
 
 			//Emit particles
 			StartCoroutine(EmitFeathers(particleCount));
