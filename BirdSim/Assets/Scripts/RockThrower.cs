@@ -6,7 +6,7 @@ public class RockThrower : MonoBehaviour
 {
     private int throwCount = 1;
 
-    [SerializeField] private float rockSpeed = 25.0f;
+    [SerializeField] private float timeForRockToReachTarget = 3.0f;
     [SerializeField] private float coolDownBetweenThrows = 5.0f;
     [SerializeField] private int throwInFrontOfPlayerEveryXThrows = 3;
 
@@ -27,6 +27,10 @@ public class RockThrower : MonoBehaviour
     private GameObject rocksContainer = null;
     [SerializeField] private GameObject predictionPath = null;
     [SerializeField] private GameObject rockPrefab = null;
+
+    [SerializeField] private List<Transform> curve = new(4);
+
+    [SerializeField] private LayerMask collisionLayers;
 
     [SerializeField] private bool showDebug = true;
 
@@ -92,9 +96,10 @@ public class RockThrower : MonoBehaviour
             {
                 targetImpactPosition = new Vector2(playerPosition.x + playerVelocity.x, playerPosition.z + playerVelocity.z);
 
-                timeToReachPosition = new Vector3(playerVelocity.x, playerPosition.y - targetY, playerVelocity.z).magnitude; //temp, Improve timing when bezier curve is implemented
+                //timeToReachPosition = timeForRockToReachTarget / new Vector3(playerVelocity.x, playerPosition.y - targetY, playerVelocity.z).magnitude; //todo, Improve timing when bezier curve is fully implemented
+                timeToReachPosition = timeForRockToReachTarget; //temp
 
-                if(showDebug)
+                if (showDebug)
                 {
                     Debug.Log("Throwing rock in front of a player, local position: " + transform.InverseTransformPoint(new Vector3(targetImpactPosition.x, targetY, targetImpactPosition.y)));
                 }
@@ -116,7 +121,7 @@ public class RockThrower : MonoBehaviour
                     targetImpactPosition.y += targetImpactPosition.y > 0 ? boundsInnerMargin.y : -boundsInnerMargin.y;
                 }
 
-                timeToReachPosition = rockSpeed;
+                timeToReachPosition = timeForRockToReachTarget;
 
                 if(showDebug)
                 {
@@ -145,18 +150,18 @@ public class RockThrower : MonoBehaviour
 
         Transform point = null;
 
-        for(int i=1; i < predictionPath.transform.childCount; i++)
+        for(int i=1; i < curve.Count; i++)
 		{
-            point = predictionPath.transform.GetChild(i);
+            point = curve[i];
 
-            if(i == predictionPath.transform.childCount-1)
+            if(i == curve.Count - 1)
 			{
                 point.transform.position = targetPosition;
             }
             else
 			{
-                //temp, add bezier curve
-			}
+                //todo, procedurally based on pos4 modify bezier's curve middle points (try rotate around pos0)
+            }
         }
     }
 
@@ -166,15 +171,14 @@ public class RockThrower : MonoBehaviour
 
         RockController rock = null;
 
-        //rock = Instantiate(rockPrefab, transform.position, Quaternion.identity, rocksContainer.transform); //temp, remove comment after bezier curve is working
-        rock = Instantiate(rockPrefab, targetPosition, Quaternion.identity, rocksContainer.transform).GetComponent<RockController>(); //temp, instantiating at final position
+        rock = Instantiate(rockPrefab, transform.position, Quaternion.identity, rocksContainer.transform).GetComponent<RockController>();
 
+        rock.curve = curve;
         rock.targetPosition = targetPosition;
         rock.timeToReachPosition = timeToReachPosition;
-        //rock.curve = curve //todo, add bezier curve solution
+        rock.collisionLayers = collisionLayers;
+        rock.showDebug = showDebug;
 
         rock.Throw();
-
-        //todo, add custom script to rock prefab, start coroutine on start, lerp over bezier curve, stop coroutine on colsiion with terrain, water or player, end level on collision with player, play sound particles, disable collision, etc. on collision with terrain or water. Try to instantiate with arguments of bezier curve and rockSpeed
     }
 }
