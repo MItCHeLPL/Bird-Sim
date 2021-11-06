@@ -1,23 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class RockThrower : MonoBehaviour
 {
     private int throwCount = 1;
 
+    [Header("Settings")]
     [SerializeField] private float timeForRockToReachTarget = 3.0f;
-    [SerializeField] private float coolDownBetweenThrows = 5.0f;
-    [SerializeField] private int throwInFrontOfPlayerEveryXThrows = 3;
+    [SerializeField] private float coolDownBetweenThrows = 15.0f;
+    [SerializeField] private int throwInFrontOfPlayerEveryXThrows = 1;
 
+    [SerializeField] private float targetY = 0;
+    [SerializeField] private float curveOffset = -90.0f;
+
+    [SerializeField] private float distanceFromPlayerOffset = 40.0f;
+
+    [SerializeField] private float pathTimeBeforeThrow = 3.0f;
+
+    [Header("Bounds")]
     [SerializeField] private Vector2 boundsCenter = Vector3.zero;
     [SerializeField] private Vector2 boundsSize = Vector3.zero;
-    [SerializeField] private Vector2 boundsInnerMargin = Vector3.zero;
+    [SerializeField] private Vector2 boundsInnerMarginCenter = Vector3.zero;
+    [SerializeField] private Vector2 boundsInnerMarginSize = Vector3.zero;
 
     private Vector2 targetImpactPosition = Vector3.zero;
 
-    [SerializeField] private float targetY = 0;
-
+    [Header("Game Objects")]
     [SerializeField] private GameObject player = null;
     private Rigidbody playerRB = null;
     private Vector3 playerVelocity = Vector3.zero;
@@ -25,18 +35,31 @@ public class RockThrower : MonoBehaviour
     private bool playerInBounds;
 
     private GameObject rocksContainer = null;
+
+    [SerializeField] private AudioController audioController = null;
+
     [SerializeField] private GameObject predictionPath = null;
+    private VisualEffect predictionPathParticles = null;
+
     [SerializeField] private GameObject rockPrefab = null;
 
     [SerializeField] private List<Transform> curve = new(4);
 
+    [SerializeField] private VisualEffect volcanoSparks = null;
+
+    [SerializeField] private string explosionAudioName = "";
+
+    [Header("Layers")]
     [SerializeField] private LayerMask collisionLayers;
 
+    [Header("Debug")]
     [SerializeField] private bool showDebug = true;
 
     void Start()
     {
         playerRB = player.GetComponent<Rigidbody>();
+
+        predictionPathParticles = predictionPath.GetComponent<VisualEffect>();
 
         //Create Rocks Container as a child
         rocksContainer = new GameObject("Rocks Container");
@@ -60,7 +83,7 @@ public class RockThrower : MonoBehaviour
 
             //Inner margin
             Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(new Vector3(boundsCenter.x, targetY + (sizeY / 2), boundsCenter.y), new Vector3(boundsInnerMargin.x, sizeY, boundsInnerMargin.y));
+            Gizmos.DrawWireCube(new Vector3(boundsInnerMarginCenter.x, targetY + (sizeY / 2), boundsInnerMarginCenter.y), new Vector3(boundsInnerMarginSize.x, sizeY, boundsInnerMarginSize.y));
         }
     }
 
@@ -82,7 +105,6 @@ public class RockThrower : MonoBehaviour
 		{
             playerInBounds = false;
         }
-
     }
 
     private IEnumerator ThrowerCoroutine()
@@ -94,10 +116,13 @@ public class RockThrower : MonoBehaviour
             //Throw rock in front of the player
             if (throwCount % throwInFrontOfPlayerEveryXThrows == 0 && playerInBounds)
             {
-                targetImpactPosition = new Vector2(playerPosition.x + playerVelocity.x, playerPosition.z + playerVelocity.z);
+                //player position + player velocity + distance offset * player angle to align impact timing
+                targetImpactPosition = new Vector2(
+                    playerPosition.x + playerVelocity.x + ((playerVelocity.x > 0 ? distanceFromPlayerOffset : -distanceFromPlayerOffset) * (1 - Mathf.Abs(player.transform.forward.y))), 
+                    playerPosition.z + playerVelocity.z + ((playerVelocity.z > 0 ? distanceFromPlayerOffset : -distanceFromPlayerOffset) * (1 - Mathf.Abs(player.transform.forward.y)))
+                    );
 
-                //timeToReachPosition = timeForRockToReachTarget / new Vector3(playerVelocity.x, playerPosition.y - targetY, playerVelocity.z).magnitude; //todo, Improve timing when bezier curve is fully implemented
-                timeToReachPosition = timeForRockToReachTarget; //temp
+                timeToReachPosition = timeForRockToReachTarget;
 
                 if (showDebug)
                 {
@@ -112,13 +137,13 @@ public class RockThrower : MonoBehaviour
                     );
 
                 //Ensure that rock doesn't fall near spawn positon
-                if(Mathf.Abs(targetImpactPosition.x) < boundsInnerMargin.x)
+                if(Mathf.Abs(targetImpactPosition.x) < (boundsInnerMarginSize.x/2) + boundsInnerMarginCenter.x)
 				{
-                    targetImpactPosition.x += targetImpactPosition.x > 0 ? boundsInnerMargin.x : -boundsInnerMargin.x;
+                    targetImpactPosition.x += targetImpactPosition.x > 0 ? boundsInnerMarginSize.x : -boundsInnerMarginSize.x;
                 }
-                if (Mathf.Abs(targetImpactPosition.y) < boundsInnerMargin.y)
+                if (Mathf.Abs(targetImpactPosition.y) < (boundsInnerMarginSize.y/2) + boundsInnerMarginCenter.y)
 				{
-                    targetImpactPosition.y += targetImpactPosition.y > 0 ? boundsInnerMargin.y : -boundsInnerMargin.y;
+                    targetImpactPosition.y += targetImpactPosition.y > 0 ? boundsInnerMarginSize.y : -boundsInnerMarginSize.y;
                 }
 
                 timeToReachPosition = timeForRockToReachTarget;
@@ -130,6 +155,10 @@ public class RockThrower : MonoBehaviour
             }
 
             SetUpPredictionPath(targetImpactPosition);
+
+            predictionPathParticles.SendEvent("StartEmit");
+
+            yield return new WaitForSeconds(pathTimeBeforeThrow);
 
             ThrowRock(targetImpactPosition, timeToReachPosition);
 
@@ -148,21 +177,18 @@ public class RockThrower : MonoBehaviour
     {
         Vector3 targetPosition = new Vector3(targetPos.x, targetY, targetPos.y);
 
-        Transform point = null;
+        Transform parent = curve[0].transform.parent; //Rotate parent that holds all curve points
 
-        for(int i=1; i < curve.Count; i++)
-		{
-            point = curve[i];
 
-            if(i == curve.Count - 1)
-			{
-                point.transform.position = targetPosition;
-            }
-            else
-			{
-                //todo, procedurally based on pos4 modify bezier's curve middle points (try rotate around pos0)
-            }
-        }
+        //Rotate curve around volcano to face target position
+        Vector3 direction = targetPosition - transform.position;
+        direction.y = 0; //rotate only on Y axis
+
+        parent.transform.rotation = Quaternion.LookRotation(direction);
+        parent.transform.Rotate(new Vector3(0, curveOffset, 0)); //offset to make rock fly naturally
+
+
+        curve[curve.Count - 1].transform.position = targetPosition; //set end point to target posiiton
     }
 
     private void ThrowRock(Vector2 targetPos, float timeToReachPosition)
@@ -171,13 +197,20 @@ public class RockThrower : MonoBehaviour
 
         RockController rock = null;
 
+        //Instantiate rock and assign values
         rock = Instantiate(rockPrefab, transform.position, Quaternion.identity, rocksContainer.transform).GetComponent<RockController>();
 
         rock.curve = curve;
         rock.targetPosition = targetPosition;
         rock.timeToReachPosition = timeToReachPosition;
+        rock.predictionPathParticles = predictionPathParticles;
         rock.collisionLayers = collisionLayers;
         rock.showDebug = showDebug;
+        rock.audioVolume = audioController.globalVolume;
+
+        volcanoSparks.SendEvent("Emit");
+
+        audioController.Play(explosionAudioName);
 
         rock.Throw();
     }

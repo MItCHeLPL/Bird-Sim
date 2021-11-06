@@ -1,28 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class RockController : MonoBehaviour
 {
     [SerializeField] private float yOffsetOnCollision = 10.0f;
 
+    [SerializeField] private VisualEffect impactSparksParticles = null;
+    [HideInInspector] public VisualEffect predictionPathParticles = null;
+
     [HideInInspector] public Vector3 targetPosition = Vector3.zero;
+
     [HideInInspector] public float timeToReachPosition = 5;
 
     [HideInInspector] public List<Transform> curve = new(4);
 
     [HideInInspector] public bool rockInAir = false;
-    private Coroutine rockInAirCoroutine = null;
 
-    [HideInInspector] public bool showDebug = false;
+    private Coroutine rockInAirCoroutine = null;
 
     [HideInInspector] public LayerMask collisionLayers;
 
-    public void Throw()
+    private AudioSource audioSource;
+    [HideInInspector] public float audioVolume;
+
+    [HideInInspector] public bool showDebug = false;
+
+    private void Start()
+	{
+        audioSource = GetComponent<AudioSource>();
+    }
+
+	public void Throw()
 	{
         rockInAirCoroutine = StartCoroutine(RockInAir());
-
-        //todo, emit sparks particles and sound on vulcano
 	}
 
 	private void OnCollisionEnter(Collision collision)
@@ -85,14 +97,19 @@ public class RockController : MonoBehaviour
 
     private void EnvironmentImpact()
     {
-        //todo, Play collision particles, sound, disable path etc.
-
         rockInAir = false;
 
         GetComponent<Rigidbody>().isKinematic = true;
 
-        transform.position = new Vector3(transform.position.x, transform.position.y - yOffsetOnCollision, transform.position.z);
+        transform.position = new Vector3(transform.position.x, transform.position.y - yOffsetOnCollision, transform.position.z); //Sink rock into ground
 
+        predictionPathParticles.SendEvent("StopEmit");
+
+        impactSparksParticles.SendEvent("Emit");
+
+        audioSource.volume *= audioVolume;
+        audioSource.Play(0);
+        
         if (showDebug)
         {
             Debug.Log("Rock collided with environment");

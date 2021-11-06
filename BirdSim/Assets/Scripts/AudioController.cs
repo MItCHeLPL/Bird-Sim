@@ -35,8 +35,8 @@ public class Sound
 
 public class AudioController : MonoBehaviour
 {
-	private float globalVolume = 0.5f;
-	private float musicVolume = 0.5f;
+	[HideInInspector] public float globalVolume = 0.5f;
+	[HideInInspector] public float musicVolume = 0.5f;
 
 	[SerializeField] private List<Sound> sounds;
 
