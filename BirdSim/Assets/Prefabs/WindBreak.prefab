@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 588510624}
   - component: {fileID: 588510623}
   - component: {fileID: 624529266}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WindBreakParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 2425113782564504595}
   - component: {fileID: 2425113782564504592}
   - component: {fileID: 2425113782564504597}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WindBreak
   m_TagString: Untagged
   m_Icon: {fileID: 0}

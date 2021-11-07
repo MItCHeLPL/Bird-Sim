@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1961923522}
   - component: {fileID: 1961923521}
   - component: {fileID: 826290885}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WindBoostParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 6067792433118663167}
   - component: {fileID: 6067792433118663164}
   - component: {fileID: 6067792433118663161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WindBoost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
