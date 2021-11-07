@@ -574,6 +574,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   audioVolume: 0
+  levelManager: {fileID: 0}
   showDebug: 0
 --- !u!54 &200286266
 Rigidbody:
@@ -818,7 +819,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 971efaf64130f6143a9fe24a766fe30f, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400000, guid: 5f36b57d675b1444cb2203b7a6cac6cb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f36b57d675b1444cb2203b7a6cac6cb, type: 3}
 --- !u!4 &8673840897093005030 stripped
 Transform:

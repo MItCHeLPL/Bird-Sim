@@ -32,9 +32,12 @@ public class RockThrower : MonoBehaviour
     private Rigidbody playerRB = null;
     private Vector3 playerVelocity = Vector3.zero;
     private Vector3 playerPosition = Vector3.zero;
+    private PlayerController playerController = null;
     private bool playerInBounds;
 
     private GameObject rocksContainer = null;
+
+    [SerializeField] private LevelManager levelManager = null;
 
     [SerializeField] private AudioController audioController = null;
 
@@ -60,6 +63,8 @@ public class RockThrower : MonoBehaviour
         playerRB = player.GetComponent<Rigidbody>();
 
         predictionPathParticles = predictionPath.GetComponent<VisualEffect>();
+
+        playerController = playerRB.gameObject.GetComponent<PlayerController>();
 
         //Create Rocks Container as a child
         rocksContainer = new GameObject("Rocks Container");
@@ -116,11 +121,21 @@ public class RockThrower : MonoBehaviour
             //Throw rock in front of the player
             if (throwCount % throwInFrontOfPlayerEveryXThrows == 0 && playerInBounds)
             {
-                //player position + player velocity + distance offset * player angle to align impact timing
+                //player position + player velocity + distance offset * player speed * player angle to align impact timing
+
+                float xOffsetDistance = 
+                    (playerVelocity.x > 0 ? distanceFromPlayerOffset : -distanceFromPlayerOffset) * 
+                    ExtendedMathf.MapTo01(playerController.speed, playerController.minSpeed, playerController.maxSpeed) * 
+                    (1 - Mathf.Abs(player.transform.forward.y));
+
+                float zOffsetDistance = 
+                    (playerVelocity.z > 0 ? distanceFromPlayerOffset : -distanceFromPlayerOffset) *
+                    ExtendedMathf.MapTo01(playerController.speed, playerController.minSpeed, playerController.maxSpeed) * 
+                    (1 - Mathf.Abs(player.transform.forward.y));
+
                 targetImpactPosition = new Vector2(
-                    playerPosition.x + playerVelocity.x + ((playerVelocity.x > 0 ? distanceFromPlayerOffset : -distanceFromPlayerOffset) * (1 - Mathf.Abs(player.transform.forward.y))), 
-                    playerPosition.z + playerVelocity.z + ((playerVelocity.z > 0 ? distanceFromPlayerOffset : -distanceFromPlayerOffset) * (1 - Mathf.Abs(player.transform.forward.y)))
-                    );
+                    playerPosition.x + playerVelocity.x + xOffsetDistance, 
+                    playerPosition.z + playerVelocity.z + zOffsetDistance);
 
                 timeToReachPosition = timeForRockToReachTarget;
 
@@ -207,6 +222,7 @@ public class RockThrower : MonoBehaviour
         rock.collisionLayers = collisionLayers;
         rock.showDebug = showDebug;
         rock.audioVolume = audioController.globalVolume;
+        rock.levelManager = levelManager;
 
         volcanoSparks.SendEvent("Emit");
 

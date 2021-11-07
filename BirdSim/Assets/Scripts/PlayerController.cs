@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
 	[Header("Speed")]
 	//Speed
 	[HideInInspector] public float speed = 2.0f; //Current player speed
-	[SerializeField] private float minSpeed = 2.0f; //Slowest player speed
-	[SerializeField] private float maxSpeed = 12.0f; //Fastest natural player speed
+	public float minSpeed = 2.0f; //Slowest player speed
+	public float maxSpeed = 12.0f; //Fastest natural player speed
 
 	//Stun on collision
 	[SerializeField] private float timeToReduceStun= 3.0f;
@@ -213,7 +213,7 @@ public class PlayerController : MonoBehaviour
 
 			//Calculate how many particles to emit
 			//int particleCount = Mathf.Clamp((minParticleCountOnStun + ((int)speed - (int)minSpeed) * (maxParticleCountOnStun - minParticleCountOnStun) / ((int)dynamicMaxSpeed - (int)minSpeed)), minParticleCountOnStun, maxParticleCountOnStun);
-			int particleCount = Mathf.Clamp(ExtendedMathf.Map((int)speed, (int)minSpeed, (int)dynamicMaxSpeed, minParticleCountOnStun, maxParticleCountOnStun), minParticleCountOnStun, maxParticleCountOnStun);
+			int particleCount = Mathf.Clamp(ExtendedMathf.Map((int)Mathf.Ceil(speed), (int)minSpeed, (int)dynamicMaxSpeed, minParticleCountOnStun, maxParticleCountOnStun), minParticleCountOnStun, maxParticleCountOnStun);
 
 			//Change speed
 			RiseDynamicMaxSpeed(stunSpeed, 0);

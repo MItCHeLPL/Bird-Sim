@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/City.unity
     guid: a6179746f7c0b2448a09099225e5363a
   - enabled: 1
-    path: Assets/Scenes/Alps.unity
-    guid: 01a36be6826fbdd4f8568bd891f021c7
-  - enabled: 1
     path: Assets/Scenes/Volcano.unity
     guid: b44dac13a3306b54696e3db30fe4bf33
+  - enabled: 0
+    path: Assets/Scenes/Alps.unity
+    guid: 01a36be6826fbdd4f8568bd891f021c7
   m_configObjects: {}

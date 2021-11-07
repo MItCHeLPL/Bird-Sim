@@ -25,6 +25,8 @@ public class RockController : MonoBehaviour
     private AudioSource audioSource;
     [HideInInspector] public float audioVolume;
 
+    [HideInInspector] public LevelManager levelManager = null;
+
     [HideInInspector] public bool showDebug = false;
 
     private void Start()
@@ -87,9 +89,9 @@ public class RockController : MonoBehaviour
 
     private void PlayerImpact()
 	{
-        //todo, End level
+        levelManager.Die();
 
-        if(showDebug)
+        if (showDebug)
 		{
             Debug.Log("Rock collided with Player");
 		}

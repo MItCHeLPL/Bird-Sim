@@ -23,6 +23,7 @@ public class LevelManager : MonoBehaviour
 	[SerializeField] private UnityEvent OnPause;
 	[SerializeField] private UnityEvent OnResume;
 	[SerializeField] private UnityEvent OnFinished;
+	[SerializeField] private UnityEvent OnDied;
 	[SerializeField] private UnityEvent OnPersonalBest;
 
 	private void Start()
@@ -104,7 +105,7 @@ public class LevelManager : MonoBehaviour
 		//Finish level if used all checkpoint
         if(checkpoints.Count == 0)
 		{
-            FinishLevel();
+            FinishLevel(false);
         }
 	}
 
@@ -138,7 +139,12 @@ public class LevelManager : MonoBehaviour
 		isPaused = false; //State
 	}
 
-	private void FinishLevel()
+	public void Die()
+	{
+		FinishLevel(true);
+	}
+
+	private void FinishLevel(bool died)
 	{
 		finished = true; //State
 
@@ -152,13 +158,21 @@ public class LevelManager : MonoBehaviour
 
 		OnFinished.Invoke(); //UnityEvent
 
-		SavePB(); //Save player's PB if achieved
-
-		if(SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings) //If there is next level
+		if(died)
 		{
-			PlayerPrefs.SetInt(("LevelLockedStatus_" + (SceneManager.GetActiveScene().buildIndex + 1)), 0); //Unlock new level
+			OnDied.Invoke();
+		}
 
-			PlayerPrefs.Save();
+		if(!died)
+		{
+			SavePB(); //Save player's PB if achieved
+
+			if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings) //If there is next level
+			{
+				PlayerPrefs.SetInt(("LevelLockedStatus_" + (SceneManager.GetActiveScene().buildIndex + 1)), 0); //Unlock new level
+
+				PlayerPrefs.Save();
+			}
 		}
 
 		//Debug.Log("Finished level, time: " + timer);

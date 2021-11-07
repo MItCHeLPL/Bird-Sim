@@ -3263,11 +3263,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CollideAgainst:
     serializedVersion: 2
-    m_Bits: 519
+    m_Bits: 1543
   m_IgnoreTag: Player
   m_TransparentLayers:
     serializedVersion: 2
-    m_Bits: 434
+    m_Bits: 418
   m_MinimumDistanceFromTarget: 0.25
   m_AvoidObstacles: 1
   m_DistanceLimit: 0
