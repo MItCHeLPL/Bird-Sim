@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PoolWater
-  m_Shader: {fileID: -6465566751694194690, guid: 0beee1aa4619f924e884e4a9eacddda8, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: bd92e7b75d4c21d4ab293daac424fea8, type: 3}
   m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT _REFRACTION_PLANE
     _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
@@ -137,13 +137,21 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Vector1_05f2c1737d61471eb0e07b8d8698244b: 0
     - Vector1_37e0df4966bc4bd0a06230b4090c7a00: 0
     - Vector1_3a0049a1665747199a8a4454942893ef: 1.5
     - Vector1_3f5a052b5cb146daa91acfa4c7e2313d: 3
     - Vector1_4a3b6c0326c249afbdb62e9b34ac9068: 0.01
+    - Vector1_65a69cc299af4323a8bed21f7d12cbc9: 1250
     - Vector1_77d0724ef4984078bf7eac678028567f: 0
-    - Vector1_93c92b8e84d645debd4af9ec54da7b49: 9992.1
-    - Vector1_be6284abd64a4907ba0694fb4a9551d4: 0.35
+    - Vector1_8d901da9f75e43daba6bfc60470dfbf3: 10
+    - Vector1_93145c5ec31c4b89b954070cd9bd1ce6: 0
+    - Vector1_93c92b8e84d645debd4af9ec54da7b49: 10000
+    - Vector1_a0986b66e698409bbcd277d58271ef85: 1
+    - Vector1_a835b27c13ec4b978d356d4f0b21a149: 0
+    - Vector1_be076292afaf4c1ebe923f1376ed483f: 1
+    - Vector1_be6284abd64a4907ba0694fb4a9551d4: 1
+    - Vector1_d4273c5ba38743c48fa9847cc833676b: 0.45
     - Vector1_d605f388760947ec9d0e377b9e0f5938: 2
     - _AORemapMax: 1
     - _AORemapMin: 0
@@ -276,11 +284,12 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - Color_8d098089990344a285a2f18988387c32: {r: 0, g: 0.045277234, b: 0.045277234, a: 0}
+    - Color_8d098089990344a285a2f18988387c32: {r: 0, g: 0.039067756, b: 0.4528302, a: 0}
     - Color_a2c7f2b28db34320a218ccf001f9c164: {r: 1, g: 1, b: 1, a: 0}
     - Color_fbc4791516ed4e8db84d5b2778048052: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 0}
     - Vector2_60186597e5c540a8910922f499eef340: {r: 0, g: 0, b: 0, a: 0}
-    - Vector2_9a2b5b207a0c4fbea06a3b1680a45900: {r: 0.001, g: 0.001, b: 0, a: 0}
+    - Vector2_9a2b5b207a0c4fbea06a3b1680a45900: {r: 0.0001, g: 0.0001, b: 0, a: 0}
+    - Vector2_e62f9f7c67b8447ebec99327b885c4a4: {r: 10, g: 10, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
