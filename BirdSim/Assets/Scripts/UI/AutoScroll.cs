@@ -18,8 +18,6 @@ public class AutoScroll : MonoBehaviour
 
 	private void Update()
 	{
-        Debug.Log(isControllerInput()  + " " + isMouseInput());
-
         if (isControllerInput())
         {
             if (lastSelection != EventSystem.current.currentSelectedGameObject) //If changed selection
