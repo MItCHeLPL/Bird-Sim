@@ -18,10 +18,15 @@ public class AutoScroll : MonoBehaviour
 
 	private void Update()
 	{
-        if(lastSelection != EventSystem.current.currentSelectedGameObject) //If changed selection
-		{
-            OnSelectionChange(); //changed selection
-            lastSelection = EventSystem.current.currentSelectedGameObject; //save new selection
+        Debug.Log(isControllerInput()  + " " + isMouseInput());
+
+        if (isControllerInput())
+        {
+            if (lastSelection != EventSystem.current.currentSelectedGameObject) //If changed selection
+            {
+                OnSelectionChange(); //changed selection
+                lastSelection = EventSystem.current.currentSelectedGameObject; //save new selection
+            }
         }
     }
 
@@ -90,5 +95,60 @@ public class AutoScroll : MonoBehaviour
                 }
             }
         }
+    }
+
+    private bool isMouseInput()
+    {
+        // mouse buttons and mouse movement
+        if (Input.anyKey ||
+            Input.GetMouseButton(0) ||
+            Input.GetMouseButton(1) ||
+            Input.GetMouseButton(2) ||
+            Input.GetAxis("Mouse ScrollWheel") != 0.0f ||
+            Input.GetAxis("Mouse X") != 0.0f ||
+            Input.GetAxis("Mouse Y") != 0.0f)
+        {
+            //Show cursor
+            Cursor.visible = true;
+
+            return true;
+        }
+        return false;
+    }
+
+    private bool isControllerInput()
+    {
+        // joystick buttons
+        // check if we're not using a key for the axis' at the end 
+        if (Input.GetKey(KeyCode.JoystickButton0) ||
+           Input.GetKey(KeyCode.JoystickButton1) ||
+           Input.GetKey(KeyCode.JoystickButton2) ||
+           Input.GetKey(KeyCode.JoystickButton3) ||
+           Input.GetKey(KeyCode.JoystickButton4) ||
+           Input.GetKey(KeyCode.JoystickButton5) ||
+           Input.GetKey(KeyCode.JoystickButton6) ||
+           Input.GetKey(KeyCode.JoystickButton7) ||
+           Input.GetKey(KeyCode.JoystickButton8) ||
+           Input.GetKey(KeyCode.JoystickButton9) ||
+           Input.GetKey(KeyCode.JoystickButton10) ||
+           Input.GetKey(KeyCode.JoystickButton11) ||
+           Input.GetKey(KeyCode.JoystickButton12) ||
+           Input.GetKey(KeyCode.JoystickButton13) ||
+           Input.GetKey(KeyCode.JoystickButton14) ||
+           Input.GetKey(KeyCode.JoystickButton15) ||
+           Input.GetKey(KeyCode.JoystickButton16) ||
+           Input.GetKey(KeyCode.JoystickButton17) ||
+           Input.GetKey(KeyCode.JoystickButton18) ||
+           Input.GetKey(KeyCode.JoystickButton19) ||
+           Input.GetAxis("Horizontal") != 0.0f ||
+           Input.GetAxis("Vertical") != 0.0f)
+        {
+            //Hide cursor
+            Cursor.visible = false;
+
+            return true;
+        }
+
+        return false;
     }
 }
