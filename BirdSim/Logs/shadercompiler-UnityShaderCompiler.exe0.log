@@ -1,11 +1,29 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
-Cmd: compileSnippet
-  insize=1537 file=Assets/DefaultResourcesExtra/GIDebug/Hidden/GIDebug/UV1sAsPositions pass=<Unnamed Pass> cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 rsLen=0 pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW= dKW=UNITY_NO_DXT5nm UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 UNITY_UNIFIED_SHADER_PRECISION_MODEL flags=0 lang=0 type=Vertex platform=d3d11 reqs=33 mask=6 start=13 ok=1 outsize=878
+Cmd: compileComputeKernel
+  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=InBucketSum cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
+ ok=0 outsize=0
 
-Cmd: compileSnippet
-  insize=1537 file=Assets/DefaultResourcesExtra/GIDebug/Hidden/GIDebug/UV1sAsPositions pass=<Unnamed Pass> cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 rsLen=0 pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW= dKW=UNITY_NO_DXT5nm UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30 UNITY_UNIFIED_SHADER_PRECISION_MODEL flags=0 lang=0 type=Fragment platform=d3d11 reqs=33 mask=6 start=13 ok=1 outsize=294
+Cmd: compileComputeKernel
+  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=DistanceTransform cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=RayMapScanX cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=SignPass6Rays cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=ToBlockSumBuffer cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
+ ok=0 outsize=0
+
+Cmd: compileComputeKernel
+  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=ConservativeRasterization cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
+ ok=0 outsize=0
 
 Cmd: compileComputeKernel
   insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=InBucketSum cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
@@ -16,19 +34,7 @@ Cmd: compileComputeKernel
  ok=0 outsize=0
 
 Cmd: compileComputeKernel
-  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=JFA cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
- ok=0 outsize=0
-
-Cmd: compileComputeKernel
   insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=DistanceTransform cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
- ok=0 outsize=0
-
-Cmd: compileComputeKernel
-  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=CopyBuffers cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
- ok=0 outsize=0
-
-Cmd: compileComputeKernel
-  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=GenerateRayMapLocal cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
  ok=0 outsize=0
 
 Cmd: compileComputeKernel
@@ -36,15 +42,7 @@ Cmd: compileComputeKernel
  ok=0 outsize=0
 
 Cmd: compileComputeKernel
-  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=RayMapScanY cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
- ok=0 outsize=0
-
-Cmd: compileComputeKernel
-  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=RayMapScanZ cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
- ok=0 outsize=0
-
-Cmd: compileComputeKernel
-  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=SignPassNeighbors cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
+  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=SignPass6Rays cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
  ok=0 outsize=0
 
 Cmd: compileComputeKernel
@@ -52,11 +50,7 @@ Cmd: compileComputeKernel
  ok=0 outsize=0
 
 Cmd: compileComputeKernel
-  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=GenerateTrianglesUV cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
- ok=0 outsize=0
-
-Cmd: compileComputeKernel
-  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=ChooseDirectionTriangleOnly cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
+  insize=20439 file=C:/build/output/Unity-Technologies/Graphics/com.unity.template-hd/Library/PackageCache/com.unity.visualeffectgraph@12.0.0/Shaders/SDFBaker/GenSdfRayMap.compute kernel=ConservativeRasterization cachingPP=1 ppOnly=0 stripLineD=0 buildPlatform=19 km=<UNITY_VERSION=202120> pKW=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR uKW=SHADER_STAGE_COMPUTE platform=d3d11 flags=0 reqs=0 forceDXC=0 forceFXC=0  error: 2 plat 25 at GenSdfRayMap.compute(22): Couldn't open include file 'SdfUtils.hlsl'.
  ok=0 outsize=0
 
 Cmd: shutdown
