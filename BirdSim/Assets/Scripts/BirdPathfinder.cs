@@ -57,7 +57,7 @@ public class BirdPathfinder : MonoBehaviour
 
     private IEnumerator MoveToTarget()
 	{
-        while (Vector3.Distance(targetTransform.position, transform.position) > 0.1f)
+        while (Vector3.Distance(new Vector3(targetTransform.position.x, 0, targetTransform.position.z), new Vector3(transform.position.x, 0, transform.position.z)) > 0.1f)
 		{
             //Move bird's target towards target with speed
             transform.position += direction * speed * Time.deltaTime;
