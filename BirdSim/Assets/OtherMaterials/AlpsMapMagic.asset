@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9bc43e142692db4e92eef81e1903ca4, type: 3}
   m_Name: AlpsMapMagic
   m_EditorClassIdentifier: 
-  changeVersion: 3442
+  changeVersion: 3446
   serializedVersion: 0
   guiShowDependent: 0
   guiShowShared: 0

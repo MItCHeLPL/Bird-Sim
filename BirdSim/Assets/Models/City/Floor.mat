@@ -30,24 +30,33 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2225
-  stringTagMap: {}
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
-  - TransparentDepthPrepass
+  - ForwardEmissiveForDeferred
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
   - MOTIONVECTORS
-  - ForwardEmissiveForDeferred
+  - TransparentDepthPrepass
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_a0f29a8f5df2422ea580f38643c477ca:
+        m_Texture: {fileID: 2800000, guid: e0d862c4fd71b3f479612a378d3a6d1f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_d248fbc474924767b2db5649b9fd0545:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
         m_Texture: {fileID: 2800000, guid: 9575eeb174958fa46bcf52b136e0e2ea, type: 3}
-        m_Scale: {x: 500, y: 500}
+        m_Scale: {x: 400, y: 400}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
         m_Texture: {fileID: 0}
@@ -83,7 +92,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 9575eeb174958fa46bcf52b136e0e2ea, type: 3}
-        m_Scale: {x: 500, y: 500}
+        m_Scale: {x: 400, y: 400}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
         m_Texture: {fileID: 0}
@@ -135,6 +144,21 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Vector1_05f2c1737d61471eb0e07b8d8698244b: 0
+    - Vector1_37e0df4966bc4bd0a06230b4090c7a00: -4
+    - Vector1_3a0049a1665747199a8a4454942893ef: 5
+    - Vector1_3f5a052b5cb146daa91acfa4c7e2313d: 0
+    - Vector1_65a69cc299af4323a8bed21f7d12cbc9: 0
+    - Vector1_77d0724ef4984078bf7eac678028567f: 1
+    - Vector1_8d901da9f75e43daba6bfc60470dfbf3: 0
+    - Vector1_93145c5ec31c4b89b954070cd9bd1ce6: 0
+    - Vector1_93c92b8e84d645debd4af9ec54da7b49: 0
+    - Vector1_a0986b66e698409bbcd277d58271ef85: 0
+    - Vector1_a835b27c13ec4b978d356d4f0b21a149: 0
+    - Vector1_be076292afaf4c1ebe923f1376ed483f: 1
+    - Vector1_be6284abd64a4907ba0694fb4a9551d4: 1.03
+    - Vector1_d4273c5ba38743c48fa9847cc833676b: 0
+    - Vector1_d605f388760947ec9d0e377b9e0f5938: 0
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -152,10 +176,11 @@ Material:
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatMask: 0
+    - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
-    - _DepthOffsetEnable: 0
+    - _DepthOffsetEnable: 1
     - _DetailAlbedoScale: 1
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
@@ -172,7 +197,7 @@ Material:
     - _EmissiveExposureWeight: 1
     - _EmissiveIntensity: 1
     - _EmissiveIntensityUnit: 0
-    - _EnableBlendModePreserveSpecularLighting: 1
+    - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
@@ -186,7 +211,7 @@ Material:
     - _HeightPoMAmplitude: 2
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
-    - _InvTilingScale: 0.002
+    - _InvTilingScale: 0.0025
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
@@ -207,6 +232,8 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
+    - _RenderQueueType: 4
+    - _RequireSplitLighting: 0
     - _Smoothness: 0
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
@@ -216,10 +243,12 @@ Material:
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
     - _StencilRefGBuffer: 10
     - _StencilRefMV: 40
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 14
     - _StencilWriteMaskMV: 40
     - _SubsurfaceMask: 1
@@ -235,7 +264,7 @@ Material:
     - _TransparentDepthPrepassEnable: 0
     - _TransparentSortPriority: 0
     - _TransparentWritingMotionVec: 0
-    - _TransparentZWrite: 0
+    - _TransparentZWrite: 1
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
@@ -246,6 +275,12 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - Color_8d098089990344a285a2f18988387c32: {r: 0.01690992, g: 0.01735302, b: 0.03773582, a: 0}
+    - Color_a2c7f2b28db34320a218ccf001f9c164: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 0}
+    - Color_fbc4791516ed4e8db84d5b2778048052: {r: 296.63928, g: 296.63928, b: 296.63928, a: 0}
+    - Vector2_60186597e5c540a8910922f499eef340: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_9a2b5b207a0c4fbea06a3b1680a45900: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_e62f9f7c67b8447ebec99327b885c4a4: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}

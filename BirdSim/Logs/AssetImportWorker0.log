@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.2/staging' branch; Version is '2021.2.0b7 (f7def5121c60) revision 16244469'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'pl' Physical Memory: 16341 MB
+OS: 'Windows 10 Pro; OS build 19043.1348; Version 2009; 64bit' Language: 'pl' Physical Memory: 16341 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51247
+52624
 Successfully changed project path to: C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
 C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Kreatywne/Unity/BirdSim/Bird-Simulator/BirdSim
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 263.47 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 207.78 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.0b7 (f7def5121c60)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/Resources/UnitySubsystems
@@ -63,53 +63,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.0b7/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013976 seconds.
+Registered in 0.012925 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 225.34 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 217.43 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.643 seconds
+- Completed reload, in  1.570 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1676ms)
-		BeginReloadAssembly (97ms)
+	ReloadAssembly (1605ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (834ms)
-			LoadAssemblies (94ms)
+		EndReloadAssembly (802ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
+			SetupTypeCache (244ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (478ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (436ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (225ms)
+				RefreshPlugins (218ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (166ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016001 seconds.
+Registered in 0.017201 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 218.28 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 230.00 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 [com.unity.burst] Burst is disabled entirely, either from the command line or because this is not the main Unity process
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -123,33 +123,33 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  3.976 seconds
+- Completed reload, in  4.476 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4056ms)
-		BeginReloadAssembly (269ms)
+	ReloadAssembly (4625ms)
+		BeginReloadAssembly (204ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (3657ms)
-			LoadAssemblies (174ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (4217ms)
+			LoadAssemblies (130ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (701ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (105ms)
-			SetupLoadedEditorAssemblies (2532ms)
+			SetupTypeCache (698ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (104ms)
+			SetupLoadedEditorAssemblies (2980ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (218ms)
-				BeforeProcessingInitializeOnLoad (220ms)
-				ProcessInitializeOnLoadAttributes (2011ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				RefreshPlugins (230ms)
+				BeforeProcessingInitializeOnLoad (233ms)
+				ProcessInitializeOnLoadAttributes (2422ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -162,12 +162,12 @@ Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/U
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.76 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.53 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7850 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 312 unused Assets / (24.1 MB). Loaded Objects now: 8268.
-Memory consumption went from 419.7 MB to 395.6 MB.
-Total: 8.357900 ms (FindLiveObjects: 0.587200 ms CreateObjectMapping: 0.637300 ms MarkObjects: 3.662600 ms  DeleteObjects: 3.469500 ms)
+Unloading 7851 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 312 unused Assets / (24.7 MB). Loaded Objects now: 8269.
+Memory consumption went from 419.6 MB to 394.9 MB.
+Total: 9.040100 ms (FindLiveObjects: 0.578000 ms CreateObjectMapping: 0.997300 ms MarkObjects: 4.032700 ms  DeleteObjects: 3.430700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -182,110 +182,26 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 8457.820073 seconds.
-  path: Assets/OtherMaterials/logo1024x1024.png
-  artifactKey: Guid(8a769743441bf554aae340eab40f88a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/OtherMaterials/logo1024x1024.png using Guid(8a769743441bf554aae340eab40f88a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ef46fed2b0027eea8f80ec21238da3') in 0.175161 seconds 
+  Time since last request: 99271.408967 seconds.
+  path: Assets/Scenes/Alps.unity
+  artifactKey: Guid(103401c4ed2f95c499c5a7c1cc3bc755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Alps.unity using Guid(103401c4ed2f95c499c5a7c1cc3bc755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d7acb2fadd75dd3718f1df2205d69d') in 0.016288 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 88.041906 seconds.
-  path: Assets/Images/volcanoss.jpg
-  artifactKey: Guid(5248e27d74a64cf448466c50485ede5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/volcanoss.jpg using Guid(5248e27d74a64cf448466c50485ede5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e05efbad35a30ff66aebb1bdafd675d') in 0.023206 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.457528 seconds.
-  path: Assets/Images/logosq.png
-  artifactKey: Guid(8768c4fe594dc7b49832fc4a2da74908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/logosq.png using Guid(8768c4fe594dc7b49832fc4a2da74908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12598c503e2c93a64b913afa7844944') in 0.718758 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.087470 seconds.
-  path: Assets/Images/logosq.png
-  artifactKey: Guid(8768c4fe594dc7b49832fc4a2da74908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/logosq.png using Guid(8768c4fe594dc7b49832fc4a2da74908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722a77536cb2577e0f70b067971106d5') in 0.195549 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.220084 seconds.
-  path: Assets/Images/logosq.png
-  artifactKey: Guid(8768c4fe594dc7b49832fc4a2da74908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/logosq.png using Guid(8768c4fe594dc7b49832fc4a2da74908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cabb7a12a06f17f9bb904e6f0af6b649') in 0.180286 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.768999 seconds.
-  path: Assets/Images/2021 transparent.png
-  artifactKey: Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/2021 transparent.png using Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98161d712b95563d255500ab53b55fde') in 0.168343 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.496468 seconds.
-  path: Assets/Images/2021 transparent.png
-  artifactKey: Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/2021 transparent.png using Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bab26c6f841e96b1ff8d30a16899755') in 0.156666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.639564 seconds.
-  path: Assets/Images/2021 transparent.png
-  artifactKey: Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/2021 transparent.png using Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcab30629877cec65d6bc4a23a544b0d') in 0.156471 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.067266 seconds.
-  path: Assets/Images/2021 transparent.png
-  artifactKey: Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/2021 transparent.png using Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef77e0e353ea414d0501f285ea59b18') in 0.160873 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.776586 seconds.
-  path: Assets/Images/2021 transparent.png
-  artifactKey: Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/2021 transparent.png using Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9814bbbf299432ed9b99c6920535e1ae') in 0.175830 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.469331 seconds.
-  path: Assets/Images/2021 transparent.png
-  artifactKey: Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/2021 transparent.png using Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5552489d34d4831a05e71e8c222ad04') in 0.154404 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.759421 seconds.
-  path: Assets/Images/2021 transparent.png
-  artifactKey: Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/2021 transparent.png using Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf2936b71f26c8f98f04192c5162555') in 0.156484 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 75.883086 seconds.
-  path: Assets/Images/2021 transparent.png
-  artifactKey: Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/2021 transparent.png using Guid(a5bcbe08c2ccb0f4f97af549dac19936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637247c3766f4fda020cafa747268b9c') in 0.161506 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.090019 seconds.
-  path: Assets/Images/logosq.png
-  artifactKey: Guid(8768c4fe594dc7b49832fc4a2da74908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Images/logosq.png using Guid(8768c4fe594dc7b49832fc4a2da74908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fa9f0f6d5bfddf74f6ae59d2789f3f') in 0.181339 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.307350 seconds.
-  path: Assets/OtherMaterials/logo512x512.png
-  artifactKey: Guid(edc6c5eed97499341ac9847f16f9bbc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/OtherMaterials/logo512x512.png using Guid(edc6c5eed97499341ac9847f16f9bbc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b0ff4d4721ccc10ab01226ef66c560') in 0.035051 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.745817 seconds.
-  path: Assets/OtherMaterials/logo1024x1024.png
-  artifactKey: Guid(8a769743441bf554aae340eab40f88a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/OtherMaterials/logo1024x1024.png using Guid(8a769743441bf554aae340eab40f88a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33067d53c35ad8325d244f44e07f3e96') in 0.087506 seconds 
+  Time since last request: 146.955665 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(92e4e30f2860bc94c9896d337a07ffee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(92e4e30f2860bc94c9896d337a07ffee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0784c19428380e17df2906413139bac7') in 0.003846 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.015527 seconds.
+Registered in 0.020789 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Kreatywne\Unity\BirdSim\Bird-Simulator\BirdSim\Library\PackageCache\com.unity.visualscripting@1.7.3\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.62 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.58 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -308,33 +224,33 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: Library/PackageCache/com.unity.burst@1.6.0-pre.2/Editor/BurstLoader.cs Line: 107)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  3.258 seconds
+- Completed reload, in  3.466 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3333ms)
-		BeginReloadAssembly (257ms)
+	ReloadAssembly (3558ms)
+		BeginReloadAssembly (231ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (81ms)
-		EndReloadAssembly (2919ms)
-			LoadAssemblies (167ms)
+			CreateAndSetChildDomain (85ms)
+		EndReloadAssembly (3202ms)
+			LoadAssemblies (133ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (833ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (130ms)
-			SetupLoadedEditorAssemblies (1445ms)
+			SetupTypeCache (794ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (1771ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
+				InitializePlatformSupportModulesInManaged (20ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (180ms)
-				ProcessInitializeOnLoadAttributes (1155ms)
-				ProcessInitializeOnLoadMethodAttributes (70ms)
-				AfterProcessingInitializeOnLoad (14ms)
+				BeforeProcessingInitializeOnLoad (177ms)
+				ProcessInitializeOnLoadAttributes (1483ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
+				AfterProcessingInitializeOnLoad (16ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
 Platform modules already initialized, skipping
 Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
@@ -344,12 +260,12 @@ Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pi
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Refreshing native plugins compatible for Editor in 1.41 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 1.38 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7406 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 100 unused Assets / (21.4 MB). Loaded Objects now: 8528.
-Memory consumption went from 423.8 MB to 402.4 MB.
-Total: 8.368100 ms (FindLiveObjects: 0.583900 ms CreateObjectMapping: 0.635600 ms MarkObjects: 3.369700 ms  DeleteObjects: 3.777600 ms)
+Unloading 7402 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (21.4 MB). Loaded Objects now: 8284.
+Memory consumption went from 393.3 MB to 371.8 MB.
+Total: 7.731800 ms (FindLiveObjects: 0.533500 ms CreateObjectMapping: 0.608700 ms MarkObjects: 3.573700 ms  DeleteObjects: 3.014600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -372,52 +288,12 @@ Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pi
 Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
 Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Refreshing native plugins compatible for Editor in 15.36 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 17.33 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 92 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 92 unused Assets / (21.5 MB). Loaded Objects now: 8528.
-Memory consumption went from 275.2 MB to 253.8 MB.
-Total: 8.239700 ms (FindLiveObjects: 0.635100 ms CreateObjectMapping: 0.618100 ms MarkObjects: 4.204100 ms  DeleteObjects: 2.781500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 461.087883 seconds.
-  path: Assets/OtherMaterials/Loading circle.png
-  artifactKey: Guid(505793a825d9b3a489c0f565d5037418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/OtherMaterials/Loading circle.png using Guid(505793a825d9b3a489c0f565d5037418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c5e21d3195281531e5d894c9745c7b8') in 0.146834 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.464008 seconds.
-  path: Assets/Scenes/MainMenu.unity
-  artifactKey: Guid(92e4e30f2860bc94c9896d337a07ffee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainMenu.unity using Guid(92e4e30f2860bc94c9896d337a07ffee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e959124ec8f93205248932f7c275566a') in 0.004412 seconds 
-========================================================================
-Received Prepare
-Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
-Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
-Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Shader 'MapMagic/TerrainPreviewURP': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
-Shader 'MapMagic/TerrainPreviewURP': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
-Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
-Shader 'MapMagic/TerrainPreviewURP': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
-Refreshing native plugins compatible for Editor in 11.38 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 92 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 92 unused Assets / (21.5 MB). Loaded Objects now: 8530.
-Memory consumption went from 275.4 MB to 253.9 MB.
-Total: 9.358100 ms (FindLiveObjects: 0.649600 ms CreateObjectMapping: 0.724600 ms MarkObjects: 4.736000 ms  DeleteObjects: 3.246900 ms)
+Unloading 92 unused Assets / (21.4 MB). Loaded Objects now: 8284.
+Memory consumption went from 244.7 MB to 223.3 MB.
+Total: 9.226100 ms (FindLiveObjects: 0.695200 ms CreateObjectMapping: 0.747300 ms MarkObjects: 4.477700 ms  DeleteObjects: 3.304800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

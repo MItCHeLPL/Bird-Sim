@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
-using System;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] private List<Checkpoint> checkpoints; //List of all checkpoints of current level
+    public List<Checkpoint> checkpoints; //List of all checkpoints of current level
 
 	[SerializeField] private bool randomizeCheckpoints = false;
 	[SerializeField] private int randomCheckpointsAmount = 6;
@@ -18,6 +17,7 @@ public class LevelManager : MonoBehaviour
 	//Level states
 	[HideInInspector] public bool isPaused = false;
 	[HideInInspector] public bool finished = false;
+	[HideInInspector] public bool randomizedCheckpoints = false;
 
 	//Unity Events to use in other scripts
 	[SerializeField] private UnityEvent OnPause;
@@ -69,8 +69,6 @@ public class LevelManager : MonoBehaviour
 
 		List<int> randomizedNumbers = new List<int>();
 
-		System.Random rand = new System.Random();
-
 		int num = 0;
 
 		//Randomize unique numbers
@@ -78,7 +76,7 @@ public class LevelManager : MonoBehaviour
 		{
 			do
 			{
-				num = rand.Next(0, checkpoints.Count-1);
+				num = Random.Range(0, checkpoints.Count);
 			} while (randomizedNumbers.Contains(num));
 
 			randomizedNumbers.Add(num);
@@ -94,6 +92,8 @@ public class LevelManager : MonoBehaviour
 			checkpoints[x].gameObject.SetActive(false); //Deactivate checkpoint object
 			checkpoints.RemoveAt(x); //remove checkpoint from list
 		}
+
+		randomizedCheckpoints = true;
 	}
 
 	public void UseCheckpoint(Checkpoint cp)

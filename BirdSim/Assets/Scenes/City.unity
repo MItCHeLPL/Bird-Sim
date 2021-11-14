@@ -43525,7 +43525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508769612774, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -3.3953387e-10
+      value: -3.3953437e-10
       objectReference: {fileID: 0}
     - target: {fileID: 5970855508913377826, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_Name
@@ -43581,11 +43581,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5970855509106745542, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000021348812
+      value: -0.000000012772521
       objectReference: {fileID: 0}
     - target: {fileID: 5970855509106745542, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000027925076
+      value: 0.0000000016765567
       objectReference: {fileID: 0}
     - target: {fileID: 5970855509370248300, guid: 62371d4c830a1064bb9b8c4f0a0db259, type: 3}
       propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[3].m_Value

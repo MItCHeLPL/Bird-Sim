@@ -11,6 +11,8 @@ public class Checkpoint : MonoBehaviour
 
 	[SerializeField] private LevelManager lvlManager;
 
+	public Transform birdTarget = null;
+
 	private void OnTriggerEnter(Collider col)
 	{
 		if (col.tag == "Player")
